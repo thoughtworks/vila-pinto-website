@@ -67,7 +67,7 @@ ComfortableMexicanSofa.configure do |config|
   
   # Admin interface will respect the locale of the site being managed. However you can
   # force it to English by setting this to `:en`
-  #   config.admin_locale = nil
+  config.admin_locale = :'pt-BR'
   
   # If you want to keep your CMS tables in a location other than the default database
   # add a database_config. For example, setting it to 'cms' will look for a cms_#{Rails.env}
