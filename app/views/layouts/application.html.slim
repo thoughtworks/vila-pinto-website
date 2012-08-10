@@ -2,8 +2,22 @@ doctype html
 html
   head
     title Centro de Educação Ambiental da Vila Pinto
+    meta charset="UTF-8"
+    link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'
     = stylesheet_link_tag 'application', :media => 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-  body
+  body data-spy="scroll" data-target="#menu" data-offset="70"
+    #header
+      = image_tag "logocea.png"
+    #menu
+      ul#menu-list.nav
+        li.active
+          a.anchor-link href="#sobre" Sobre
+        li
+          a.anchor-link href="#historia" Historia
+        li
+          a.anchor-link href="#depoimentos" Depoimentos
+        li
+          a.anchor-link href="#departamentos" Departamentos
     = yield
