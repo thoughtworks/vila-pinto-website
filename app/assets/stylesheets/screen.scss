@@ -49,6 +49,10 @@ body {
       &.active a {
         color: #48bf3a !important;
       }
+      
+      & a {
+        color:white
+      }
 
       & a:visited {
         color: white;
