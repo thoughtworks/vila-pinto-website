@@ -18,13 +18,13 @@ $(document).ready(function() {
     $('body').animate({ scrollTop: sessionPosition }, 500, function() {
         window.location.hash = session;
     });
+  });
 
-    $('.sobre').click(function(e) {
-      e.preventDefault();
+  $('.sobre').click(function(e) {
+    e.preventDefault();
     
-      $('body').animate({ scrollTop: 0 }, 500, function() {
-        window.location.hash = '';
-      });  
-    });
+    $('body').animate({ scrollTop: 0 }, 500, function() {
+      window.location.hash = '';
+    });  
   });
 });
