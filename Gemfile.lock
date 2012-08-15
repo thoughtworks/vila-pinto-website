@@ -14,7 +14,6 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.1.3)
-    active_link_to (1.0.0)
     activemodel (3.2.7)
       activesupport (= 3.2.7)
       builder (~> 3.0.0)
@@ -32,7 +31,6 @@ GEM
     arel (3.0.2)
     builder (3.0.0)
     chunky_png (1.2.6)
-    cocaine (0.2.1)
     coderay (1.0.7)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -41,10 +39,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.3)
-    comfortable_mexican_sofa (1.6.23)
-      active_link_to (~> 1.0.0)
-      paperclip (>= 2.3.0)
-      rails (>= 3.0.0)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -70,12 +64,6 @@ GEM
     method_source (0.8)
     mime-types (1.19)
     multi_json (1.3.6)
-    paperclip (3.1.4)
-      activemodel (>= 3.0.0)
-      activerecord (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      cocaine (>= 0.0.2)
-      mime-types
     polyglot (0.3.3)
     pry (0.9.10)
       coderay (~> 1.0.5)
@@ -154,7 +142,6 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
-  comfortable_mexican_sofa
   compass-rails
   jquery-rails
   pry
