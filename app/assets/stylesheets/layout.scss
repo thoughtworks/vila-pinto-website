@@ -1,11 +1,12 @@
 #localization {
   height: 90px;
   width: 50px;
-  background-color: rgba(111, 111, 111, 0.9);
+  background-color: #111;
   position: fixed;
   top: 50%;
-  right: 0;
+  right: -30px;
   border-radius: 7px 0 0 7px;
+  opacity: 0.5;
 
   img {
     width: 38px;
