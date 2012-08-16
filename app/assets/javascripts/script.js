@@ -27,4 +27,10 @@ $(document).ready(function() {
       window.location.hash = '';
     });  
   });
+
+  $('#localization').hover(function() {
+    $('#localization').animate({ opacity: 1, right: 0 }, 300);
+  }, function() {
+    $('#localization').animate({ opacity: 0.5, right: '-30px' }, 300);
+  });
 });
