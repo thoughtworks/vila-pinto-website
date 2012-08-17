@@ -13,19 +13,19 @@ $(document).ready(function() {
   });
 
   $(".anchor-link").not(".sobre").click(function(event) {
-    event.preventDefault();
+    event.preventDefault(event);
     var session = $(this).attr('href');
     var sessionPosition = $(session).offset().top;
 
-    $('body').animate({ scrollTop: sessionPosition }, 500, function() {
+    $('body,html').animate({ scrollTop: sessionPosition }, 500, function() {
         window.location.hash = session;
     });
   });
 
-  $('.sobre').click(function(e) {
-    e.preventDefault();
+  $('.sobre').click(function(event) {
+    event.preventDefault(event);
     
-    $('body').animate({ scrollTop: 0 }, 500, function() {
+    $('body,html').animate({ scrollTop: 0 }, 500, function() {
       window.location.hash = '';
     });  
   });
