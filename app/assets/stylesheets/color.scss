@@ -1,11 +1,20 @@
+$blue: #3F7CB4;
+$green: #50B948;
+$orange: #D4813C;
+
+$light-blue: #82B2D9;
+
+
+$error: #B94A48;
+
 .cejak {
-  background-color: #3F7CB4;
+  background-color: $blue;
 }
 
 .ctvp {
-  background-color: #50b948;
+  background-color: $green;
 }
 
 .vovo {
-  background-color: #d5813c;
+  background-color: $orange;
 }
