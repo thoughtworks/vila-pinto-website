@@ -35,13 +35,15 @@
   }
 
   input:not(.btn) {
-    width: 350px;
+    width: 352px;
     height: 25px;
+    border: 2px solid #ccc;
   }
 
   textarea {
     width: 350px;
     border-radius: 3px;
+    border: 2px solid #ccc;
   }
 
   .btn {
@@ -51,12 +53,21 @@
     background-color: $blue;
     color: white;
     border: 0;
-    padding: 5px 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+
+    &:focus, &:hover {
+      box-shadow: 0 0 7px #777;
+    }
+
+    &:active {
+      box-shadow: 0 0 20px 0 #1D2845 inset, 0 1px 0 white;
+    }
   }
 
   label {
     display: block;
-    width: 110px;
+    width: 115px;
     text-align: right;
     float: left;
     margin-right: 30px;
