@@ -9,7 +9,7 @@ html
     = csrf_meta_tags
   body data-spy="scroll" data-target="#menu" data-offset="70"
     #header
-      #logo = image_tag "logocea.png"
+      = link_to image_tag("logocea.png", id: 'logo'), root_path
       #localization
         a = image_tag "portuguese.png"
         a = image_tag "english.png"

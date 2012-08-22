@@ -18,7 +18,7 @@ body {
   background-image: url('../assets/image1.jpeg');
   background-position: 0 -210px;
 
-  #logo img {
+  #logo {
     width: 200px;
     height: 200px;
     margin-top: 50px;
@@ -33,7 +33,7 @@ body {
 
   ul {
     margin: 0 auto;
-    width: 955px;
+    width: 970px;
     
     li {
       list-style: none;
@@ -56,6 +56,10 @@ body {
 
       & a:visited {
         color: white;
+      }
+
+      .contact {
+        color: #222 !important;
       }
     }
 
@@ -203,6 +207,7 @@ blockquote {
 
   .nav {
     padding-bottom: 20px;
+    margin-top: 40px;
 
     &:hover {
       -moz-box-shadow: inset 0 0 3px 3px #999;
