@@ -1,15 +1,15 @@
 #menu
   ul#menu-list.nav
     li.active
-      a.anchor-link.sobre href="#sobre" Sobre
+      = link_to t('home.about'), "#sobre", class: 'anchor-link sobre'
     li
-      a.anchor-link href="#historia" História
+      = link_to t('home.history'), "#historia", class: 'anchor-link'
     li
-      a.anchor-link href="#depoimentos" Depoimentos
+      = link_to t('home.testimonials'), "#depoimentos", class: 'anchor-link'
     li
-      a.anchor-link href="#departamentos" Iniciativas
+      = link_to t('home.iniciatives'), "#departamentos", class: 'anchor-link'
     li
-      = link_to 'Contato', new_contact_path, class: 'contact'
+      = link_to t('home.contact'), new_contact_path, class: 'contact'
 #sobre.content
   h1
     | Gerar e facilitar oportunidades de crescimento pessoal e qualificação 

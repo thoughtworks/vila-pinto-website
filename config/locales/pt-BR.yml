@@ -1,4 +1,11 @@
 pt-BR:
+  home:
+    about: Sobre    
+    history: História
+    testimonials: Depoimentos
+    iniciatives: Iniciativas
+    contact: Contato
+
   time:
     formats:
       default: '%d/%m/%Y'

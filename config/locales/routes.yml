@@ -1,0 +1,7 @@
+pt-BR:
+  routes:
+    new: novo
+    contacts: contato
+
+en:
+  routes:
