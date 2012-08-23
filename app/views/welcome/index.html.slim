@@ -76,7 +76,7 @@
         p
           small Fulano da Silva - 22 anos
 #departamentos.content
-  a href="cejak"
+  = link_to cejak_path do
     .departamento
       h1 CEJAK - Centro Cultural James Kulisz
       p
@@ -87,18 +87,20 @@
       .nav
         img alt="cjak" src="assets/cejak.png"
         .saiba-mais.cejak Saiba Mais
-  .departamento
-    h1 CTVP - Centro de Triagem da Vila Pinto
-    p
-      | É uma associação de trabalhadores de baixa renda, preferencialmente
-      | mulheres, que realizam a seleção de material reciclável, garantindo assim o sustento
-      | financeiro de suas famílias e também as ações do Centro Cultural.
-    .nav
-      img alt="ctvp" src="assets/ctvp.png"
-      .saiba-mais.ctvp Saiba Mais
-  .departamento
-    h1 Escola de educacao infantil Vovo Belinha
-    p A Escola de Educação Infantil Vovó Belinha, é fruto de uma grande batalha do Centro de Educação Ambiental – CEA que vem a ser uma Organização Não Governamental, fundada em 1996 através da iniciativa de um grupo de mulheres da comunidade, liderada por Marli Medeiros, decididas em transformar a condição de pobreza e violência a que estavam submetidas.
-    .nav
-      img alt="vovo belinha" src="assets/vovo.png"
-      .saiba-mais.vovo Saiba Mais
+  = link_to ctvp_path do
+    .departamento
+      h1 CTVP - Centro de Triagem da Vila Pinto
+      p
+        | É uma associação de trabalhadores de baixa renda, preferencialmente
+        | mulheres, que realizam a seleção de material reciclável, garantindo assim o sustento
+        | financeiro de suas famílias e também as ações do Centro Cultural.
+      .nav
+        img alt="ctvp" src="assets/ctvp.png"
+        .saiba-mais.ctvp Saiba Mais
+  = link_to vovo_path do
+    .departamento
+      h1 Escola de educacao infantil Vovo Belinha
+      p A Escola de Educação Infantil Vovó Belinha, é fruto de uma grande batalha do Centro de Educação Ambiental – CEA que vem a ser uma Organização Não Governamental, fundada em 1996 através da iniciativa de um grupo de mulheres da comunidade, liderada por Marli Medeiros, decididas em transformar a condição de pobreza e violência a que estavam submetidas.
+      .nav
+        img alt="vovo belinha" src="assets/vovo.png"
+        .saiba-mais.vovo Saiba Mais
