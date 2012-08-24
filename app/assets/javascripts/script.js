@@ -30,9 +30,9 @@ $(document).ready(function() {
     });  
   });
 
-  $('#localization').hover(function() {
-    $('#localization').animate({ opacity: 1, right: 0 }, 300);
-  }, function() {
-    $('#localization').animate({ opacity: 0.5, right: '-30px' }, 300);
+  $('#localization').hover(function(event) {
+    $('#localization').animate({ opacity: 1, right: 0 }, 300).dequeue();
+  }, function(event) {
+    $('#localization').animate({ opacity: 0.5, right: '-30px' }, 300).dequeue();
   });
 });
