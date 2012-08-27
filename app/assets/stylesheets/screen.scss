@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 $blueprint_grid_columns: 8;
 $blueprint_grid_width: 960px;
 
@@ -207,7 +209,7 @@ div.sobrectvp {
 }
 
 #departamentos {
-  height: 800px;
+  height: 880px;
   width: 100%;
   margin: 0;
   background-color: #eee;
@@ -225,10 +227,12 @@ div.sobrectvp {
     margin: 0 auto;
     text-align: center;
     width: 150px;
-    font-size: 1.5em;
     padding: 3px;
     border-radius: 3px;
-    color: white;
+    @include background(linear-gradient(white, #E8E8E8));
+    border: 2px solid #CCC;
+    font-weight: bold;
+    margin-top: 30px;
   }
 }
 
@@ -251,11 +255,14 @@ blockquote {
   .nav {
     padding-bottom: 20px;
     margin-top: 40px;
+    @include background(linear-gradient(#EFEFEF, #DDDDDD));
+    border: 1px solid #CCC;
+    border-radius: 3px;
 
     &:hover {
-      -moz-box-shadow: inset 0 0 3px 3px #999;
-      -webkit-box-shadow: inset 0 0 3px 3px #999;
-      box-shadow: inset 0 0 3px 3px #999;
+      -moz-box-shadow: 0 0 10px #333;
+      -webkit-box-shadow: 0 0 10px #333;
+      box-shadow: 0 0 10px #333;
       border-radius: 5px;
       cursor: pointer;
     }
