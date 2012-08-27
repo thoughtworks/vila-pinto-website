@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 $blueprint_grid_columns: 8;
 $blueprint_grid_width: 960px;
 
@@ -184,7 +186,7 @@ h1 {
     width: 150px;
     padding: 3px;
     border-radius: 3px;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#E8E8E8));
+    @include background(linear-gradient(white, #E8E8E8));
     border: 2px solid #CCC;
     font-weight: bold;
     margin-top: 30px;
@@ -210,7 +212,7 @@ blockquote {
   .nav {
     padding-bottom: 20px;
     margin-top: 40px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#DDD));
+    @include background(linear-gradient(#EFEFEF, #DDDDDD));
     border: 1px solid #CCC;
     border-radius: 3px;
 
