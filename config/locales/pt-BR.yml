@@ -19,7 +19,7 @@ pt-BR:
     contact_us: "Entre em contato"
     sent_by_name: 'Enviado por %{name}: %{email}'
     notices:
-      error: "Você deve preencher os campos."
+      error: "Você deve preencher todos os campos."
       success: "Email de contato foi enviado com sucesso."
 
   errors: &errors

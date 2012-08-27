@@ -137,6 +137,49 @@ h1 {
   }
 }
 
+#sobrectvp {
+  height: 500px;
+}
+
+div.news {
+    width: 21%;
+    height: 300px;
+    margin: 0 20px;;
+    padding: 7px;
+    float: right;
+  }
+
+div.news h1 {
+  font-size: 1.9em;
+  color: #50B948;
+  padding-bottom: 10px;
+  color: #50B948;
+}
+
+div.news ul li {
+  list-style: none;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #407EB3;
+}
+
+div.news ul li a {
+  font-size: .9em;
+  color: #727A7E;
+  text-decoration: none;
+}
+
+div.news ul li a:hover {
+  text-decoration: underline;
+}
+
+div.sobrectvp {
+    width: 70%;
+    
+    float: left;
+
+  }
+
+
 #depoimentos {
  height: 950px;
  
