@@ -220,6 +220,9 @@ blockquote {
   padding-left: 4%;
   padding-top: 3%;
 
+  p {
+    height: 380px;
+  }
   .nav {
     padding-bottom: 20px;
     @include background(linear-gradient(#EFEFEF, #DDDDDD));
