@@ -17,4 +17,8 @@ html
     = yield
     footer
       div
+        = image_tag("logoceawhite.png", id:"logo_cea_white")
         p CEA - Centro de Educacao Ambiental Vila Pinto - Todos os direitos reservados
+        .top Ir para o inicio
+        = link_to image_tag("arrow.png", id:"back_to_top"), root_path
+

@@ -257,8 +257,30 @@ footer {
 
   & p {
     width: 60%;
-    margin: 0 auto;
     padding-top: 20px;
+    color: white;
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  #back_to_top {
+    padding-top: 15px;
+    width: 35px;
+    display: inline-block;
+    float: right;
+  }
+
+  #logo_cea_white {
+    width: 50px;
+    margin-left: 20px;
+    padding-top: 15px;
+    float: left;
+  }
+
+  .top {
+    float:right;
+    padding: 10px;
+    padding-top: 15px;
     color: white;
   }
 
