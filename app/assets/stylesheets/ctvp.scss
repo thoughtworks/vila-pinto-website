@@ -1,0 +1,53 @@
+@import "color";
+
+#sobrectvp {
+    height: 500px;
+}
+
+#menu.ctvp {
+  background: $green;
+
+  .department {
+    color: #222;
+    font-weight: bold;
+    font-size: 2em;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+}
+
+div.news {
+  width: 21%;
+  height: 300px;
+  margin: 0 20px;;
+  padding: 7px;
+  float: right;
+  
+  h1 {
+    font-size: 1.9em;
+    padding-bottom: 10px;
+    color: $green;
+  }
+
+  ul li {
+    list-style: none;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #407EB3;
+  }
+
+  ul li a {
+    font-size: .9em;
+    color: #727A7E;
+    text-decoration: none;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+}
+
+div.sobrectvp {
+  width: 70%;
+  float: left;
+}

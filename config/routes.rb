@@ -4,9 +4,9 @@ VilaPintoWebsite::Application.routes.draw do
 
   root :to => 'welcome#index'
 
-  match '/cejak' => 'welcome#cejak', as: :cejak
-  match '/ctvp' => 'welcome#ctvp', as: :ctvp
-  match '/vovo' => 'welcome#vovo', as: :vovo
+  match '/cejak' => 'departments#cejak', as: :cejak
+  match '/ctvp' => 'departments#ctvp', as: :ctvp
+  match '/vovo' => 'departments#vovo', as: :vovo
 
   ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
 end

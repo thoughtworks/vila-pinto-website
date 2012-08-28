@@ -1,8 +1,5 @@
 @import "compass/css3";
-
-$blueprint_grid_columns: 8;
-$blueprint_grid_width: 960px;
-
+@import "color";
 @import "blueprint/reset";
 @import "partials/base";
 @import "blueprint";
@@ -19,6 +16,18 @@ body {
   overflow: hidden;
   background-image: url('../assets/image1.jpeg');
   background-position: 0 -210px;
+
+  &.ctvp {
+    height: 130px;
+    background-image: none;
+    background: white;
+
+    #logo {
+      margin-top: 20px;
+      width: 170px;
+      height: 170px;
+    }
+  }
 
   #logo {
     width: 200px;
@@ -83,7 +92,7 @@ h1 {
   padding-bottom: 50px;
   color: #3f7cb4;
   font-weight: lighter;
-  font-size: 2.3em;
+  font-size: 2em;
   float: left;
   line-height: 1.3em;
 }
@@ -112,7 +121,7 @@ h1 {
 }
 
 #sobre {
-  height: 300px;
+  height: 230px;
 
   iframe {
     margin: 0 auto;
@@ -121,6 +130,7 @@ h1 {
 
   h1 {
     width: 50%;
+    font-size: 2.2em;
   }
 
   p {
@@ -138,48 +148,6 @@ h1 {
     column-gap: 50px;
   }
 }
-
-#sobrectvp {
-  height: 500px;
-}
-
-div.news {
-    width: 21%;
-    height: 300px;
-    margin: 0 20px;;
-    padding: 7px;
-    float: right;
-  }
-
-div.news h1 {
-  font-size: 1.9em;
-  color: #50B948;
-  padding-bottom: 10px;
-  color: #50B948;
-}
-
-div.news ul li {
-  list-style: none;
-  padding-bottom: 10px;
-  border-bottom: 1px dotted #407EB3;
-}
-
-div.news ul li a {
-  font-size: .9em;
-  color: #727A7E;
-  text-decoration: none;
-}
-
-div.news ul li a:hover {
-  text-decoration: underline;
-}
-
-div.sobrectvp {
-    width: 70%;
-    float: left;
-
-  }
-
 
 #depoimentos {
  height: 950px;
@@ -208,7 +176,7 @@ div.sobrectvp {
 }
 
 #departamentos {
-  height: 880px;
+  height: 830px;
   width: 100%;
   margin: 0;
   background-color: #eee;
@@ -216,6 +184,7 @@ div.sobrectvp {
   img {
     margin-top: 10%;
     margin-left: 7%;
+    width: 250px;
   }
 
   a {
@@ -253,10 +222,12 @@ blockquote {
 
   .nav {
     padding-bottom: 20px;
-    margin-top: 40px;
     @include background(linear-gradient(#EFEFEF, #DDDDDD));
     border: 1px solid #CCC;
     border-radius: 3px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
 
     &:hover {
       -moz-box-shadow: 0 0 10px #333;
@@ -278,12 +249,13 @@ blockquote {
 }
 
 footer {
-  height: 100px;
+  height: 60px;
   background-color: #407eb3;
+
   & p {
     width: 60%;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 20px;
     color: white;
   }
 
