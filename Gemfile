@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
-gem 'sqlite3'
 gem 'slim-rails'
 gem "simple_form"
 gem 'rails-translate-routes'
@@ -16,6 +15,11 @@ end
 group :test, :development do
   gem 'rspec-rails', '~> 2.0'
   gem 'pry'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
 end
 
 group :test do
