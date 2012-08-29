@@ -17,7 +17,7 @@ body {
   background-image: url('../assets/image1.jpeg');
   background-position: 0 -210px;
 
-  &.ctvp {
+  &.ctvp, &.cejak, &.vovo {
     height: 130px;
     background-image: none;
     background: white;

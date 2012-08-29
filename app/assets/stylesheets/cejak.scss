@@ -1,0 +1,23 @@
+@import "color";
+
+#sobrecejak {
+      height: 300px;
+}
+
+#menu.cejak {
+  background: $blue;
+
+  .department {
+    color: #222;
+    font-weight: bold;
+    font-size: 2em;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+}
+
+div.sobrectvp {
+    width: 70%;
+    float: left;
+}

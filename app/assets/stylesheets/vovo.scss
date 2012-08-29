@@ -1,0 +1,23 @@
+@import "color";
+
+#sobrevovo {
+      height: 300px;
+}
+
+#menu.vovo {
+  background: $orange;
+
+  .department {
+    color: #222;
+    font-weight: bold;
+    font-size: 2em;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+}
+
+div.sobrevovo {
+    width: 70%;
+    float: left;
+}
