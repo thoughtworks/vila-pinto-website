@@ -182,9 +182,8 @@ h1 {
   background-color: #eee;
   
   img {
-    margin-top: 10%;
-    margin-left: 7%;
-    width: 250px;
+    margin: 10%;
+    width: 75%;
   }
 
   a {
@@ -223,6 +222,7 @@ blockquote {
   p {
     height: 380px;
   }
+
   .nav {
     padding-bottom: 20px;
     @include background(linear-gradient(#EFEFEF, #DDDDDD));
@@ -241,6 +241,7 @@ blockquote {
     }
   }
 }
+
 
 #historia {
   height: 840px;
