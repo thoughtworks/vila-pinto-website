@@ -1,7 +1,37 @@
 @import "color";
 
 #sobrectvp {
-    height: 500px;
+    height: 600px;
+
+    ul.information {
+      margin-top: 20px;
+      list-style: none;
+
+      h3 {
+        float: left;
+        font-weight: bold;
+      }
+
+      img {
+        float: left;
+        width: 20px;
+        margin-right: 10px;
+      }
+
+      li {
+        padding-top: 20px;
+        border-bottom: 1px solid #ccc;
+        width: 500px;
+        font-size: 1.2em;
+      }
+    }
+
+    h2 {
+      font-size: 1.9em;
+      color: $green;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
 }
 
 #menu.ctvp {
@@ -14,6 +44,10 @@
     float: left;
     margin-left: 50px;
     margin-top: 10px;
+  }
+
+  ul li.active a {
+    color: $blue !important;
   }
 }
 
