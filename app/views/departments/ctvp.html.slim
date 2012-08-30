@@ -4,27 +4,46 @@
   .department CTVP
   ul#menu-list.nav
     li.active
-      = link_to t('home.about'), "#sobre", class: 'anchor-link sobre'
+      = link_to t('home.about'), "#sobre", class: 'sobre'
     li
-      = link_to t('home.history'), "#historia", class: 'anchor-link'
+      = link_to t('home.projects'), "#projetos"
     li
-      = link_to t('home.projects'), "#projetos", class: 'anchor-link'
-    li
-      = link_to t('home.materiais'), "#materiais", class: 'anchor-link'
+      = link_to t('home.materiais'), "#materiais"
     li
       = link_to t('home.contact'), new_contact_path, class: 'contact'
 
 #sobrectvp.content
   div.sobrectvp
-      | O Centro de Triagem Vila Pinto (CTVP) É uma associação de trabalhadores de baixa renda, preferencialmente mulheres, que realizam a      seleção de material reciclável, garantindo assim o sustento financeiro de suas famílias e também as ações do Centro Cultural. Os recursos adquiridos com a venda são partilhados entre os associados e um percentual é destinado à manutenção do Centro de Triagem e do Centro Cultural, cobrindo as despesas com manutenção dos veículos, combustível e material de escritório. Atualmente o Centro de Triagem atende diretamente 180 pessoas (associados e seus familiares) e indiretamente 120 pessoas, através da relação com carroceiros e carrinheiros. 
+    h2 
+      | Centro de Triagem Vila Pinto
 
-      ul
-        li 45 associados link_to 
-        li Ganho mensal (média): 1 salário mínimo nacional
-        li Carga horária diária: 8 horas
-        li Média material manipulado/mês: 130 toneladas
-        li Média rejeito: 30%
-  
+
+    label 
+      | O Centro de Triagem Vila Pinto (CTVP) É uma associação de trabalhadores de baixa renda, preferencialmente mulheres, que realizam a      seleção de material reciclável, garantindo assim o sustento financeiro de suas famílias e também as ações do Centro Cultural. Os recursos adquiridos com a venda são partilhados entre os associados e um percentual é destinado à manutenção do Centro de Triagem e do Centro Cultural, cobrindo as despesas com manutenção dos veículos, combustível e material de escritório. Atualmente o Centro de Triagem atende diretamente 180 pessoas (associados e seus familiares) e indiretamente 120 pessoas, através da relação com carroceiros e carrinheiros. 
+      
+    h2 Dados sobre a instituicao
+      
+    ul.information
+      li
+        = image_tag("people.png")
+        h3
+          | Associados:   
+        | 45 
+      li
+        = image_tag("money.png")
+        h3 
+          | Ganho mensal (média): 
+        | 1 salário mínimo nacional
+      li
+        = image_tag("hour.png")
+        h3
+          | Carga horária diária: 
+        | 8 horas
+      li
+        = image_tag("materials.png")
+        h3
+          | Média material manipulado/mês: 
+        | 130 toneladas
   div.news
     h1 
       | Novidades CTVP
@@ -34,5 +53,5 @@
       li: a href='a' Governo Estadual libera repasse de orçamento para o Centro de Triagem.
       li: a href='a' Centro atinge marca recorde de 138 toneladas/mês
 footer.ctvp
-    div
-    p CEA - Centro de Educacao Ambiental Vila Pinto - Todos os direitos reservados
+  div
+  p CEA - Centro de Educacao Ambiental Vila Pinto - Todos os direitos reservados
