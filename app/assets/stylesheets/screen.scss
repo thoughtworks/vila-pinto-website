@@ -183,7 +183,7 @@ h1 {
   
   img {
     margin: 10%;
-    width: 78%;
+    width: 80%;
   }
 
   a {
@@ -193,13 +193,13 @@ h1 {
   .saiba-mais {
     margin: 0 auto;
     text-align: center;
-    width: 150px;
+    width: 60%;
     padding: 3px;
     border-radius: 3px;
     @include background(linear-gradient(white, #E8E8E8));
     border: 2px solid #CCC;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 5px;
   }
 }
 
