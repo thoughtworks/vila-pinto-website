@@ -196,6 +196,7 @@ h1 {
     width: 60%;
     padding: 3px;
     border-radius: 3px;
+    background: white;
     @include background(linear-gradient(white, #E8E8E8));
     border: 2px solid #CCC;
     font-weight: bold;
@@ -246,7 +247,7 @@ blockquote {
 
 
 #historia {
-  height: 840px;
+  height: 960px;
 
   img {
     margin: 0 auto;
