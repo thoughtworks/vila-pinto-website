@@ -19,8 +19,6 @@ body {
 
   &.ctvp, &.cejak, &.vovo {
     height: 130px;
-    background-image: none;
-    background: white;
 
     #logo {
       margin-top: 20px;
@@ -81,8 +79,7 @@ body {
 }
 
 .content {
-  margin: 0 4.5%;
-  padding: 4% 0;
+  padding: 4% 4.5%;
   width: 91%;
 }
 
@@ -177,7 +174,6 @@ h1 {
 
 #departamentos {
   height: 830px;
-  width: 100%;
   margin: 0;
   background-color: #eee;
   
@@ -233,7 +229,7 @@ blockquote {
     border-radius: 3px;
     width: 80%;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 80px;
 
     &:hover {
       -moz-box-shadow: 0 0 10px #cacaca;
@@ -256,10 +252,7 @@ blockquote {
 }
 
 .fb-like {
-  padding-left: 80px;
   background: #EEE;
-  padding-bottom: 40px;
-  width: 100%;
 }
 
 #footer {

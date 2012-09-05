@@ -1,5 +1,10 @@
 @import "color";
 
+#header.ctvp {
+  background: url('headerCtvp.png') #777;
+  background-size: 100%;
+}
+
 #sobrectvp {
     height: 600px;
 
@@ -22,7 +27,6 @@
         padding-top: 20px;
         border-bottom: 1px solid #ccc;
         width: 500px;
-        font-size: 1.2em;
       }
     }
 
@@ -56,9 +60,11 @@
 
 div.news {
   width: 21%;
-  height: 300px;
   margin: 0 20px;;
   float: right;
+  background-color: #efefef;
+  padding: 20px;
+  border-radius: 3px;
   
   h1 {
     font-size: 1.9em;
@@ -73,9 +79,8 @@ div.news {
   }
 
   ul li a {
-    font-size: .9em;
-    color: #727A7E;
     text-decoration: none;
+    color: #222;
   }
 
   ul li a:hover {
