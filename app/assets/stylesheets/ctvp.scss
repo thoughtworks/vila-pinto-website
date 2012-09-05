@@ -2,12 +2,16 @@
 
 #header.ctvp {
   background: url('headerCtvp.png') #777;
-  background-size: 100%;
+  background-size: 1300px;
+}
+
+#footer.ctvp {
+  background: url('footerCtvp.png') white;
+  background-size: 1300px;
+  height: 170px;
 }
 
 #sobrectvp {
-    height: 600px;
-
     ul.information {
       margin-top: 20px;
       list-style: none;
@@ -58,6 +62,14 @@
 
   ul li.active a {
     color: #222 !important;
+  }
+}
+
+.photos {
+  img {
+    width: 850px;
+    margin-top: 60px;
+    margin-left: 100px;
   }
 }
 
