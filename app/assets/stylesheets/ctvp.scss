@@ -15,18 +15,21 @@
       h3 {
         float: left;
         font-weight: bold;
+        color: #222;
       }
 
       img {
         float: left;
-        width: 20px;
+        width: 25px;
         margin-right: 10px;
       }
 
       li {
         padding-top: 20px;
-        border-bottom: 1px solid #ccc;
-        width: 500px;
+        width: 400px;
+        float: left;
+        font-size: 1.2em;
+        color: $green;
       }
     }
 
@@ -63,7 +66,7 @@ div.news {
   margin: 0 20px;;
   float: right;
   background-color: #efefef;
-  padding: 20px;
+  padding: 0 20px;
   border-radius: 3px;
   
   h1 {
