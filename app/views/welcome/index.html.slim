@@ -1,15 +1,34 @@
 #menu
   ul#menu-list.nav
     li.active
-      = link_to t('home.about'), "#sobre", class: 'anchor-link sobre'
+      = link_to t('home.iniciatives'), "#departamentos", class: 'anchor-link sobre' 
+    li
+      = link_to t('home.about'), "#sobre", class: 'anchor-link'
     li
       = link_to t('home.history'), "#historia", class: 'anchor-link'
     li
       = link_to t('home.testimonials'), "#depoimentos", class: 'anchor-link'
     li
-      = link_to t('home.iniciatives'), "#departamentos", class: 'anchor-link'
-    li
       = link_to t('home.contact'), new_contact_path, class: 'contact'
+#departamentos.content
+  = link_to cejak_path do
+    .departamento
+      .nav
+        img alt="cjak" src="assets/cejak.png"
+        .saiba-mais.cejak Entre
+      h1 Centro Cultural James Kulisz  
+  = link_to ctvp_path do
+    .departamento
+      .nav
+        img alt="ctvp" src="assets/ctvp.png"
+        .saiba-mais.ctvp Entre
+      h1 Centro de Triagem da Vila Pinto
+  = link_to vovo_path do
+    .departamento
+      .nav
+        img alt="vovo belinha" src="assets/vovo.png"
+        .saiba-mais.vovo Entre
+      h1 Escola infantil Vovo Belinha
 #sobre.content
   h1
     | Gerar e facilitar oportunidades de crescimento pessoal e qualificação 
@@ -68,32 +87,3 @@
         | O centro de educacao ambiental me ajudou muito pois atraves dele pude exercer minha vontade de trabalhar e pude ajudar minha familia financeiramente.
         p
           small Fulano da Silva
-#departamentos.content
-  = link_to cejak_path do
-    .departamento
-      h1 CEJAK - Centro Cultural James Kulisz
-      p
-        | Promover a inclusão sócio cultural e educacional de crianças, jovens e
-        | adultos, moradores da comunidade local, oferecer a oportunidade de modificação da
-        | condição de risco social da comunidade local e, potencializar os envolvidos a serem
-        | futuros multiplicadores das ações desenvolvidas para o benefício da coletividade.
-      .nav
-        img alt="cjak" src="assets/cejak.png"
-        .saiba-mais.cejak Saiba Mais
-  = link_to ctvp_path do
-    .departamento
-      h1 CTVP - Centro de Triagem da Vila Pinto
-      p
-        | É uma associação de trabalhadores de baixa renda, preferencialmente
-        | mulheres, que realizam a seleção de material reciclável, garantindo assim o sustento
-        | financeiro de suas famílias e também as ações do Centro Cultural.
-      .nav
-        img alt="ctvp" src="assets/ctvp.png"
-        .saiba-mais.ctvp Saiba Mais
-  = link_to vovo_path do
-    .departamento
-      h1 Escola de educacao infantil Vovo Belinha
-      p A Escola de Educação Infantil Vovó Belinha, é fruto de uma grande batalha do Centro de Educação Ambiental – CEA que vem a ser uma Organização Não Governamental, fundada em 1996 através da iniciativa de um grupo de mulheres da comunidade, liderada por Marli Medeiros, decididas em transformar a condição de pobreza e violência a que estavam submetidas.
-      .nav
-        img alt="vovo belinha" src="assets/vovo.png"
-        .saiba-mais.vovo Saiba Mais
