@@ -49,6 +49,10 @@
 
 #menu.ctvp {
   background: $green;
+  
+  li {
+    font-size: 1.3em;
+  }
 
   .department {
     color: #222;
@@ -57,7 +61,7 @@
     float: left;
     margin-left: 50px;
     margin-top: 10px;
-    margin-right: 100px;
+    margin-right: 70px;
   }
 
   ul li.active a {
