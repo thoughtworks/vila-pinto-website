@@ -1,16 +1,31 @@
 #menu
   ul#menu-list.nav
     li.active
-      = link_to t('home.iniciatives'), "#departamentos", class: 'anchor-link sobre' 
+      = link_to t('home.about'), "#sobre", class: 'anchor-link sobre'
     li
-      = link_to t('home.about'), "#sobre", class: 'anchor-link'
+      = link_to t('home.iniciatives'), "#departamentos", class: 'anchor-link'   
     li
       = link_to t('home.history'), "#historia", class: 'anchor-link'
     li
       = link_to t('home.testimonials'), "#depoimentos", class: 'anchor-link'
     li
       = link_to t('home.contact'), new_contact_path, class: 'contact'
+#sobre.content
+  h1
+    | Gerar e facilitar oportunidades de crescimento pessoal e qualificação 
+    | profissional para melhorar a qualidade de vida da comunidade da Vila 
+    | Pinto
+  p.two
+    | O  Centro de Educação Ambiental (CEA) é uma Organização Não 
+    | Governamental fundada em 1996 com a iniciativa de um grupo de mulheres 
+    | da comunidade. Lideradas por Marli Medeiros, decidiram transformar a 
+    | condição de pobreza e violência a que estavam submetidas e buscar 
+    | alternativas que lhes garantissem independência e qualidade de vida. 
+    | Definiram juntas, como objetivo principal de sua luta, a promoção, a defesa e 
+    | a garantia de seus direitos.
 #departamentos.content
+  h1.title
+    | Iniciativas
   = link_to cejak_path do
     .departamento
       .nav
@@ -29,19 +44,6 @@
         img alt="vovo belinha" src="assets/vovo.png"
         .saiba-mais.vovo Entre
       h1 Escola infantil Vovo Belinha
-#sobre.content
-  h1
-    | Gerar e facilitar oportunidades de crescimento pessoal e qualificação 
-    | profissional para melhorar a qualidade de vida da comunidade da Vila 
-    | Pinto
-  p.two
-    | O  Centro de Educação Ambiental (CEA) é uma Organização Não 
-    | Governamental fundada em 1996 com a iniciativa de um grupo de mulheres 
-    | da comunidade. Lideradas por Marli Medeiros, decidiram transformar a 
-    | condição de pobreza e violência a que estavam submetidas e buscar 
-    | alternativas que lhes garantissem independência e qualidade de vida. 
-    | Definiram juntas, como objetivo principal de sua luta, a promoção, a defesa e 
-    | a garantia de seus direitos.
 #historia.content
   h1 História
   span.two
