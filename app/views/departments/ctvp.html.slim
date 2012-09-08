@@ -1,5 +1,18 @@
 #header.ctvp
   = link_to image_tag("ctvp.png", id: 'logo'), ctvp_path
+  #navigation
+    .cea.page_link
+      = link_to root_path do
+        = image_tag("logoceawhite.png")
+        label.short CEA
+    .vovo.page_link
+      = link_to vovo_path do
+        = image_tag("logoceawhite.png")
+        label Vovo Belinha
+    .cejak.page_link
+      = link_to cejak_path do
+        = image_tag("logoceawhite.png")
+        label.short CEJAK
 #menu.ctvp
   .department CTVP
   ul#menu-list.nav
