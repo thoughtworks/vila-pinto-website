@@ -11,6 +11,19 @@ html
   body data-spy="scroll" data-target="#menu" data-offset="70"
     #header
       = link_to image_tag("logocea.png", id: 'logo'), root_path
+      #navigation
+        .vovo.page_link
+          = link_to vovo_path do
+            = image_tag("logoceawhite.png")
+            label Vovo Belinha
+        .ctvp.page_link
+          = link_to ctvp_path do
+            = image_tag("logoceawhite.png")
+            label.short CTVP
+        .cejak.page_link
+          = link_to cejak_path do
+            = image_tag("logoceawhite.png")
+            label.short CEJAK
       #localization
         = link_to image_tag("portuguese.png"), url_for(:only_path => false, :locale => 'pt-BR')
         = link_to image_tag("english.png"), url_for(:only_path => false, :locale => 'en')
