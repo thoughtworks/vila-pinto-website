@@ -5,3 +5,64 @@ en:
     testimonials: Testimonials
     iniciatives: Initiatives
     contact: Contact
+    projects: Projects
+    partners: Partners
+    recycling: Recycling
+    finance: Financials
+    materiais: Materials
+
+  time:
+    formats:
+      default: '%m/%d/%Y'
+
+  helpers:
+    submit:
+      contact:
+        create: "Submit"
+
+  contact:
+    contact_us: "Contact us"
+    sent_by_name: 'Submitted by %{name}: %{email}'
+    notices:
+      error: "You must fill in all fields."
+      success: "Contact email sent successfully."
+
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: must be accepted
+      blank: cannot be left blank
+      confirmation: não está de acordo com a confirmação
+      empty: cannot be left empty
+      equal_to: must be equal to %{count}
+      even: must be even
+      exclusion: is not available
+      greater_than: must be greate than %{count}
+      greater_than_or_equal_to: must be greate than or equal to %{count}
+      inclusion: is not listed
+      invalid: is invalid
+      less_than: must be less than %{count}
+      less_than_or_equal_to: must be less than or equal to %{count}
+      not_a_number: is not a number
+      not_an_integer: is not an integer
+      odd: must be odd
+      record_invalid: ! 'The validation failed: %{errors}'
+      taken: is already taken
+      too_long: ! 'is too long (maximum: %{count} characters)'
+      too_short: ! 'is too short (minimum: %{count} characters)'
+      wrong_length: does not have the expected length of (%{count} characters)
+    template:
+      body: ! 'Please verify the following field(s):'
+      header:
+        one: ! 'Impossible to save %{model}: 1 error'
+        other: ! 'Impossible to save %{model}: %{count} errors.'
+
+  activemodel:
+    attributes:
+      contact:
+        name: 'Name'
+        email: 'Email'
+        subject: 'Subject'
+        message: 'Message'
+    errors:
+      <<: *errors
