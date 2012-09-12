@@ -30,6 +30,10 @@ en:
       error: "You must fill in all fields."
       success: "Contact email sent successfully."
 
+  cea:
+    mission: "Generate and facilitate oppotunities of personal and professional growth to improve the overall quality of life of the Vila Pinto community."
+    about: "translate text into english"
+
   errors: &errors
     format: ! '%{attribute} %{message}'
     messages:

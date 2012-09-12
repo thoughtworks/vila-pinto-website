@@ -12,20 +12,12 @@
       = link_to t('home.contact'), new_contact_path, class: 'contact'
 #sobre.content
   h1
-    | Gerar e facilitar oportunidades de crescimento pessoal e qualificação 
-    | profissional para melhorar a qualidade de vida da comunidade da Vila 
-    | Pinto
-  p.two
-    | O  Centro de Educação Ambiental (CEA) é uma Organização Não 
-    | Governamental fundada em 1996 com a iniciativa de um grupo de mulheres 
-    | da comunidade. Lideradas por Marli Medeiros, decidiram transformar a 
-    | condição de pobreza e violência a que estavam submetidas e buscar 
-    | alternativas que lhes garantissem independência e qualidade de vida. 
-    | Definiram juntas, como objetivo principal de sua luta, a promoção, a defesa e 
-    | a garantia de seus direitos.
+    = t('cea.mission')
+  p.two 
+    = t('cea.about')
 #departamentos.content
   h1.title
-    | Iniciativas
+    = t('home.iniciatives')
   = link_to vovo_path do
     .departamento
       .nav
@@ -45,7 +37,8 @@
         .saiba-mais.cejak Entre
       h1 Centro Cultural James Kulisz  
 #historia.content
-  h1 História
+  h1
+    = t('home.history')
   span.two
     p
       | O CEA está localizado na Vila Pinto, Bairro Bom Jesus, zona Leste de Porto&nbsp;
@@ -67,7 +60,8 @@
       | desenvolvida também por crianças e adolescentes.
   object width="80%" height="60%" <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fvilapintowebsite%2Fshow%2F&page_show_back_url=%2Fphotos%2Fvilapintowebsite%2F&user_id=78707398@N05&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=109615"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fvilapintowebsite%2Fshow%2F&page_show_back_url=%2Fphotos%2Fvilapintowebsite%2F&user_id=78707398@N05&jump_to=" width="400" height="300"></embed>
 #depoimentos.content
-  h1 Depoimentos
+  h1
+    = t('home.testimonials')  
   .portraits
     .portrait
       img src="assets/depoimento3.png"
@@ -92,4 +86,4 @@
         p
           | O centro de educacao ambiental me ajudou muito pois atraves dele pude exercer minha vontade de trabalhar e pude ajudar minha familia financeiramente.
           p
-            small Jurema 
+            small Jurema
