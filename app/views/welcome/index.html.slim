@@ -1,7 +1,7 @@
 #menu
   ul#menu-list.nav
     li.active
-      = link_to t('home.about'), "#sobre", class: 'anchor-link sobre'
+      = link_to t('home.aboutus'), "#sobre", class: 'anchor-link sobre'
     li
       = link_to t('home.iniciatives'), "#departamentos", class: 'anchor-link'   
     li
@@ -26,24 +26,24 @@
 #departamentos.content
   h1.title
     | Iniciativas
-  = link_to cejak_path do
+  = link_to vovo_path do
     .departamento
       .nav
-        img alt="cjak" src="assets/cejak.png"
-        .saiba-mais.cejak Entre
-      h1 Centro Cultural James Kulisz  
+        img alt="vovo belinha" src="assets/vovo.png"
+        .saiba-mais.vovo Entre
+      h1 Escola infantil Vovó Belinha
   = link_to ctvp_path do
     .departamento
       .nav
         img alt="ctvp" src="assets/ctvp.png"
         .saiba-mais.ctvp Entre
       h1 Centro de Triagem da Vila Pinto
-  = link_to vovo_path do
+  = link_to cejak_path do
     .departamento
       .nav
-        img alt="vovo belinha" src="assets/vovo.png"
-        .saiba-mais.vovo Entre
-      h1 Escola infantil Vovo Belinha
+        img alt="cjak" src="assets/cejak.png"
+        .saiba-mais.cejak Entre
+      h1 Centro Cultural James Kulisz  
 #historia.content
   h1 História
   span.two

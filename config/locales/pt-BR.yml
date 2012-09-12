@@ -1,6 +1,7 @@
 pt-BR:
   home:
-    about: Quem Somos  
+    aboutus: Quem Somos
+    about: Sobre  
     history: História
     testimonials: Depoimentos
     iniciatives: Iniciativas
@@ -10,6 +11,8 @@ pt-BR:
     recycling: Reciclagem
     finance: Financeiro
     materiais: Materiais
+    donation: Doação
+    sponsors: Parceiros
 
   time:
     formats:

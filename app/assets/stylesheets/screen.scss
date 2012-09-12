@@ -29,6 +29,7 @@ body {
       text-align: center;
       line-height: 1em;
       cursor: pointer;
+      border-radius: 0 0 4px 4px;
 
       a {
         text-decoration: none;
@@ -282,7 +283,6 @@ blockquote {
   }
 }
 
-
 #historia {
   height: 960px;
 
@@ -294,6 +294,39 @@ blockquote {
 
 .fb-like {
   background: #EEE;
+}
+
+#sitemap {
+  height: 250px;
+  background: $light-blue;
+
+  ul {
+    margin-top: 50px;
+    float: left;
+    margin-left: 15%;
+    color: white;
+    padding-left: 10px;
+    border-left: 1px solid white;
+  
+    li {
+      &:first-child {
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          color: $green;
+        }
+      }
+
+      list-style: none;
+    }
+
+  }
 }
 
 #footer {
