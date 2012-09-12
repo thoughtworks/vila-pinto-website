@@ -302,9 +302,7 @@ blockquote {
 
 #sitemap-container {
   #sitemap {
-    margin: 0 auto;
-    width: 80%;
-  }
+    margin: 0 auto;  }
 
   height: 250px;
   background: $light-blue;
@@ -312,7 +310,6 @@ blockquote {
   ul {
     margin-top: 50px;
     float: left;
-    margin-left: 15%;
     color: white;
     padding-left: 10px;
     border-left: 1px solid white;
@@ -348,6 +345,7 @@ blockquote {
     color: white;
     display: inline-block;
     margin-left: 20px;
+    font-size: 0.8em;
   }
 
   #back_to_top {
@@ -359,7 +357,7 @@ blockquote {
 
   #logo_cea_white {
     width: 50px;
-    margin-left: 60px;
+    margin-left: 5%;
     padding-top: 15px;
     float: left;
   }
@@ -369,7 +367,7 @@ blockquote {
     padding: 10px;
     padding-top: 15px;
     color: white;
-    margin-right: 60px;
+    margin-right: 5%;
   }
 
   & div {
