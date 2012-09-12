@@ -158,8 +158,6 @@ h1 {
 }
 
 #sobre {
-  height: 230px;
-
   iframe {
     margin: 0 auto;
     display: block;
@@ -205,8 +203,13 @@ h1 {
     margin-left: 170px;
     margin-bottom: 30px;
   }
-  
+
   .portraits {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .portrait {
     width: 45%;
     float: left;
   }
@@ -287,6 +290,7 @@ blockquote {
   height: 960px;
 
   img {
+    width: 90%;
     margin: 0 auto;
     display: block;
   } 
@@ -296,7 +300,12 @@ blockquote {
   background: #EEE;
 }
 
-#sitemap {
+#sitemap-container {
+  #sitemap {
+    margin: 0 auto;
+    width: 80%;
+  }
+
   height: 250px;
   background: $light-blue;
 

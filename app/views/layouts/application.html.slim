@@ -37,27 +37,28 @@ html
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     .fb-like.content data-href="http://www.facebook.com/cejak" data-send="true" data-width="450" data-show-faces="true"
-    #sitemap
-      ul
-        li 
-          = link_to "Vovó Belinha", vovo_path
-        li = link_to t('home.about'), vovo_path
-        li = link_to t('home.sponsors'), vovo_path
-        li = link_to t('home.donation'), vovo_path
-        li = link_to t('home.contact'), new_contact_path
-      ul
-        li 
-          = link_to "CTVP", ctvp_path
-        li = link_to t('home.about'), ctvp_path
-        li = link_to t('home.materiais'), ctvp_path
-        li = link_to t('home.sponsors'), ctvp_path
-        li = link_to t('home.contact'), new_contact_path
-      ul 
-        li 
-          = link_to "CEJAK", cejak_path
-        li = link_to t('home.about'), cejak_path
-        li = link_to t('home.projects'), cejak_path
-        li = link_to t('home.contact'), new_contact_path
+    #sitemap-container
+      #sitemap
+        ul
+          li 
+            = link_to "Vovó Belinha", vovo_path
+          li = link_to t('home.about'), vovo_path
+          li = link_to t('home.sponsors'), vovo_path
+          li = link_to t('home.donation'), vovo_path
+          li = link_to t('home.contact'), new_contact_path
+        ul
+          li 
+            = link_to "CTVP", ctvp_path
+          li = link_to t('home.about'), ctvp_path
+          li = link_to t('home.materiais'), ctvp_path
+          li = link_to t('home.sponsors'), ctvp_path
+          li = link_to t('home.contact'), new_contact_path
+        ul 
+          li 
+            = link_to "CEJAK", cejak_path
+          li = link_to t('home.about'), cejak_path
+          li = link_to t('home.projects'), cejak_path
+          li = link_to t('home.contact'), new_contact_path
     #footer
       div
         = image_tag("logoceawhite.png", id:"logo_cea_white")
