@@ -12,20 +12,13 @@
       = link_to t('home.contact'), new_contact_path, class: 'contact'
 #sobre.content
   h1
-    | Gerar e facilitar oportunidades de crescimento pessoal e qualificação 
-    | profissional para melhorar a qualidade de vida da comunidade da Vila 
-    | Pinto
-  p.two
-    | O  Centro de Educação Ambiental (CEA) é uma Organização Não 
-    | Governamental fundada em 1996 com a iniciativa de um grupo de mulheres 
-    | da comunidade. Lideradas por Marli Medeiros, decidiram transformar a 
-    | condição de pobreza e violência a que estavam submetidas e buscar 
-    | alternativas que lhes garantissem independência e qualidade de vida. 
-    | Definiram juntas, como objetivo principal de sua luta, a promoção, a defesa e 
-    | a garantia de seus direitos.
+    = t('cea.mission')
+
+  p.two 
+    = t('cea.about')
 #departamentos.content
   h1.title
-    | Iniciativas
+    = t('home.iniciatives')
   = link_to cejak_path do
     .departamento
       .nav
@@ -45,7 +38,8 @@
         .saiba-mais.vovo Entre
       h1 Escola infantil Vovo Belinha
 #historia.content
-  h1 História
+  h1
+    = t('home.history')
   span.two
     p
       | O CEA está localizado na Vila Pinto, Bairro Bom Jesus, zona Leste de Porto
@@ -67,7 +61,8 @@
       | desenvolvida também por crianças e adolescentes.
   img src="assets/carousel.png"
 #depoimentos.content
-  h1 Depoimentos
+  h1
+    = t('home.testimonials')  
   .portraits
     img src="assets/depoimento3.png"
     blockquote
