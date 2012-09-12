@@ -29,6 +29,7 @@ body {
       text-align: center;
       line-height: 1em;
       cursor: pointer;
+      border-radius: 0 0 4px 4px;
 
       a {
         text-decoration: none;
@@ -157,8 +158,6 @@ h1 {
 }
 
 #sobre {
-  height: 230px;
-
   iframe {
     margin: 0 auto;
     display: block;
@@ -204,8 +203,13 @@ h1 {
     margin-left: 170px;
     margin-bottom: 30px;
   }
-  
+
   .portraits {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .portrait {
     width: 45%;
     float: left;
   }
@@ -282,18 +286,53 @@ blockquote {
   }
 }
 
-
 #historia {
-  height: 960px;
+  height: 1020px;
 
-  img {
-    margin: 0 auto;
+  object {
+    margin: 40px 10%;
     display: block;
+    float: left;
   } 
 }
 
 .fb-like {
   background: #EEE;
+}
+
+#sitemap-container {
+  #sitemap {
+    margin: 0 auto;  }
+
+  height: 250px;
+  background: $light-blue;
+
+  ul {
+    margin-top: 50px;
+    float: left;
+    color: white;
+    padding-left: 10px;
+    border-left: 1px solid white;
+  
+    li {
+      &:first-child {
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          color: $green;
+        }
+      }
+
+      list-style: none;
+    }
+
+  }
 }
 
 #footer {
@@ -306,6 +345,7 @@ blockquote {
     color: white;
     display: inline-block;
     margin-left: 20px;
+    font-size: 0.8em;
   }
 
   #back_to_top {
@@ -317,7 +357,7 @@ blockquote {
 
   #logo_cea_white {
     width: 50px;
-    margin-left: 60px;
+    margin-left: 5%;
     padding-top: 15px;
     float: left;
   }
@@ -327,7 +367,7 @@ blockquote {
     padding: 10px;
     padding-top: 15px;
     color: white;
-    margin-right: 60px;
+    margin-right: 5%;
   }
 
   & div {

@@ -1,6 +1,7 @@
 en:
   home:
-    about: About Us   
+    aboutus: About Us
+    about: About   
     history: History
     testimonials: Testimonials
     iniciatives: Initiatives
@@ -10,6 +11,8 @@ en:
     recycling: Recycling
     finance: Financials
     materiais: Materials
+    donation: Donation
+    sponsors: Sponsors
 
   time:
     formats:
