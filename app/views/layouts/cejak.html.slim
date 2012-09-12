@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    = favicon_link_tag image_path 'favicon.ico'
+    title Centro de Educação Ambiental da Vila Pinto
+    meta charset="UTF-8"
+    link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'
+    = stylesheet_link_tag 'application', :media => 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  body data-spy="scroll" data-target="#menu" data-offset="70"
+    #localization
+      = link_to image_tag("portuguese.png"), url_for(:only_path => false, :locale => 'pt-BR')
+      = link_to image_tag("english.png"), url_for(:only_path => false, :locale => 'en')
+    #header.cejak
+      = link_to image_tag("cejak.png", id: 'logo'), cejak_path
+      #navigation
+            .cea.page_link
+              = link_to root_path do
+                = image_tag("logoceawhite.png")
+                label.short CEA
+            .vovo.page_link
+              = link_to vovo_path do
+                = image_tag("logoceawhite.png")
+                label Vovo Belinha
+            .ctvp.page_link
+              = link_to ctvp_path do
+                = image_tag("logoceawhite.png")
+                label.short CTVP
+    #menu.cejak
+      .department CEJAK
+      ul#menu-list.nav
+        li.active
+          = link_to t('home.about'), cejak_path, class: 'sobre'
+        li
+          = link_to t('home.projects'), cejak_projects_path
+        li
+          = link_to t('home.contact'), new_contact_path, class: 'contact'
+    = yield
+    footer.cejak
+      div
+      p CEA - Centro de Educacao Ambiental Vila Pinto - Todos os direitos reservados
