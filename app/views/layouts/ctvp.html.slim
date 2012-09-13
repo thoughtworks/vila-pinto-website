@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    = favicon_link_tag image_path 'favicon.ico'
+    title Centro de Educação Ambiental da Vila Pinto
+    meta charset="UTF-8"
+    link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'
+    = stylesheet_link_tag 'application', :media => 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  body data-spy="scroll" data-target="#menu" data-offset="70"
+    #localization
+      = link_to image_tag("portuguese.png"), url_for(:only_path => false, :locale => 'pt-BR')
+      = link_to image_tag("english.png"), url_for(:only_path => false, :locale => 'en')
+    #header.ctvp
+      = link_to image_tag("ctvp.png", id: 'logo'), ctvp_path
+      #navigation
+        .cea.page_link
+          = link_to root_path do
+            = image_tag("logoceawhite.png")
+            label.short CEA
+        .vovo.page_link
+          = link_to vovo_path do
+            = image_tag("logoceawhite.png")
+            label Vovo Belinha
+        .cejak.page_link
+          = link_to cejak_path do
+            = image_tag("logoceawhite.png")
+            label.short CEJAK
+    #menu.ctvp
+      .department CTVP
+      ul#menu-list.nav
+        li.active
+          = link_to t('home.about'),  ctvp_path, class: 'sobre'
+        li
+          = link_to t('home.materiais'), ctvp_materiais_path
+        li
+          =link_to t('home.partners'), ctvp_sponsors_path
+        li
+          = link_to t('home.contact'), new_contact_path, class: 'contact'
+    = yield
+    #footer.ctvp

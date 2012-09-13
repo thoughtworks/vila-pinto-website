@@ -18,7 +18,10 @@ body {
   background-repeat: no-repeat;
 
   #navigation {
+    position: absolute;
     float: right;
+    right: 0;
+    top: 0;
 
     .page_link {
       float: left;
@@ -164,16 +167,13 @@ h1 {
   }
 
   h1 {
-    width: 50%;
     font-size: 2.2em;
   }
 
   p {
     font-weight: normal;
-    margin: 0;
     line-height: 1.8em;
     color: #222;
-    width: 45%;
     padding-bottom: 50px;
     -moz-column-count: 2;
     -moz-column-gap: 50px;
@@ -185,8 +185,6 @@ h1 {
 }
 
 #depoimentos {
- height: 950px;
- 
   h1 {
     width: 100%;
   }
@@ -200,7 +198,8 @@ h1 {
   }
 
   img {
-    margin-left: 170px;
+    width: 40%;
+    margin-left: 30%;
     margin-bottom: 30px;
   }
 
@@ -210,13 +209,13 @@ h1 {
   }
   
   .portrait {
-    width: 45%;
+    margin-left: 5%;
     float: left;
   }
 }
 
 #departamentos {
-  height: 500px;
+  height: 600px;
   margin: 0;
   background-color: #eee;
   
@@ -230,7 +229,7 @@ h1 {
   }
 
   h1 {
-    margin-top: 30px;
+    margin-top: 50px;
     text-align: center;
   }
 
@@ -296,13 +295,10 @@ blockquote {
   } 
 }
 
-.fb-like {
-  background: #EEE;
-}
-
 #sitemap-container {
   #sitemap {
-    margin: 0 auto;  }
+    margin: 0 auto;  
+  }
 
   height: 250px;
   background: $light-blue;
@@ -331,7 +327,10 @@ blockquote {
 
       list-style: none;
     }
+  }
 
+  ul:first-child {
+      margin-left: 10%;
   }
 }
 
