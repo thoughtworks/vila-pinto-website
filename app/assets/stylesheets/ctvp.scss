@@ -74,10 +74,16 @@
 }
 
 .photos {
+  height: 1150px;
+
   img {
     width: 450px;
     margin-top: 60px;
     margin-left: 80px;
+  }
+
+  object {
+    display: block;
   }
 
   h2 {
