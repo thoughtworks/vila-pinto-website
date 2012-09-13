@@ -1,7 +1,8 @@
 @import "color";
 
 #header.ctvp {
-  background: url('headerCtvp.png') #777;
+  background: url('headerCtvp.jpg') #777;
+  background-position: 0px -275px;
   background-size: 1300px;
 }
 
@@ -64,6 +65,10 @@
   }
 
   ul li.active a {
+    color: #222 !important;
+  }
+
+  li:hover a {
     color: #222 !important;
   }
 }
