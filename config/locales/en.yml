@@ -1,7 +1,6 @@
 en:
   home:
-    aboutus: About Us
-    about: About   
+    about: About Us   
     history: History
     testimonials: Testimonials
     iniciatives: Initiatives
@@ -11,8 +10,7 @@ en:
     recycling: Recycling
     finance: Financials
     materiais: Materials
-    donation: Donation
-    sponsors: Sponsors
+    enter: Enter 
 
   time:
     formats:
@@ -31,8 +29,8 @@ en:
       success: "Contact email sent successfully."
 
   cea:
-    mission: "Generate and facilitate oppotunities of personal and professional growth to improve the overall quality of life of the Vila Pinto community."
-    about: "translate text into english"
+    mission: "Generate and facilitate opportunities of personal and professional growth to improve the overall quality of life of the Vila Pinto community."
+    about: "The Centro de Educação Vila Pinto (CEA) is a non-governmental organization founded in 1996 by the initiative of a group of women from the community. Led by Marli Medeiros, they decided to transform the condition of poverty and violence to which they were submitted and seek alternatives to guarantee their independence and quality of life. Together, they defined as their main goal the promotion, defense and guarantee of their rights."
 
   errors: &errors
     format: ! '%{attribute} %{message}'
