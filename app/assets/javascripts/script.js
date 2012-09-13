@@ -22,13 +22,16 @@ $(document).ready(function() {
     });
   });
 
-  $('.sobre').click(function(event) {
+  $('.sobre').click(backToTop);
+  $('.back-to-top').click(backToTop);
+
+  function backToTop(event) {
     event.preventDefault(event);
     
     $('body,html').animate({ scrollTop: 0 }, 500, function() {
       window.location.hash = '';
     });  
-  });
+  };
 
   $('#localization').hover(function(event) {
     $('#localization').animate({ opacity: 1, right: 0 }, 300).dequeue();
