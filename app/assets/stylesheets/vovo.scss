@@ -4,6 +4,11 @@
       height: 300px;
 }
 
+#header.vovo {
+  background: url('bgvovo.jpg');
+  background-position: 0px -193px;
+}
+
 #menu.vovo {
   background: $orange;
 
@@ -12,7 +17,7 @@
     font-weight: bold;
     font-size: 2em;
     float: left;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 10px;
   }
 }
