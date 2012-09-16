@@ -11,8 +11,33 @@
   background-color: $green;
 }
 
+#materials {
+  padding-top: 4%;
+  height: 1000px;
+  margin: 0 auto;
+  width: 70%;
+
+  ul.material {
+    list-style: none;
+    float: left;
+    width: 23%;
+    font-weight: bold;
+    color: $green;
+    font-size: 1.3em;
+    padding: 0.5%;
+    margin: 0.5%;
+    background: #EEE;
+    border-radius: 2px;
+
+    li {
+      color: #777;
+      font-size: 0.7em;
+    }
+  }
+}
+
 #sobrectvp {
-    ul.information {
+  ul.information {
       margin-top: 20px;
       list-style: none;
 
