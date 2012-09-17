@@ -4,6 +4,10 @@ html
     = favicon_link_tag image_path 'favicon.ico'
     title Centro de Educação Ambiental da Vila Pinto
     meta charset="UTF-8"
+    meta name="viewport" content="initial-scale=1.0, width=device-width"
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    meta name="description" content="Site institucional para o Centro Cultural James Kulisz"
+
     link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'
     = stylesheet_link_tag 'application', :media => 'all'
     = javascript_include_tag 'application'
@@ -30,13 +34,14 @@ html
     #menu.cejak
       .department CEJAK
       ul#menu-list.nav
-        li.active
-          = link_to t('home.about'), cejak_path, class: 'sobre'
+        li
+          = link_to t('home.about'), cejak_path
         li
           = link_to t('home.projects'), cejak_projects_path
         li
           = link_to t('home.contact'), new_contact_path, class: 'contact'
     = yield
-    footer.cejak
+    #footer.cejak
       div
-      p CEA - Centro de Educacao Ambiental Vila Pinto - Todos os direitos reservados
+        = image_tag("logoceawhite.png", id:"logo_cea_white")
+        p CEA - Centro de Educacao Ambiental Vila Pinto - Todos os direitos reservados

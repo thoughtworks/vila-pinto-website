@@ -4,6 +4,15 @@
       height: 300px;
 }
 
+#header.cejak {
+  background: url('bgcejak.jpg');
+  background-position: 0px -400px;
+
+  #logo {
+    margin-top: 10px !important;
+  }
+}
+
 #menu.cejak {
   background: $yellow;
 
@@ -20,4 +29,10 @@
 div.sobrectvp {
     width: 70%;
     float: left;
+}
+
+#footer.cejak {
+  color: white;
+  height: 60px;
+  background: $yellow;
 }

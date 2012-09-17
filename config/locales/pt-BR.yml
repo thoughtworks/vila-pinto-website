@@ -1,7 +1,7 @@
 pt-BR:
   home:
-    aboutus: Quem Somos
     about: Sobre
+    aboutus: Quem Somos 
     history: História
     testimonials: Depoimentos
     iniciatives: Iniciativas
@@ -12,6 +12,8 @@ pt-BR:
     finance: Financeiro
     materiais: Materiais
     enter: Entre
+    sponsors: Parceiros
+    donation: Doação
 
   time:
     formats:

@@ -1,7 +1,13 @@
 @import "color";
-
 #sobrevovo {
-      height: 300px;
+      height: 100%;
+      margin: 0 auto -60px; 
+      display:table;
+}
+
+#header.vovo {
+  background: url('bgvovo.jpg');
+  background-position: 0px -193px;
 }
 
 #menu.vovo {
@@ -12,7 +18,7 @@
     font-weight: bold;
     font-size: 2em;
     float: left;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 10px;
   }
 }
@@ -20,4 +26,20 @@
 div.sobrevovo {
     width: 70%;
     float: left;
+    margin-bottom:5%;
+
+h2{
+   font-size: 1.9em;
+   color: $orange;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   border-bottom: 4px solid $orange;
+   height: 45px;
+  }
+}
+
+#footer.vovo {
+  color: white;
+  height: 60px;
+  background: $orange;
 }

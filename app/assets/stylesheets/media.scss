@@ -1,7 +1,5 @@
 @media screen and (min-width: 0px) {
 	#sobre {
-		height: 900px;
-
 		p {
 			margin: 0;
 			margin-top: 40px;
@@ -17,10 +15,6 @@
 	    width: 90%;
 	}
 
-	#depoimentos {
-		height: 1950px;
-	}
-
 	#sitemap-container {
     	#sitemap {
     		width: 100%;
@@ -33,8 +27,8 @@
 }
 
 @media screen and (min-width: 320px) {
-	#sobre {
-		height: 820px;
+	#navigation {
+		display: none;
 	}
 
 	#sitemap-container {
@@ -45,8 +39,8 @@
 }
 
 @media screen and (min-width: 480px) {
-	#sobre {
-		height: 700px;
+	#navigation {
+		display: block;
 	}
 
 	#sitemap-container {
@@ -58,8 +52,6 @@
 
 @media screen and (min-width: 600px) {
 	#sobre {
-		height: 590px;
-
 		p {
 			margin-top: 0px;
 			width: 50%;
@@ -67,15 +59,12 @@
 
 		h1 {
 			width: 45%;
+		
 		}
 	}
 
 	.portrait {
 	    width: 45%;
-	}
-
-	#depoimentos {
-		height: 950px;
 	}
 
 	#sitemap-container {
@@ -90,10 +79,6 @@
 }
 
 @media screen and (min-width: 768px) {
-	#sobre {
-		height: 430px;
-	}
-
 	#sitemap-container {
     	#sitemap {
     		width: 80%;
@@ -106,10 +91,6 @@
 }
 
 @media screen and (min-width: 900px) {
-	#sobre {
-		height: 290px;
-	}
-
 	#sitemap-container {
     	ul {
     		margin-left: 25%;
@@ -118,7 +99,5 @@
 }
 
 @media screen and (min-width: 1024px) {
-	#sobre {
-		height: 250px;
-	}
+
 }

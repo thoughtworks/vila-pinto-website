@@ -161,6 +161,9 @@ h1 {
 }
 
 #sobre {
+  height: 100%;
+  display: table;
+
   iframe {
     margin: 0 auto;
     display: block;
@@ -185,6 +188,9 @@ h1 {
 }
 
 #depoimentos {
+  height: 100%;
+  display: table;
+
   h1 {
     width: 100%;
   }
