@@ -48,6 +48,7 @@
 #sobrectvp {
   height: 100%;
   display: table;
+  padding-top: 0px;
 
   ul.information {
       margin-top: 20px;
@@ -72,10 +73,6 @@
         font-size: 1.2em;
         color: $green;
       }
-
-      h2 {
-        margin-top: 20px;
-      }
     }
 }
 
@@ -86,6 +83,7 @@
       margin-bottom: 20px;
       border-bottom: 4px solid $green;
       height: 45px;
+      margin-top: 4%;
     }
 }
 
@@ -137,6 +135,7 @@ div.news {
   float: right;
   padding: 0 20px;
   border-radius: 3px;
+  padding-top: 5%;
   
   h1 {
     font-size: 1.9em;
