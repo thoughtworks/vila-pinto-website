@@ -37,7 +37,7 @@
   }
 }
 
-#content-ctvp {
+#content-ctvp, #sponsors {
   h2 {
     margin-top: 3%;
     margin-left: 5%;
@@ -79,7 +79,7 @@
     }
 }
 
-#sobrectvp, #content-ctvp {
+#sobrectvp, #content-ctvp, #sponsors {
    h2 {
       font-size: 1.9em;
       color: $green;
@@ -157,6 +157,13 @@ div.news {
 
   ul li a:hover {
     text-decoration: underline;
+  }
+}
+
+#sponsors {
+  img {
+    width: 10%;
+    padding: 3%;
   }
 }
 
