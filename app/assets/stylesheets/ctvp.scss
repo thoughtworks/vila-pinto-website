@@ -12,10 +12,10 @@
 }
 
 #materials {
-  padding-top: 4%;
+  padding-top: 2%;
   height: 1000px;
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
 
   ul.material {
     list-style: none;
@@ -33,6 +33,14 @@
       color: #777;
       font-size: 0.7em;
     }
+  }
+}
+
+#content-ctvp {
+  h2 {
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 85%; 
   }
 }
 
@@ -60,12 +68,17 @@
         font-size: 1.2em;
         color: $green;
       }
-    }
 
-    h2 {
+      h2 {
+        margin-top: 20px;
+      }
+    }
+}
+
+#sobrectvp, #content-ctvp {
+   h2 {
       font-size: 1.9em;
       color: $green;
-      margin-top: 20px;
       margin-bottom: 20px;
       border-bottom: 4px solid $green;
       height: 45px;
