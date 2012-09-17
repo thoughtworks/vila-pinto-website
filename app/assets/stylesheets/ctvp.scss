@@ -46,6 +46,9 @@
 }
 
 #sobrectvp {
+  height: 100%;
+  display: table;
+
   ul.information {
       margin-top: 20px;
       list-style: none;
@@ -109,7 +112,7 @@
 }
 
 .photos {
-  height: 1150px;
+  float: left;
 
   img {
     width: 450px;
@@ -118,6 +121,7 @@
   }
 
   object {
+    height: 550px;
     display: block;
   }
 
