@@ -4,6 +4,10 @@ html
     = favicon_link_tag image_path 'favicon.ico'
     title Centro de Educação Ambiental da Vila Pinto
     meta charset="UTF-8"
+    meta name="viewport" content="initial-scale=1.0, width=device-width"
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    meta name="description" content="Site institucional para a Escola Infantil Vovó belinha"
+  
     link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'
     = stylesheet_link_tag 'application', :media => 'all'
     = javascript_include_tag 'application'
@@ -30,8 +34,8 @@ html
     #menu.vovo
       .department Vovo Belinha
       ul#menu-list.nav
-        li.active
-          = link_to t('home.about'), vovo_path, class: 'sobre'
+        li
+          = link_to t('home.about'), vovo_path
         li
           = link_to t('home.sponsors'), vovo_sponsors_path
         li
