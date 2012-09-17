@@ -1,6 +1,7 @@
 pt-BR:
   home:
-    aboutus: Quem Somos  
+    aboutus: Quem Somos
+    about: Sobre
     history: História
     testimonials: Depoimentos
     iniciatives: Iniciativas
@@ -37,6 +38,12 @@ pt-BR:
     item4: "Média de renda familiar de um salário mínimo."
     item5: "Nível de escolaridade médio é o Ensino Fundamental Incompleto."
     history2: "A Vila Pinto tem população de 11.000 pessoas que, somadas às outras duas vilas totaliza uma população de 30.000 habitantes. Estima-se que 70% das famílias residentes na Vila Pinto vivem em situação de risco social e, garantem minimamente seu sustento através da venda de material reciclável, cuja prática por falta de alternativas, é desenvolvida também por crianças e adolescentes."
+    testimonial_marli:
+    label_marli:
+    testimonial_jurema:
+    label_jurema:
+    testimonial_sirlei: "O centro de triagem foi tudo na minha vida. Ele foi tanto uma experiência pessoal e profissional quanto uma oportunidade para minha família."
+    label_sirlei: "Sirlei"
 
 
   errors: &errors

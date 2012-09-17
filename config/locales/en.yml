@@ -1,6 +1,7 @@
 en:
   home:
     aboutus: About Us   
+    about: About
     history: History
     testimonials: Testimonials
     iniciatives: Initiatives
@@ -38,6 +39,12 @@ en:
     item4: "Average household income of one minimum wage."
     item5: "Average education level of incomplete elementary school."
     history2: "Vila Pinto has a population of 11.000 people that together with the population of other communities adds up to 30.000 inhabitants. It's estimated that 70% of the families who have their residence in Vila Pinto live in a situation of social risk, and obtain their livelihood from the sale of recyclable material, what is also practised by children and adolescents due to  lack of alternatives."
+    testimonial_marli:
+    label_marli:
+    testimonial_jurema:
+    label_jurema:
+    testimonial_sirlei:
+    label_sirlei:
 
   errors: &errors
     format: ! '%{attribute} %{message}'
