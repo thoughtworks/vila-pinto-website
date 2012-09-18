@@ -12,7 +12,7 @@ body {
 }
 
 #header {
-  height: 300px;
+  height: 100%;
   overflow: hidden;
   background-image: url('../assets/bg.jpg');
   background-repeat: no-repeat;
@@ -71,9 +71,9 @@ body {
   }
 
   #logo {
-    width: 200px;
-    height: 200px;
-    margin-top: 50px;
+    width: 16%;
+    margin-top: 3.5%;
+    margin-bottom: 3.0%;
   }
 }
 
