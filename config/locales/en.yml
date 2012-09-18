@@ -41,12 +41,12 @@ en:
     item4: "Average household income of one minimum wage."
     item5: "Average education level of incomplete elementary school."
     history2: "Vila Pinto has a population of 11.000 people that together with the population of other communities adds up to 30.000 inhabitants. It's estimated that 70% of the families who have their residence in Vila Pinto live in a situation of social risk, and obtain their livelihood from the sale of recyclable material, what is also practised by children and adolescents due to  lack of alternatives."
-    testimonial_marli:
-    label_marli:
+    testimonial_marli: "My name is Marli Medeiros, I am 58 years, and arrived at Vila Pinto in a time of drug trafficking, violence, poverty and fear. After long, hard years of struggle, tears and suffering, it's with pride that I am able to say that courage, strength, effort and love for others were the main elements that guided my obstination and created the enourmous chain of solidarity that allowed us to build the beautiful work we do today."
+    label_marli: "Marli Medeiros, founder"
     testimonial_jurema:
     label_jurema:
     testimonial_sirlei:
-    label_sirlei:
+    label_sirlei: "Sirlei"
 
   errors: &errors
     format: ! '%{attribute} %{message}'
