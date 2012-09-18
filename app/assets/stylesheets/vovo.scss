@@ -27,6 +27,7 @@ div.sobrevovo {
     width: 70%;
     float: left;
     margin-bottom:5%;
+}
 
 h2{
    font-size: 1.9em;
@@ -35,11 +36,33 @@ h2{
    margin-bottom: 20px;
    border-bottom: 4px solid $orange;
    height: 45px;
-  }
 }
+
 
 #footer.vovo {
   color: white;
   height: 60px;
   background: $orange;
+}
+
+
+.photos {
+  float: left;
+  margin-bottom:5%;
+
+  img {
+    width: 450px;
+    margin-top: 60px;
+    margin-left: 80px;
+  }
+
+  object {
+    height: 550px;
+    display: block;
+  }
+
+  h2 {
+    float: left;
+    width: 820px;
+  }
 }
