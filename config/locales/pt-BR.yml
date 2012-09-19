@@ -3,6 +3,7 @@ pt-BR:
     about: Sobre
     aboutus: Quem Somos 
     history: História
+    context: Contexto
     testimonials: Depoimentos
     iniciatives: Iniciativas
     contact: Contato
@@ -40,12 +41,12 @@ pt-BR:
     item4: "Média de renda familiar de um salário mínimo."
     item5: "Nível de escolaridade médio é o Ensino Fundamental Incompleto."
     history2: "A Vila Pinto tem população de 11.000 pessoas que, somadas às outras duas vilas totaliza uma população de 30.000 habitantes. Estima-se que 70% das famílias residentes na Vila Pinto vivem em situação de risco social e, garantem minimamente seu sustento através da venda de material reciclável, cuja prática por falta de alternativas, é desenvolvida também por crianças e adolescentes."
-    testimonial_marli: "Meu nome é Marli Medeiros, tenho 58 anos, e cheguei na Vila Pinto em uma época em que predominava o tráfico, a violência, a miséria e o medo. Muitos anos se passaram e com muitas dificuldades, muita luta, lágrimas e dor, mas com orgulho posso dizer que a coragem, a força, a garra e o amor ao próximo foram os elementos principais que nortearam minha obstinação e elencaram a enorme corrente de solidariedade que nos permitiu construir o lindo trabalho que desenvolvemos hoje."
+    testimonial_marli: "Meu nome é Marli Medeiros, e cheguei na Vila Pinto em uma época em que predominava o tráfico, a violência, a miséria e o medo. Muitos anos se passaram e com muitas dificuldades, muita luta, lágrimas e dor, mas com orgulho posso dizer que a coragem, a força, a garra e o amor ao próximo foram os elementos principais que nortearam minha obstinação e elencaram a enorme corrente de solidariedade que nos permitiu construir o lindo trabalho que desenvolvemos hoje."
     label_marli: "Marli Medeiros, fundadora"
     testimonial_jurema: "Eu nasci e me criei na Vila Bom Jesus, quando ela ainda era um matagal, sem luz elétrica ou água encanada. Com a ajuda das ideias da Marli e do CEA, a vida da comunidade melhorou muito. Aqui todos trabalhamos por amor."
-    label_jurema: "Jurema"
-    testimonial_sirlei: "O centro de triagem (CTVP) foi tudo na minha vida. Ele foi tanto uma experiência de vida quanto profissional, pois nunca tinha trabalhado. Ele também uma oportunidade para minha família, pois meus filhos participam nas atividades do Centro Cultural."
-    label_sirlei: "Sirlei de Souza"
+    label_jurema: "Jurema de Deus, voluntária no CEA"
+    testimonial_sirlei: "O Centro de Triagem (CTVP) foi tudo na minha vida. Ele foi tanto uma experiência de vida quanto profissional, pois nunca tinha trabalhado. Ele também é uma oportunidade para minha família, pois meus filhos participam nas atividades do Centro Cultural."
+    label_sirlei: "Sirlei de Souza, coordenadora do CTVP"
 
 
   errors: &errors
