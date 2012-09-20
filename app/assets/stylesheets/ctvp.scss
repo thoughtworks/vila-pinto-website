@@ -10,6 +10,14 @@
 
 #header.ctvp {
   background: url('ctvp/header.jpg') #777;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+
+  #logo {
+    margin: 0;
+  }
 }
 
 #footer.ctvp {

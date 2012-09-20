@@ -51,7 +51,9 @@
 }
 
 #header.cejak {
-  background: url('cejak/header.jpg');
+  background: url('cejak/header.jpg');  
+  background-size: 100%;
+  background-repeat: no-repeat;
 
   #logo {
     margin-top: 10px !important;

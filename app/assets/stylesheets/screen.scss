@@ -63,21 +63,15 @@ body {
     }
   }
 
-  &.ctvp, &.cejak, &.vovo {
-    height: 130px;
-
-    #logo {
-      float: left;
-      margin-top: 20px;
-      width: 170px;
-      height: 170px;
-    }
-  }
-
   #logo {
     width: 16%;
     margin-top: 3.5%;
     margin-bottom: 3.0%;
+  }
+
+  #logo-department {
+    width: 14%;
+    padding-top: 1%;
   }
 }
 
