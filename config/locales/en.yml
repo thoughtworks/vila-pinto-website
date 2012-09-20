@@ -34,19 +34,19 @@ en:
 
   cea:
     mission: "Generate and facilitate opportunities of personal and professional growth to improve the overall quality of life of the Vila Pinto community."
-    about: "The Centro de Educação Ambiental (CEA) is a non-governmental organization founded in 1996 by the initiative of a group of women from the community. Led by Marli Medeiros, they decided to transform the condition of poverty and violence to which they were submitted and seek alternatives to guarantee their independence and quality of life. Together they defined as their main goal the promotion, defense and guarantee of their rights."
+    about: "The Centro de Educação Ambiental (CEA) is a non-government organization founded in 1996 by a group of women from the community. Led by Marli Medeiros, they decided to transform the condition of poverty and violence to which they were submitted and seek alternatives to guarantee their independence and quality of life. Together they defined as their main goal the promotion, defense and guarantee of their rights."
     history1: 'The CEA is located in Vila Pinto, in the Bom Jesus neighborhood, a zone in the east of Porto Alegre. Vila Pinto, together with Vila Divinéia and Vila Nossa Senhora de Fátima, integrates the city region called  "Grande Mato Sampaio", a place known for being one the  poorest areas in the city of Porto Alegre. Its community has the following characteristics:'
-    item1: "High drug addiction index."
-    item2: "Highest number of HIV positive people relative to total population."
-    item3: "Accelerated growth of child prostituion."
-    item4: "Average household income of one minimum wage."
-    item5: "Average education level of incomplete elementary school."
-    history2: "Vila Pinto has a population of 11.000 people that together with the population of other communities adds up to 30.000 inhabitants. It's estimated that 70% of the families who have their residence in Vila Pinto live in a situation of social risk, and obtain their livelihood from the sale of recyclable material, what is also practised by children and adolescents due to  lack of alternatives."
-    testimonial_marli: "My name is Marli Medeiros,  and I arrived at Vila Pinto in a time of drug trafficking, violence, poverty, and fear. After long, hard years of struggle, tears and suffering, it's with pride that I am able to say that courage, strength, effort and love for others were the main elements that guided my obstination and created the enourmous chain of solidarity that allowed us to build the beautiful work we do today."
+    item1: "High drug addiction index"
+    item2: "Highest number of HIV positive people relative to total population"
+    item3: "Accelerated growth of child prostitution"
+    item4: "Average household income of one minimum wage"
+    item5: "Average education level of incomplete elementary school"
+    history2: "Vila Pinto has a population of 11,000 people that together with the population of other communities adds up to 30,000 inhabitants. It's estimated that 70% of the families who have their residence in Vila Pinto live in a situation of social risk and obtain their livelihood from the sale of recyclable material. This is also practised by children and adolescents due to  lack of alternatives."
+    testimonial_marli: "My name is Marli Medeiros. I arrived at Vila Pinto in a time of drug trafficking, violence, poverty, and fear. After some long, hard years of struggle, tears and suffering, it's with pride that I am able to say that courage, strength, effort and love for others were the main elements that guided my obstination. This created the enourmous chain of solidarity that allowed us to build the beautiful work we do today."
     label_marli: "Marli Medeiros, founder"
-    testimonial_jurema: "I was born and raised in Vila Bom Jesus, when it was still very rural, with no piped water or electricity. With the help of Marli's ideas and CEA, life in the community improved a lot. We all work for love here."
+    testimonial_jurema: "I was born and raised in Vila Bom Jesus when it was still very rural, with no piped water or electricity. With the help of Marli's ideas and CEA, life in the community improved a lot. We all work for love here."
     label_jurema: "Jurema de Deus, volunteer at CEA"
-    testimonial_sirlei: "The Centro de Triagem (CTVP) was the best thing that happened to me. At the same time, it was both a life and professional experience, since I had never worked before. It was also an opportunity for my family, since my children take part in the activities organized by the Centro Cultural."
+    testimonial_sirlei: "The Centro de Triagem (CTVP) was the best thing that happened to me. At the same time, it was both a life and professional experience since I had never worked before. It was also an opportunity for my family, since my children take part in the activities organized by the Centro Cultural."
     label_sirlei: "Sirlei de Souza, coordinator at CTVP"
 
   errors: &errors
