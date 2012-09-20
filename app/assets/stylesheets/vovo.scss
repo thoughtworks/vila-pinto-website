@@ -1,7 +1,7 @@
 @import "color";
-#sobrevovo {
+#sobrevovo.content {
       height: 100%;
-      margin: 0 auto -60px; 
+      padding-top:1%;
       display:table;
 }
 
@@ -35,17 +35,19 @@ div.sobrevovo {
     width: 70%;
     float: left;
     margin-bottom:5%;
+    padding-top:0%; 
 }
 
-h2{
-   font-size: 1.9em;
-   color: $orange;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   border-bottom: 4px solid $orange;
-   height: 45px;
+#sobrevovo{
+  h2{
+     font-size: 1.9em;
+     color: $orange;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     border-bottom: 4px solid $orange;
+     height: 45px;
+  }
 }
-
 
 #footer.vovo {
   color: white;
