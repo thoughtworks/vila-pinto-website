@@ -68,7 +68,7 @@
 
       li {
         padding-top: 20px;
-        width: 400px;
+        width: 450px;
         float: left;
         font-size: 1.2em;
         color: $green;
@@ -160,8 +160,12 @@ div.news {
 }
 
 #sponsors {
+  #logos {
+    margin-left: 5%;
+  }
+
   img {
-    width: 10%;
+    width: 15%;
     padding: 3%;
   }
 }

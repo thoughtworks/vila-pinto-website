@@ -3,6 +3,7 @@
   <div id="contact">
     <h2><%= t('contact.contact_us') %></h2>
     <%= simple_form_for @contact do |f| %>
+      <%= f.input :to, collection: Contact::INSTITUTIONS, prompt: false %>
       <%= f.input :name %>
       <%= f.input :email %>
       <%= f.input :subject %>

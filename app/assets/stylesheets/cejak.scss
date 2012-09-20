@@ -1,7 +1,43 @@
 @import "color";
 
 #sobrecejak {
-      height: 300px;
+  height: 100%;
+  display: table;
+  padding-top: 0px;
+
+  h2 {
+    font-size: 1.9em;
+    color: $yellow;
+    margin-bottom: 20px;
+    border-bottom: 4px solid $yellow;
+    height: 45px;
+    margin-top: 4%;
+  }
+
+  ul.information {
+      margin-top: 20px;
+      list-style: none;
+
+      h3 {
+        float: left;
+        font-weight: bold;
+        color: #222;
+      }
+
+      img {
+        float: left;
+        width: 25px;
+        margin-right: 10px;
+      }
+
+      li {
+        padding-top: 20px;
+        width: 400px;
+        float: left;
+        font-size: 1.2em;
+        color: $yellow;
+      }
+    }
 }
 
 #header.cejak {
