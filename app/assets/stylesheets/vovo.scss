@@ -74,3 +74,33 @@ h2{
     width: 820px;
   }
 }
+
+div.news {
+  width: 21%;
+  margin: 0 20px;;
+  float: right;
+  padding: 0 20px;
+  border-radius: 3px;
+  padding-top: 5%;
+  
+  h1 {
+    font-size: 1.9em;
+    padding-bottom: 10px;
+    color: $green;
+  }
+
+  ul li {
+    list-style: none;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #407EB3;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+}
