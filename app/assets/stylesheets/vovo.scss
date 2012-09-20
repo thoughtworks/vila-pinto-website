@@ -21,6 +21,14 @@
     margin-left: 10px;
     margin-top: 10px;
   }
+
+  ul li.active a {
+    color: #222 !important;
+  }
+
+  li:hover a {
+    color: #222 !important;
+  }
 }
 
 div.sobrevovo {

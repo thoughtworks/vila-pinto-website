@@ -82,7 +82,7 @@ body {
   height: 50px;
   width: 100%;
   opacity: 0.9;
-
+  z-index: 2;
   ul {
     margin: 0 auto;
     width: 970px;
@@ -108,10 +108,6 @@ body {
 
       & a:visited {
         color: white;
-      }
-
-      .contact {
-        color: #222 !important;
       }
     }
 

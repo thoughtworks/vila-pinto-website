@@ -2,7 +2,7 @@ doctype html
 html
   head
     = favicon_link_tag image_path 'favicon.ico'
-    title Centro de Educação Ambiental da Vila Pinto
+    title Centro Cultural James Kulisz
     meta charset="UTF-8"
     meta name="viewport" content="initial-scale=1.0, width=device-width"
     meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
@@ -26,7 +26,7 @@ html
             .vovo.page_link
               = link_to vovo_path do
                 = image_tag("logoceawhite.png")
-                label Vovo Belinha
+                label Vovó Belinha
             .ctvp.page_link
               = link_to ctvp_path do
                 = image_tag("logoceawhite.png")
@@ -39,7 +39,7 @@ html
         li
           = link_to t('home.projects'), cejak_projects_path
         li
-          = link_to t('home.contact'), new_contact_path, class: 'contact'
+          = link_to t('home.contact'), new_contact_path({to: 'cejak'}), class: 'contact'
     = yield
     #footer.cejak
       div
