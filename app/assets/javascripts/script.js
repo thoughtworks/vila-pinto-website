@@ -38,4 +38,16 @@ $(document).ready(function() {
   }, function(event) {
     $('#localization').animate({ opacity: 0.5, right: '-30px' }, 300).dequeue();
   });
+
+  $('#menu-list.nav > li > a').each(function() {
+    var urlSplit    = $(location).attr('href').split('/'),
+        hrefSplit   = $(this).attr('href').split('/'),
+        currentPage = urlSplit[urlSplit.length - 1],
+        currentHref = hrefSplit[hrefSplit.length - 1],
+        $li         = $(this).parent();
+
+    if ( currentPage.indexOf(currentHref) != -1 ) {
+      $li.addClass("active");
+    }
+  });
 });
