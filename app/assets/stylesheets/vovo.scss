@@ -1,6 +1,8 @@
 @import "color";
-#sobrevovo {
+
+#sobrevovo.content {
       height: 100%;
+      padding-top:1%;
       display:table;
 }
 
@@ -34,17 +36,19 @@ div.sobrevovo {
     width: 70%;
     float: left;
     margin-bottom:5%;
+    padding-top:0%; 
 }
 
-h2{
-   font-size: 1.9em;
-   color: $orange;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   border-bottom: 4px solid $orange;
-   height: 45px;
+#sobrevovo{
+  h2{
+     font-size: 1.9em;
+     color: $orange;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     border-bottom: 4px solid $orange;
+     height: 45px;
+  }
 }
-
 
 #footer.vovo {
   color: white;
@@ -71,5 +75,35 @@ h2{
   h2 {
     float: left;
     width: 820px;
+  }
+}
+
+div.news {
+  width: 21%;
+  margin: 0 20px;;
+  float: right;
+  padding: 0 20px;
+  border-radius: 3px;
+  padding-top: 5%;
+  
+  h1 {
+    font-size: 1.9em;
+    padding-bottom: 10px;
+    color: $green;
+  }
+
+  ul li {
+    list-style: none;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #407EB3;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
   }
 }
