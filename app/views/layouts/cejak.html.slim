@@ -39,7 +39,7 @@ html
         li
           = link_to t('home.projects'), cejak_projects_path
         li
-          = link_to t('home.contact'), new_contact_path, class: 'contact'
+          = link_to t('home.contact'), new_contact_path({to: 'cejak'}), class: 'contact'
     = yield
     #footer.cejak
       div

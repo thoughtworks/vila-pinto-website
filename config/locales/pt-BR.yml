@@ -82,6 +82,7 @@ pt-BR:
   activemodel:
     attributes:
       contact:
+        to: 'Para'
         name: 'Nome'
         email: 'Email'
         subject: 'Assunto'

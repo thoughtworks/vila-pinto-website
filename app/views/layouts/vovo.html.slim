@@ -41,7 +41,7 @@ html
         li
           = link_to t('home.donation'), vovo_donation_path
         li
-          = link_to t('home.contact'), new_contact_path, class: 'contact'
+          = link_to t('home.contact'), new_contact_path({to: 'vovo'}), class: 'contact'
     = yield
     #footer.vovo
       div
