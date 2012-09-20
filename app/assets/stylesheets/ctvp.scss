@@ -3,6 +3,11 @@
 @include all-sprite-sprites;
 
 
+@mixin size($sprite) {
+  height: sprite-sprite-height($sprite);
+  width: sprite-sprite-width($sprite);
+}
+
 #header.ctvp {
   background: url('headerCtvp.jpg') #777;
   background-position: 0px -275px;
@@ -164,12 +169,113 @@ div.news {
 
 #sponsors {
   #logos {
+    display: table;
     margin-left: 5%;
   }
 
-  img {
-    width: 15%;
-    padding: 3%;
+  div.sprite {
+    margin: 0 2%;
+    float: left;
+  }
+
+  .sprite-bancodealimentos {
+    @include size(bancodealimentos);
+  }
+
+  .sprite-banrisul {
+    @include size(banrisul);
+  }
+
+  .sprite-camp {
+    @include size(camp);
+  }
+
+  .sprite-cbc {
+    @include size(cbc);
+  }
+
+  .sprite-ceee {
+    @include size(ceee);
+  }
+
+  .sprite-dmlu {
+    @include size(dmlu);
+  }
+
+  .sprite-epr {
+    @include size(epr);
+  }
+
+  .sprite-estoril {
+    @include size(estoril);
+  }
+
+  .sprite-fundacentro {
+    @include size(fundacentro);
+  }
+
+  .sprite-ir {
+    @include size(ir);
+  }
+
+  .sprite-juvenil {
+    @include size(juvenil);
+  }
+
+  .sprite-lomando {
+   @include size(lomando); 
+  }
+
+  .sprite-mesabrasil {
+    @include size(mesabrasil);
+  }
+
+  .sprite-moinhosshopping {
+    @include size(moinhosshopping);
+  }
+
+  .sprite-netimpact {
+    @include size(netimpact);
+  }
+
+  .sprite-parceirosvoluntarios {
+    @include size(parceirosvoluntarios);
+  }
+
+  .sprite-prefeiturapoa {
+    @include size(prefeiturapoa);
+  }
+
+  .sprite-projust {
+    @include size(projust);
+  }
+
+  .sprite-receitafederal {
+    @include size(receitafederal);
+  }
+
+  .sprite-renner {
+    @include size(renner);
+  }
+
+  .sprite-sec {
+    @include size(sec);
+  }
+
+  .sprite-sheraton {
+    @include size(sheraton);
+  }
+
+  .sprite-tre {
+    @include size(tre);
+  }
+
+  .sprite-ufrgs {
+    @include size(ufrgs);
+  }
+
+  .sprite-ventura {
+    @include size(ventura);
   }
 }
 
