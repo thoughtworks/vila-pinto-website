@@ -1,8 +1,19 @@
 @import "color";
 
+div.newscejak {
+  width: 21%;
+  margin: 0 20px;;
+  float: right;
+  padding: 0 20px;
+  border-radius: 3px;
+  padding-top: 5%;
+}
+
 #sobrecejak {
   height: 100%;
   display: table;
+  float:left;
+  width: 100%;
   padding-top: 0px;
 
   h2 {
@@ -78,13 +89,20 @@
   }
 }
 
-div.sobrectvp {
-    width: 70%;
-    float: left;
+div.sobrecejak {
+  float: left;
+  width: 70%;
+
+  ul {
+    list-style: square;
+  }
 }
+
 
 #footer.cejak {
   color: white;
   height: 60px;
   background: $yellow;
+  float: left;
+  width: 100%;
 }
