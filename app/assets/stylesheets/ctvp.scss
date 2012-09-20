@@ -1,4 +1,7 @@
 @import "color";
+@import "ctvp/sprite/*.png";
+@include all-sprite-sprites;
+
 
 #header.ctvp {
   background: url('headerCtvp.jpg') #777;
