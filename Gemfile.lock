@@ -49,6 +49,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    font-awesome-rails (0.4.1)
+      railties (~> 3.1)
     fssm (0.2.9)
     hike (1.2.1)
     i18n (0.6.0)
@@ -151,6 +153,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass-rails
+  font-awesome-rails
   jquery-rails
   pg
   pry

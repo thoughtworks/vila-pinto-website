@@ -61,6 +61,7 @@
 
 #sobrectvp {
   height: 100%;
+  width: 100%;
   display: table;
   padding-top: 0px;
 
@@ -82,7 +83,7 @@
 
       li {
         padding-top: 20px;
-        width: 450px;
+        width: 400px;
         float: left;
         font-size: 1.2em;
         color: $green;
