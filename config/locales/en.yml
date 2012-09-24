@@ -48,6 +48,9 @@ en:
     label_jurema: "Jurema de Deus, volunteer at CEA"
     testimonial_sirlei: "The Centro de Triagem (CTVP) was the best thing that happened to me. At the same time, it was both a life and professional experience since I had never worked before. It was also an opportunity for my family, since my children take part in the activities organized by the Centro Cultural."
     label_sirlei: "Sirlei de Souza, coordinator at CTVP"
+    testimonial_eduardo: "My name is Eduardo Finamor. I am 27 years old and have worked for 10 years now in a transnational company. I am the result of social projects and CEJAK's bet on our community's youth. It was one of those bets that opened the doors to a completely different world for me. I am deeply grateful for everything this institution has done, does and will do for us."
+    label_eduardo: "Eduardo Finamor"
+
 
   errors: &errors
     format: ! '%{attribute} %{message}'

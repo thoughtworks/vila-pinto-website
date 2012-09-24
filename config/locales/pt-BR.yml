@@ -47,7 +47,8 @@ pt-BR:
     label_jurema: "Jurema de Deus, voluntária no CEA"
     testimonial_sirlei: "O Centro de Triagem (CTVP) foi tudo na minha vida. Ele foi tanto uma experiência de vida quanto profissional, pois nunca tinha trabalhado. Ele também é uma oportunidade para minha família, pois meus filhos participam nas atividades do Centro Cultural."
     label_sirlei: "Sirlei de Souza, coordenadora do CTVP"
-
+    testimonial_eduardo: "Meu nome é Eduardo Finamor, tenho 27 anos, trabalho há 10 anos em uma empresa multi nacional, e sou fruto dos projetos sociais e da aposta que o Cejak deposita nos jovem aqui da nossa comunidade. Foi em uma destas apostas que as portas de um mundo completamente diferente do nosso se abriu para mim. Sou muito agradecido por tudo que esta instituição fez, faz e com certeza fará por todos."
+    label_eduardo: "Eduardo Finamor"
 
   errors: &errors
     format: ! '%{attribute} %{message}'
