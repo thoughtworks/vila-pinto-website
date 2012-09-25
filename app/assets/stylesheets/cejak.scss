@@ -6,6 +6,7 @@
 #doe.cejak {
   width: 170px;
   display: table;
+  border: 2px solid white;
 
   .doe-text {
     float: left;
@@ -103,7 +104,7 @@
     height: 70px;
     margin-bottom: 10px;
     float: left;
-    background: white;
+    background: #eee;
     border-radius: 10px;
     display: table;
   }
@@ -118,7 +119,7 @@
   }
 
   h2 {
-    color: white;
+    color: #777;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
@@ -138,7 +139,6 @@
     }
   }
 
-  background: #bbb;
   display: table;
   padding: 0 10%;
   padding-top: 40px;
