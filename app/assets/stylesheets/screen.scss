@@ -12,7 +12,10 @@ body {
 }
 
 #face {
-  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 20%;
+  right: 5%;
 }
 
 i {
@@ -83,13 +86,13 @@ i {
 
 #menu {
   background-color: #3f7cb4;
-  height: 50px;
   width: 100%;
   opacity: 0.9;
   z-index: 2;
+
   ul {
-    margin: 0 auto;
-    width: 970px;
+    display: inline-block;
+    padding-left:10%;
     
     li {
       list-style: none;
@@ -97,10 +100,6 @@ i {
       float: left;
       padding-right: 50px;
       padding-top: 10px;
-
-      &:first-child {
-        padding-left: 20px;
-      }
 
       &.active a, &:hover a {
         color: $green !important;
@@ -167,10 +166,6 @@ h1 {
   iframe {
     margin: 0 auto;
     display: block;
-  }
-
-  h1 {
-    font-size: 2.2em;
   }
 
   p {
@@ -345,8 +340,7 @@ blockquote {
 }
 
 #footer {
-  height: 60px;
-  background-color: #407eb3;
+  background-color: $blue;
 
   & p {
     width: 60%;
