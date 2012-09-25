@@ -16,6 +16,10 @@
 		}
 	}
 
+	#menu ul li {
+		width: 60%;		
+	}
+
 	.portrait {
 	    width: 90%;
 	}
@@ -53,6 +57,10 @@
     		margin-left: 5%;
     	}
   	}
+
+	#menu ul li {
+		width: auto;		
+	}
 }
 
 @media screen and (min-width: 600px) {
