@@ -71,23 +71,34 @@
   width: 100%;
 
   a {
-    height: 64px;
-    margin-bottom: 10px;
     text-decoration: none;
-    color: #333;
     font-size: 1.1em;
     text-align: center;
-    background: #eee;
     color: $dark-yellow;
-    border-radius: 10px;
+    width: 230px;
+    display: block;
+    width: 230px;
+  }
+
+  .vertical-align {
     vertical-align: middle;
+    display: table-cell;
+  }
+
+  .program {
+    height: 70px;
+    margin-bottom: 10px;
+    float: left;
+    background: white;
+    border-radius: 10px;
+    display: table;
   }
 
   .span-12 {
     text-align: center;
     margin-bottom: 40px;
     font-weight: bold;
-    background: #ddd;
+    background: #eee;
     border-radius: 10px;
     color: #555;
   }
@@ -102,7 +113,7 @@
   }
 
   .projects {
-    width: 950px;
+    width: 970px;
     float: left;
 
     padding-bottom: 100px;
