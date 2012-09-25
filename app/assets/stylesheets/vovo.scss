@@ -7,6 +7,21 @@
       display:table;
 }
 
+#doe.vovo {
+  width: 170px;
+  display: table;
+  top: 80px;
+
+  .doe-text {
+    float: left;
+  }
+
+  img {
+    float: left;
+    width: 26%;
+  }
+}
+
 #header.vovo {
   background: url('vovo/header.jpg');
   background-size: 100%;

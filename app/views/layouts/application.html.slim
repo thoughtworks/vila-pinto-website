@@ -9,6 +9,7 @@ html
     meta name="description" content="Site institucional para o Centro de Educação da Vila Pinto"
 
     link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'
+    link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'
     = stylesheet_link_tag 'application', :media => 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
@@ -31,6 +32,10 @@ html
       #localization
         = link_to image_tag("portuguese.png"), url_for(:only_path => false, :locale => 'pt-BR')
         = link_to image_tag("english.png"), url_for(:only_path => false, :locale => 'en')
+      = link_to donation_path, :id => "doe", :class => "cea" do
+        p.doe-text
+          = t('home.donation-text')
+        = image_tag("doebg3.png")
     = yield
     javascript: 
       (function(d, s, id) {

@@ -3,6 +3,20 @@
 
 @include blueprint;
 
+#doe.cejak {
+  width: 170px;
+  display: table;
+
+  .doe-text {
+    float: left;
+  }
+
+  img {
+    float: left;
+    width: 26%;
+  }
+}
+
 #sobrecejak, #cejakprojeto {
   height: 100%;
   display: table;

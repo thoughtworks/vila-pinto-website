@@ -8,6 +8,7 @@ html
     meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
     meta name="description" content="Site institucional para a Escola Infantil Vovó belinha"
   
+    link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'
     link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'
     = stylesheet_link_tag 'application', :media => 'all'
     = javascript_include_tag 'application'
@@ -31,6 +32,10 @@ html
           = link_to cejak_path do
             = image_tag("logoceawhite.png")
             label.short CEJAK
+      = link_to donation_path, :id => "doe", :class => "vovo" do
+          p.doe-text
+            = t('home.donation-text')
+          = image_tag("doebg3.png")
     #menu.vovo
       .department Vovó Belinha
       ul#menu-list.nav
