@@ -1,4 +1,7 @@
 @import "color";
+@import '_blueprint';
+
+@include blueprint;
 
 #sobrecejak {
   height: 100%;
@@ -43,11 +46,55 @@
   }
 
 #projetoscejak {
+  width: 100%;
 
-  ul.listaprojetos {
-    list-style: none;
+  a {
+    height: 64px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    text-align: center;
+    background: #eee;
+    color: $dark-yellow;
+    border-radius: 10px;
+    vertical-align: middle;
   }
 
+  .span-12 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    background: #ddd;
+    border-radius: 10px;
+    color: #555;
+  }
+
+  h2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    width: 950px;
+    margin-bottom: 30px;
+  }
+
+  .projects {
+    width: 950px;
+    float: left;
+
+    padding-bottom: 100px;
+
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  background: #bbb;
+  display: table;
+  padding: 0 10%;
+  padding-top: 40px;
 }
 
 #header.cejak {
