@@ -4,17 +4,19 @@
   background-image: url('../assets/noise.png');
 }
 
-#contact {
-  width:700px;
-  margin: 0 auto;
-  padding: 5% 0;
+#contact { float: left; }
+#address { float: right; }
+
+#contact, #address {
+  width: 480px;
+  padding: 5%;
   color: #333;
+  font-size: 0.9em;
 
   h2 {
-    font-size: 2.3em;
+    font-size: 1.5em;
     width: 95%;
     border-bottom: 5px solid #3F7CB4;
-    padding-bottom: 10px;
     margin-bottom: 40px;
     color: $blue;
   }
@@ -35,13 +37,20 @@
   }
 
   input:not(.btn) {
-    width: 352px;
-    height: 25px;
+    font-size: 0.8em;
+    width: 60%;
+    height: 15px;
     border: 2px solid #ccc;
   }
 
+  select {
+    font-size: 0.8em;
+    width: 60%;
+    height: 15px;
+  }
+
   textarea {
-    width: 350px;
+    width: 60%;
     border-radius: 3px;
     border: 2px solid #ccc;
   }
@@ -67,11 +76,19 @@
 
   label {
     display: block;
-    width: 115px;
+    width: 20%;
     text-align: right;
     float: left;
-    margin-right: 30px;
-    font-size: 1.2em;
+    margin-right: 20px;
+  }
+
+  iframe {
+    margin-top: 30px;
+  }
+
+  small {
+    display: block;
+    text-align: center;
   }
 
   #contact_to {

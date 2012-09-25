@@ -31,6 +31,7 @@ en:
     notices:
       error: "You must fill in all fields."
       success: "Contact email sent successfully."
+    location: "Location"
 
   cea:
     mission: "Generate and facilitate opportunities of personal and professional growth to improve the overall quality of life of the Vila Pinto community."
