@@ -3,7 +3,7 @@
 
 @include blueprint;
 
-#sobrecejak {
+#sobrecejak, #cejakprojeto {
   height: 100%;
   display: table;
   float:left;
@@ -44,6 +44,28 @@
       }
     }
   }
+
+#cejakprojeto {
+
+  h2 {
+    width: 100%;
+  }
+
+  div {
+    width: 100%;
+    display: table;
+
+    img {
+       margin: 15px;
+    }
+  }
+
+  ul.information {
+    li {
+      width: 500px;
+    }
+  }
+}
 
 #projetoscejak {
   width: 100%;
@@ -128,13 +150,16 @@
   }
 }
 
-div.sobrecejak {
+div.sobrecejak, div.sobreprojeto {
   float: left;
-  width: 70%;
-
+  
   ul {
     list-style: square;
   }
+}
+
+div.sobrecejak {
+  width: 70%;
 }
 
 

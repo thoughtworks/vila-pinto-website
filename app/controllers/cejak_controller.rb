@@ -1,4 +1,8 @@
 class CejakController < ApplicationController
   def index
   end
+
+  def show
+    render params[:project_name]
+  end
 end
