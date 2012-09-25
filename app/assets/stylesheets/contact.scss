@@ -26,9 +26,10 @@
   }
 
   .error {
-    vertical-align: top;
     color: $error;
-    margin-left: 10px;
+    margin-bottom: 2em;
+    padding: 0.1em 0.1em 0.1em 2em;
+    display: block;
   }
 
   input {
@@ -41,12 +42,6 @@
     width: 60%;
     height: 15px;
     border: 2px solid #ccc;
-  }
-
-  select {
-    font-size: 0.8em;
-    width: 60%;
-    height: 15px;
   }
 
   textarea {
@@ -92,9 +87,10 @@
   }
 
   #contact_to {
-    width: 155px;
+    width: 60%;
     height: 30px;
     border: 2px solid #CCC;
-    font-size: 0.9em;
+    border-radius: 3px;
+    font-size: 1.0em;
   }
 }
