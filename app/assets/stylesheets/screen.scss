@@ -57,6 +57,7 @@ i {
   overflow: hidden;
   background-image: url('../assets/bg.jpg');
   background-repeat: no-repeat;
+  background-size: 100%;
 
   &.cea {
     border-bottom: 4px solid $blue;
