@@ -5,9 +5,11 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 300) {
       $('#menu').css('position', 'fixed').css('top', 0);
+      $('#menu').css('opacity', '0.9');
       $('#sobre').css('margin-top', 50);
     } else {
       $('#menu').css('position', 'relative');
+      $('#menu').css('opacity', '1');
       $('#sobre').css('margin-top', 0);
     }
   });

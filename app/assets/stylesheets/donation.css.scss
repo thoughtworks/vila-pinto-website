@@ -2,7 +2,7 @@
 
 #donation-text {
 	width: 80%;
-	font-size: 1.1em;
+	font-size: 1.05em;
 
 	h2 {
 		font-size: 1.2em;
@@ -13,9 +13,20 @@
 		border-bottom: 2px solid $blue;
 	}
 
+	.alternative {
+		display: table;
+		margin-bottom: 40px;
+		float: left;
+		width: 100%;
+	}
+
 	.information {
 		float: left;
 		width: 50%;
+	}
+
+	.information.site {
+		width: 100%;
 	}
 
 	h1 {
@@ -26,9 +37,20 @@
 
 	ul {
 		list-style: none;
+		line-height: 2.3em;
 	}
 
-	ul.items {
-		list-style: circle;
+	p.duvida {
+		font-size: 1.1em;
+		display: block;
+		float: left;
+		width: 280px;
+		display: block;
+	}
+
+	.contact {
+		float: left;
+		text-decoration: none;
+		font-size: 1.2em;
 	}
 }
