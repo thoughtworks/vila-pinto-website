@@ -2,6 +2,7 @@ pt-BR:
   routes:
     new: novo
     contacts: contato
+    projects: projetos
     donation: doacao
 
 en:
