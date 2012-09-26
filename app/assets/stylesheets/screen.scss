@@ -5,6 +5,7 @@
 @import "blueprint";
 @import "blueprint/scaffolding";
 @import 'font-awesome';
+
 body {
   font-family: 'Droid Sans', sans-serif;
   line-height: 2em;
@@ -131,6 +132,7 @@ i {
       float: left;
       padding-right: 50px;
       padding-top: 10px;
+      opacity: 0.9;
 
       &.active a, &:hover a {
         color: $green !important;
@@ -200,8 +202,9 @@ h1 {
   }
 
   p {
+    margin-left: 3%;
     font-weight: normal;
-    line-height: 1.8em;
+    line-height: 2em;
     color: #222;
     padding-bottom: 50px;
     -moz-column-count: 2;
@@ -329,6 +332,10 @@ blockquote {
     display: block;
     float: left;
   } 
+
+  ul {
+    line-height: 2.5em;
+  }
 }
 
 #sitemap-container {
@@ -372,6 +379,8 @@ blockquote {
 
 #footer {
   background-color: $blue;
+  display: table;
+  width: 100%;
 
   & p {
     width: 60%;

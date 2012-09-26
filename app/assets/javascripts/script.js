@@ -1,6 +1,9 @@
 $(document).ready(function() {
-
   $('#menu-list').scrollspy();
+  $('#menu-list.nav > li').removeClass('active');
+  if(window.location.hash == "") {
+    $('#menu-list.nav > li:first').addClass('active');
+  }
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 300) {
