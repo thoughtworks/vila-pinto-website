@@ -1,42 +1,41 @@
 #donation-text.content
 	h1 Doe para as iniciativas do CEA!
-	p 
-		| Sua contribuição ajudará diretamente o CEJAK ou a Escola de Educação Infantil Vovó Belinha. Para isso, existem diversas maneiras: Através do Funcriança. <br><br>
-		| Nesta modalidade o valor doado pode ser deduzido integralmente do imposto de renda devido, até o limite de 6% do imposto devido para pessoas físicas e 1% do imposto devido para pessoas jurídicas.
-		| Para doar é fácil, basta clicar no link abaixo e seguir as etapas, até imprimir o boleto.<br><br>
-	.information.site
+	p.initial 
+		| Sua contribuição ajudará diretamente o CEJAK ou a Escola de Educação Infantil Vovó Belinha. Para isso, existem diversas maneiras. <br>
+		
+	.information.funcrianca
 		h2 Através do Funcriança:
+		p
+			| Nesta modalidade o valor doado pode ser deduzido integralmente do imposto de renda devido, até o limite de 6% do imposto devido para pessoas físicas e 1% do imposto devido para pessoas jurídicas.
+			| Para doar é fácil, basta clicar no link abaixo e seguir as etapas, até imprimir o boleto.<br><br>
 		ul
 			li 1 - Acessar o site do Funcriança 
-			a href="http://funcriancapoa.procempa.com.br/dadweb/projetoLista.seam" http://funcriancapoa.procempa.com.br/dadweb/projetoLista.seam
+			a href="http://funcriancapoa.procempa.com.br/" http://funcriancapoa.procempa.com.br/
 			li 2 - Digite ou cole Centro Cultural James Kulisz (CEJAK) no campo "pesquisar"
 			li 3 - Clique em “Doar para este Projeto”
 			li 4 - Siga os passos até "Emitir DAD para pagamento"
-			li 5 - Imprima o Documento de Arrecadação e pague em uma lotérica ou em qualquer
-			li 6 - Agência dos principais bancos do país
-	.alternative
-		.information
-			h2 Através de depósito bancário:
-			ul
-				li 
-					b 
-						| Escola de Educação Infantil Vovó Belinha:
-				li Banco Banrisul
-				li Agência 0027 – Três Figueiras
-				li Conta Corrente: 06.855515.3-6
-				li 
-					b
-						| Centro Cultural James Kulisz – CEJAK
-				li Banco Banrisul
-				li Agência 0027 – Três Figueiras
-				li Conta Corrente: 06.855515.4-4
-		.information
-			h2 Através de mantimentos e materiais
-			ul	
-				li Exemplos
-				li Alimentos
-				li Material escolar
-				li Livros
-				li Equipamentos ( computadores, impressoras, etc.)
+			li 5 - Imprima o Documento de Arrecadação e pague em uma lotérica ou em qualquer agência dos principais bancos do país
+	.information.material
+		h2 Através de mantimentos e materiais
+		ul	
+			li Alimentos
+			li Material escolar
+			li Livros
+			li Equipamentos ( computadores, impressoras, etc.)
+	.information.bank
+		h2 Através de depósito bancário:
+		ul
+			li 
+				b 
+					| Escola de Educação Infantil Vovó Belinha:
+			li Banco Banrisul
+			li Agência 0027 – Três Figueiras
+			li Conta Corrente: 06.855515.3-6
+			li 
+				b
+					| Centro Cultural James Kulisz – CEJAK
+			li Banco Banrisul
+			li Agência 0027 – Três Figueiras
+			li Conta Corrente: 06.855515.4-4
 	p.duvida Se tiver alguma dúvida entre em 
 	= link_to t('home.contact'), new_contact_path, class: 'contact'

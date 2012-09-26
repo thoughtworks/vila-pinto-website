@@ -10,23 +10,6 @@
 		margin-bottom: 20px;
 		margin-top: 20px;
 		width: 350px;
-		border-bottom: 2px solid $blue;
-	}
-
-	.alternative {
-		display: table;
-		margin-bottom: 40px;
-		float: left;
-		width: 100%;
-	}
-
-	.information {
-		float: left;
-		width: 50%;
-	}
-
-	.information.site {
-		width: 100%;
 	}
 
 	h1 {
@@ -38,13 +21,42 @@
 	ul {
 		list-style: none;
 		line-height: 2.3em;
+		float: left;
+	}
+
+	.information {
+		margin-right: 10%;
+		float: left;
+
+		&.funcrianca {
+			width: 60%;
+			margin-bottom: 40px;
+		}
+
+		&.material {
+			width: 20%;
+
+			ul {
+				list-style: circle;
+				width: 400px;
+			}
+		}
+
+		&.bank {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+	}
+
+	p.initial {
+		margin-bottom: 30px;
 	}
 
 	p.duvida {
-		font-size: 1.1em;
+		font-size: 1.3em;
 		display: block;
 		float: left;
-		width: 280px;
+		width: 340px;
 		display: block;
 	}
 
