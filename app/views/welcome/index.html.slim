@@ -19,12 +19,6 @@
     = t('cea.about')
 #departamentos.content
   h1.title = t('home.iniciatives')
-  = link_to vovo_path do
-    .departamento
-      .nav
-        img alt="vovo belinha" src="assets/vovo.png"
-        .saiba-mais.vovo = t('home.enter')
-      h1 Escola de Educação Infantil Vovó Belinha
   = link_to ctvp_path do
     .departamento
       .nav
@@ -37,6 +31,12 @@
         img alt="cjak" src="assets/cejak.png"
         .saiba-mais.cejak = t('home.enter')
       h1 Centro Cultural James Kulisz
+  = link_to vovo_path do
+    .departamento
+      .nav
+        img alt="vovo belinha" src="assets/vovo.png"
+        .saiba-mais.vovo = t('home.enter')
+      h1 Escola de Educação Infantil Vovó Belinha
 #historia.content
   h1
     = t('home.vila_pinto')
