@@ -1,5 +1,4 @@
 VilaPintoWebsite::Application.routes.draw do
-
   resources :contacts, :only => [:new, :create]
 
   root :to => 'welcome#index'
@@ -17,7 +16,7 @@ VilaPintoWebsite::Application.routes.draw do
   match '/vovo/donation' => 'vovo#donation', as: :vovo_donation
 
   match '/cejak/projects' => 'cejak#projects', as: :cejak_projects
-  
+
   match '/cejak/projects/:project_name' => 'cejak#show', as: :cejak_project
 
   ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')

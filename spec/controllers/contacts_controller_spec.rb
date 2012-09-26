@@ -7,7 +7,7 @@ describe ContactsController do
 
     before do
       Contact.should_receive(:new).and_return(contact)
-      get :new
+      get :new, :locale => 'pt-BR'
     end
 
     it { should respond_with(:success) }
@@ -16,9 +16,10 @@ describe ContactsController do
   end
 
   describe '#create' do
-    let(:empty_params) { { contact: {} } } 
-    let(:good_params) { { contact: {
+    let(:empty_params) { { :locale => 'pt-BR', contact: {} } }
+    let(:good_params) { { :locale => 'pt-BR', contact: {
       name: 'name',
+      to: 'target@email.com',
       email: 'valid@email.com',
       subject: 'subject',
       message: 'message'
