@@ -85,6 +85,12 @@
 #projetoscejak {
   width: 100%;
 
+  .crianca, .comunidade {
+    width: 50%;
+    display: table;
+    float: left;
+  }
+
   a {
     text-decoration: none;
     font-size: 1.1em;
