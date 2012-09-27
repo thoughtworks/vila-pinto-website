@@ -30,7 +30,7 @@ i {
     cursor: pointer;
     z-index: 3;
     text-decoration: none;
-    top: 90px;
+    top: 105px;
     right: 30px;
     position: absolute;
     padding: 2px;
@@ -335,6 +335,7 @@ blockquote {
   } 
 
   ul {
+    list-style: circle;
     line-height: 2.5em;
   }
 }

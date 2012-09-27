@@ -125,3 +125,16 @@ div.news {
     text-decoration: underline;
   }
 }
+
+#sponsors.vovo {
+  background: white;
+
+  #logos {
+    width: 80%;
+  }
+
+  h2 {
+    color: $orange;
+    border-bottom: 4px solid $orange;
+  }
+}
