@@ -45,14 +45,15 @@ $(document).ready(function() {
   });
 
   $('#menu-list.nav > li > a').each(function() {
-    var urlSplit    = $(location).attr('href').split('/'),
-        hrefSplit   = $(this).attr('href').split('/'),
-        currentPage = urlSplit[urlSplit.length - 1],
-        currentHref = hrefSplit[hrefSplit.length - 1],
-        $li         = $(this).parent();
+    var urlSplit        = $(location).attr('href').split('/'),
+        linkSplit       = $(this).attr('href').split('/'),
+        currentPage     = urlSplit[urlSplit.length - 1],
+        currentLinkHref = linkSplit[linkSplit.length - 1],
+        listItem        = $(this).parent();
 
-    if ( currentPage.indexOf(currentHref) != -1 ) {
-      $li.addClass("active");
+    if ( currentPage.indexOf(currentLinkHref) != -1 || currentPage.indexOf(currentLinkHref) != -1 ) {
+      $('#menu-list.nav > li').removeClass('active');
+      listItem.addClass("active");
     }
   });
 });
