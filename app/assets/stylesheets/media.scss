@@ -2,6 +2,10 @@
 	#navigation {
 		display: none;
 	}
+
+	#doe {
+		top: 0;
+	}
 	
 	#sobre {
 		p {
@@ -17,7 +21,10 @@
 	}
 
 	#menu ul li {
-		width: 60%;		
+		width: 45%;
+		padding-top: 0px;
+		padding-right: 0px;
+		font-size: 1.2em;		
 	}
 
 	.portrait {
@@ -48,22 +55,29 @@
 }
 
 @media screen and (min-width: 480px) {
-	#navigation {
-		display: block;
-	}
-
 	#sitemap-container {
     	ul {
     		margin-left: 5%;
     	}
   	}
 
+  	#doe {
+		top: 60px;
+	}
+
 	#menu ul li {
-		width: auto;		
+		width: auto;
+		font-size: 1.5em;
+      	padding-right: 50px;
+      	padding-top: 10px;	
 	}
 }
 
 @media screen and (min-width: 600px) {
+	#navigation {
+		display: block;
+	}
+
 	#sobre {
 		p {
 			margin-top: 0px;
@@ -93,6 +107,10 @@
 }
 
 @media screen and (min-width: 768px) {
+	#doe {
+		top: 100px;
+	}
+
 	#sitemap-container {
     	#sitemap {
     		width: 80%;
@@ -105,6 +123,10 @@
 }
 
 @media screen and (min-width: 900px) {
+	#doe {
+		top: 130px;
+	}
+
 	#sitemap-container {
     	ul {
     		margin-left: 25%;

@@ -31,7 +31,6 @@ i {
     cursor: pointer;
     z-index: 3;
     text-decoration: none;
-    top: 130px;
     right: 30px;
     position: absolute;
     padding: 2px;
@@ -134,10 +133,7 @@ i {
     
     li {
       list-style: none;
-      font-size: 1.5em;
       float: left;
-      padding-right: 50px;
-      padding-top: 10px;
       opacity: 0.9;
 
       &.active a, &:hover a {
