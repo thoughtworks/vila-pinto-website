@@ -183,9 +183,11 @@ div.parceiros-cejak {
 
 div.sobrecejak, div.sobreprojeto {
   float: left;
-  
+
   ul {
     list-style: square;
+    margin-left: 25px;
+    margin-top: 10px;
   }
 }
 
