@@ -26,11 +26,13 @@ i {
 }
 
 #doe {
-    border: 3px solid white;
+    width: 170px;
+    display: table;
+    border: 2px solid white;
     cursor: pointer;
     z-index: 3;
     text-decoration: none;
-    top: 105px;
+    top: 130px;
     right: 30px;
     position: absolute;
     padding: 2px;
@@ -44,11 +46,14 @@ i {
       padding: 5px;
       padding-bottom: 0px;
       display: block;
+      float: left;
     }
 
     img {
       margin: 0 auto;
       display: block;
+      float: left;
+      width: 26%;
     }
   }
 
@@ -58,6 +63,7 @@ i {
   background-image: url('../assets/bg.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/bg.jpg',sizingMethod='scale');
 
   &.cea {
     border-bottom: 4px solid $blue;

@@ -21,18 +21,15 @@ html
     #header.vovo
       = link_to image_tag("vovosymbol.png", id: 'logo-department'), vovo_path
       #navigation
-        .cea.page_link
-          = link_to root_path do
-            = image_tag("logoceawhite.png")
-            label.short CEA
-        .ctvp.page_link
-          = link_to ctvp_path do
-            = image_tag("logoceawhite.png")
-            label.short CTVP
-        .cejak.page_link
-          = link_to cejak_path do
-            = image_tag("logoceawhite.png")
-            label.short CEJAK
+        = link_to root_path, :class => 'cea page_link' do
+          = image_tag("logoceawhite.png")
+          label.short CEA
+        = link_to ctvp_path, :class => 'ctvp page_link' do
+          = image_tag("logoceawhite.png")
+          label.short CTVP
+        = link_to cejak_path, :class => 'cejak page_link' do
+          = image_tag("logoceawhite.png")
+          label.short CEJAK
       = link_to donation_path, :id => "doe", :class => "vovo" do
           p.doe-text
             = t('home.donation-text')

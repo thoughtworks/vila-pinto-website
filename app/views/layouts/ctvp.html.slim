@@ -20,18 +20,15 @@ html
     #header.ctvp
       = link_to image_tag("ctvpsymbol.png", id: 'logo-department'), ctvp_path
       #navigation
-        .cea.page_link
-          = link_to root_path do
-            = image_tag("logoceawhite.png")
-            label.short CEA
-        .vovo.page_link
-          = link_to vovo_path do
-            = image_tag("logoceawhite.png")
-            label Vovo Belinha
-        .cejak.page_link
-          = link_to cejak_path do
-            = image_tag("logoceawhite.png")
-            label.short CEJAK
+        = link_to root_path, :class => 'cea page_link' do
+          = image_tag("logoceawhite.png")
+          label.short CEA
+        = link_to vovo_path, :class => 'vovo page_link' do
+          = image_tag("logoceawhite.png")
+          label Vovo Belinha
+        = link_to cejak_path, :class => 'cejak page_link' do
+          = image_tag("logoceawhite.png")
+          label.short CEJAK
     #menu.ctvp
       .department CTVP
       ul#menu-list.nav
