@@ -13,6 +13,7 @@ html
     = stylesheet_link_tag 'application', :media => 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
+    = render :partial => 'layouts/google_analytics'
   body data-spy="scroll" data-target="#menu" data-offset="70"
     #localization
       = link_to image_tag("portuguese.png"), url_for(:only_path => false, :locale => 'pt-BR')
