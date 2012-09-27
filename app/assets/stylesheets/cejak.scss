@@ -159,9 +159,13 @@ div.parceiros-cejak {
 }
 
 #header.cejak {
-  background: url('cejak/header.jpg');  
+  background: url('cejak/header.jpg'); 
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/cejak/header.jpg',sizingMethod='scale'); 
   background-size: 100%;
   background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+
 
   #logo {
     margin-top: 10px !important;

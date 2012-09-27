@@ -10,6 +10,7 @@
 
 #header.ctvp {
   background: url('ctvp/header.jpg') #777;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/ctvp/header.jpg',sizingMethod='scale');
   background-size: 100%;
   background-repeat: no-repeat;
   height: 100%;
