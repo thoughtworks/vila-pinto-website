@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   before_filter :set_locale_from_url
 
-  before_filter :authenticate, :if => :production_mode?
+#  before_filter :authenticate, :if => :production_mode?
 
   private
 
