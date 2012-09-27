@@ -56,7 +56,7 @@
   h2 {
     margin-top: 3%;
     margin-left: 5%;
-    width: 85%; 
+    width: 85%;
   }
 }
 
@@ -153,7 +153,7 @@ div.news {
   padding: 0 20px;
   border-radius: 3px;
   padding-top: 5%;
-  
+
   h1 {
     font-size: 1.9em;
     padding-bottom: 10px;
@@ -201,10 +201,6 @@ div.news {
     @include size(banrisul);
   }
 
-  .sprite-camp {
-    @include size(camp);
-  }
-
   .sprite-cbc {
     @include size(cbc);
   }
@@ -233,12 +229,8 @@ div.news {
     @include size(ir);
   }
 
-  .sprite-juvenil {
-    @include size(juvenil);
-  }
-
   .sprite-lomando {
-   @include size(lomando); 
+   @include size(lomando);
   }
 
   .sprite-mesabrasil {
