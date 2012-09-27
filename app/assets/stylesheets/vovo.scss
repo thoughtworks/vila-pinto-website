@@ -2,7 +2,7 @@
 
 #sobrevovo.content {
       height: 100%;
-      width: 100%;
+      width: 90%;
       padding-top:1%;
       display:table;
 }
@@ -130,5 +130,18 @@ div.news{
 
   ul li a:hover {
     text-decoration: underline;
+  }
+}
+
+#sponsors.vovo {
+  background: white;
+
+  #logos {
+    width: 80%;
+  }
+
+  h2 {
+    color: $orange;
+    border-bottom: 4px solid $orange;
   }
 }

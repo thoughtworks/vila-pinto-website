@@ -8,12 +8,12 @@ html
     meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
     meta name="description" content="Site institucional para o Centro Cultural James Kulisz"
 
-
     link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'
     link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'
     = stylesheet_link_tag 'application', :media => 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
+    = render :partial => 'layouts/google_analytics'
   body data-spy="scroll" data-target="#menu" data-offset="70"
     #localization
       = link_to image_tag("portuguese.png"), url_for(:only_path => false, :locale => 'pt-BR')
