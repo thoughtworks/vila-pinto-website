@@ -38,7 +38,7 @@ html
           = t('home.donation-text')
         = image_tag("doebg3.png")
     = yield
-    javascript: 
+    javascript:
       (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) return;
@@ -50,20 +50,20 @@ html
     #sitemap-container
       #sitemap
         ul
-          li 
+          li
             = link_to "Vovó Belinha", vovo_path
           li = link_to t('home.about'), vovo_path
           li = link_to t('home.sponsors'), vovo_sponsors_path
           li = link_to t('home.contact'), new_contact_path({to: 'vovo'})
         ul
-          li 
+          li
             = link_to "CTVP", ctvp_path
           li = link_to t('home.about'), ctvp_path
           li = link_to t('home.materiais'), ctvp_materiais_path
           li = link_to t('home.sponsors'), ctvp_sponsors_path
           li = link_to t('home.contact'), new_contact_path({to: 'ctvp'})
-        ul 
-          li 
+        ul
+          li
             = link_to "CEJAK", cejak_path
           li = link_to t('home.about'), cejak_path
           li = link_to t('home.projects'), cejak_projects_path
@@ -71,7 +71,7 @@ html
     #footer
       div
         = image_tag("logoceawhite.png", id:"logo_cea_white")
-        p CEA - Centro de Educacao Ambiental Vila Pinto - Todos os direitos reservados
+        p CEA - Centro de Educação Ambiental Vila Pinto - Todos os direitos reservados
         a.back-to-top href="/"
-          .top Ir para o inicio
+          .top Ir para o início
           = image_tag("arrow.png", id:"back_to_top")
