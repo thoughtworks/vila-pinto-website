@@ -12,7 +12,7 @@ VilaPintoWebsite::Application.configure do
   config.serve_static_assets = false
 
   # Precompile js
-  config.assets.precompile += %w( respond.js )
+  config.assets.precompile += %w( respond.min.js )
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
