@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
   def new
     @contact = Contact.new
-    @contact.to = params[:to]
+    @contact.to = params[:to] if params[:to]
   end
 
   def create

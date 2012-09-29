@@ -4,10 +4,12 @@ describe ContactsController do
 
   describe '#new' do
     let(:contact) { mock_model(Contact) }
+    let(:default_target) { 'CEA' }
 
     before do
       Contact.should_receive(:new).and_return(contact)
-      get :new, :locale => 'pt-BR'
+      contact.should_receive(:to=).with(default_target)
+      get :new, :locale => 'pt-BR', :to => default_target
     end
 
     it { should respond_with(:success) }
