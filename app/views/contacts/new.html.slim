@@ -1,6 +1,16 @@
 #background
   #menu
-
+    ul#menu-list
+      li.active
+        = link_to t('home.aboutus'), root_path, class: 'sobre'
+      li
+        = link_to t('home.iniciatives'), root_path(:anchor => "departamentos")
+      li
+        = link_to t('home.vila_pinto'), root_path(:anchor => "historia")
+      li
+        = link_to t('home.testimonials'), root_path(:anchor => "depoimentos")
+      li
+        = link_to t('home.contact'), new_contact_path, class: 'contact'
   #contact
     h2 =t('contact.contact_us')
     = simple_form_for @contact do |f|
