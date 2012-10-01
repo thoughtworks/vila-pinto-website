@@ -9,7 +9,7 @@
 body {
   font-family: 'Droid Sans', sans-serif;
   line-height: 2em;
-  color: #222;
+  color: #666;
 }
 
 #face {
@@ -174,9 +174,8 @@ h1 {
     padding-bottom: 50px;
     font-weight: normal;
     margin: 0;
-    line-height: 1.8em;
+    line-height: 1.7em;
     float:left;
-    color: #222;
     padding-bottom: 15px;
     -moz-column-count: 2;
     -moz-column-gap: 50px;
@@ -184,6 +183,7 @@ h1 {
     -webkit-column-gap: 50px;
     column-count: 2;
     column-gap: 500px; 
+    font-size: 1.1em;
 }
 
 #historia h1, #depoimentos h1, #departamentos h1.title {
@@ -206,8 +206,7 @@ h1 {
   p {
     margin-left: 3%;
     font-weight: normal;
-    line-height: 2em;
-    color: #222;
+    line-height: 1.6em;
     padding-bottom: 50px;
     -moz-column-count: 2;
     -moz-column-gap: 50px;
@@ -215,6 +214,7 @@ h1 {
     -webkit-column-gap: 50px;
     column-count: 2;
     column-gap: 50px;
+    font-size: 1.05em;
   }
 }
 
@@ -339,7 +339,7 @@ blockquote {
     list-style: circle;
     margin-left: 25px;
     margin-top: 10px;
-    line-height: 2.5em;
+    line-height: 2em;
     margin-bottom: 10px;
   }
 }
