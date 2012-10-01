@@ -60,14 +60,18 @@ div.sobrevovo {
     padding-top:0%;
 }
 
-#sobrevovo{
-  h2{
+#sobrevovo {
+  h2 {
      font-size: 1.9em;
      color: $orange;
      margin-top: 20px;
      margin-bottom: 20px;
      border-bottom: 4px solid $orange;
      height: 45px;
+  }
+
+  p {
+    font-size: 1.1em;
   }
 
   ul {
