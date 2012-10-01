@@ -72,7 +72,10 @@ html
     #footer
       div
         = image_tag("logoceawhite.png", id:"logo_cea_white")
-        p CEA - Centro de Educação Ambiental Vila Pinto - Todos os direitos reservados
+        p.cea CEA - Centro de Educação Ambiental Vila Pinto - Todos os direitos reservados
+        = link_to donation_path do
+          = image_tag("doebg3.png", id:"doe_agora")
+          p.doe Doe Agora
         a.back-to-top href="/"
           .top Ir para o início
           = image_tag("arrow.png", id:"back_to_top")

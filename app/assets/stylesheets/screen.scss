@@ -392,6 +392,26 @@ blockquote {
   display: table;
   width: 100%;
 
+  .cea {
+    width: 450px;
+    float: left;
+  }
+
+  .doe {
+    width: 100px;
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+
+  #doe_agora {
+    width: 50px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 12%;
+  }
+
   & p {
     width: 60%;
     padding-top: 20px;
