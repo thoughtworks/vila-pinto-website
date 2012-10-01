@@ -206,7 +206,7 @@ h1 {
   p {
     margin-left: 3%;
     font-weight: normal;
-    line-height: 1.6em;
+    line-height: 1.7em;
     padding-bottom: 50px;
     -moz-column-count: 2;
     -moz-column-gap: 50px;
@@ -328,6 +328,10 @@ blockquote {
 
 #historia {
   height: 1020px;
+
+  p {
+    margin-bottom: 4%;
+  }
 
   object {
     margin: 40px 10%;
