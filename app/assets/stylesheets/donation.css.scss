@@ -31,6 +31,12 @@
 		&.funcrianca {
 			width: 60%;
 			margin-bottom: 40px;
+
+			i {
+				font-weight: bold;
+				float: none;
+				font-size: 1.05em;
+			}
 		}
 
 		&.material {
