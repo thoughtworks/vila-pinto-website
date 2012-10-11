@@ -1,0 +1,122 @@
+@media screen and (min-width: 0px) {
+	#navigation {
+		display: none;
+	}
+
+	#doe {
+		top: 0;
+	}
+	
+	#sobre p {
+		margin: 0;
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	#sobre h1 {
+		width: 100%;
+		font-size: 1.5em;
+	}
+
+	#menu ul li {
+		width: 45%;
+		padding-top: 0px;
+		padding-right: 0px;
+		font-size: 1.2em;		
+	}
+
+	.portrait {
+	    width: 90%;
+	}
+
+	#sitemap-container #sitemap {
+    	width: 100%;
+    }
+
+    #sitemap-container	ul {
+    	margin-left: 0;
+  	}
+}
+
+@media screen and (min-width: 320px) {
+	#navigation {
+		display: none;
+	}
+
+	#sitemap-container ul {
+    	margin-left: 5%;
+  	}
+}
+
+@media screen and (min-width: 480px) {
+	#sitemap-container ul {
+    	margin-left: 5%;
+  	}
+
+  	#doe {
+		top: 60px;
+	}
+
+	#menu ul li {
+		width: auto;
+		font-size: 1.5em;
+      	padding-right: 50px;
+      	padding-top: 10px;	
+	}
+}
+
+@media screen and (min-width: 600px) {
+	#navigation {
+		display: block;
+	}
+
+	#sobre p {
+		margin-top: 0px;
+		width: 50%;
+	}
+
+	#sobre h1 {
+		width: 45%;
+		font-size: 2.2em;
+	}
+
+	.portrait {
+	    width: 45%;
+	}
+
+	#sitemap-container #sitemap {
+    	width: 90%;
+    }
+
+    #sitemap-container ul {
+    	margin-left: 10%;
+  	}
+}
+
+@media screen and (min-width: 768px) {
+	#doe {
+		top: 100px;
+	}
+
+	#sitemap-container #sitemap {
+    	width: 80%;
+    }
+
+    #sitemap-container ul {
+    	margin-left: 15%;
+  	}
+}
+
+@media screen and (min-width: 900px) {
+	#doe {
+		top: 130px;
+	}
+
+	#sitemap-container ul {
+    	margin-left: 25%;
+  	}
+}
+
+@media screen and (min-width: 1024px) {
+
+}
