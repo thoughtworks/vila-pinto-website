@@ -11,10 +11,9 @@ body {
   color: #666;
 }
 
-#face {
-  position: absolute;
+.fb-like {
   left: 45%;
-  margin-top: -5%;
+  margin-top: 10px;
 }
 
 i {
@@ -196,6 +195,7 @@ h1 {
 #sobre {
   height: 100%;
   display: table;
+  padding-top: 0;
 
   iframe {
     margin: 0 auto;
