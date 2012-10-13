@@ -23,6 +23,8 @@ VilaPintoWebsite::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  config.font_assets.origin = 'http://www.ceavilapinto.org.br'
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
