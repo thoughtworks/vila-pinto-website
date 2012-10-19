@@ -218,6 +218,11 @@ h1 {
     column-gap: 50px;
     font-size: 1.05em;
   }
+
+  a {
+    color: $blue;
+    text-decoration: none;
+  }
 }
 
 #depoimentos {
