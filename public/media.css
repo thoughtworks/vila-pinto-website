@@ -7,8 +7,16 @@
 		font-size: 1.6em;
 	}
 
+	#historia ul {
+		line-height: 1.4em;
+	}
+
 	#doe {
 		top: 0;
+	}
+
+	.two {
+		line-height: 1.4em;
 	}
 	
 	#sobre p {
@@ -19,7 +27,11 @@
 
 	#sobre h1 {
 		width: 100%;
-		font-size: 1.5em;
+		font-size: 1.4em;
+	}
+
+	#departamentos h1 {
+		font-size: 1.4em;
 	}
 
 	#menu ul li {
@@ -29,8 +41,14 @@
 		font-size: 1.2em;		
 	}
 
+	blockquote {
+	  border-left: 5px solid #EEE;
+	  float: left;
+	  line-height: 25px;
+	}
+
 	.portrait {
-	    width: 90%;
+	    width: 100%;
 	}
 
 	#sitemap-container #sitemap {
@@ -68,6 +86,17 @@
 		-moz-column-gap: 50px;
     	-webkit-column-gap: 50px;
     	column-gap: 500px; 
+    	line-height: 1.7em;
+	}
+
+	#historia ul {
+		line-height: 2em;
+	}
+
+
+	blockquote {
+	  padding: 0 0 0 15px;
+	  line-height: 40px;
 	}
 
   	#menu ul li {
@@ -90,7 +119,11 @@
 
 	#sobre h1 {
 		width: 45%;
-		font-size: 2.2em;
+		font-size: 2em;
+	}
+
+	#departamentos h1 {
+		font-size: 1.7em;
 	}
 
 	.portrait {
@@ -114,6 +147,14 @@
 	#sitemap-container #sitemap {
     	width: 80%;
     }
+
+    #sobre h1 {
+		font-size: 2.2em;
+	}
+
+	#departamentos h1 {
+		font-size: 2em;
+	}
 
     #sitemap-container ul {
     	margin-left: 15%;
