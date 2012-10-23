@@ -35,31 +35,31 @@
   }
 
   ul.information {
-      margin-top: 20px;
-      list-style: none;
+    margin-top: 20px;
+    list-style: none;
 
-      h3 {
-        float: left;
-        font-weight: bold;
-        color: #222;
-        margin-top: 5px;
-      }
+    h3 {
+      float: left;
+      font-weight: bold;
+      color: #222;
+      margin-top: 5px;
+    }
 
-      img {
-        float: left;
-        width: 25px;
-        margin-right: 10px;
-      }
+    img {
+      float: left;
+      width: 25px;
+      margin-right: 10px;
+    }
 
-      li {
-        padding-top: 20px;
-        width: 350px;
-        float: left;
-        font-size: 1.2em;
-        color: $yellow;
-      }
+    li {
+      padding-top: 20px;
+      width: 350px;
+      float: left;
+      font-size: 1.2em;
+      color: $yellow;
     }
   }
+}
 
 #cejakprojeto {
 
@@ -210,7 +210,6 @@ div.sobrecejak {
     font-size: 1.1em;
   }
 }
-
 
 #footer.cejak {
   color: white;

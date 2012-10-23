@@ -3,6 +3,10 @@
 		display: none;
 	}
 
+	h1 {
+		font-size: 1.6em;
+	}
+
 	#doe {
 		top: 0;
 	}
@@ -57,11 +61,20 @@
 		top: 60px;
 	}
 
-	#menu ul li {
-		width: auto;
+	.two {
+		column-count: 2;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		-moz-column-gap: 50px;
+    	-webkit-column-gap: 50px;
+    	column-gap: 500px; 
+	}
+
+  	#menu ul li {
+	  	width: auto;
 		font-size: 1.5em;
-      	padding-right: 50px;
-      	padding-top: 10px;	
+		padding-right: 50px;
+		padding-top: 10px;
 	}
 }
 
