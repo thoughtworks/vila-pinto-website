@@ -1,3 +1,10 @@
+
+@media screen and (min-width: 0px) and (-webkit-min-device-pixel-ratio:0) {
+	object {
+		height: 30%;
+	}
+}
+
 @media screen and (min-width: 0px) {
 	#navigation {
 		display: none;
@@ -70,6 +77,12 @@
   	}
 }
 
+@media screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio:0) {
+	object {
+		height: 40%;
+	}
+}
+
 @media screen and (min-width: 480px) {
 	#sitemap-container ul {
     	margin-left: 5%;
@@ -124,6 +137,10 @@
 
 	#departamentos h1 {
 		font-size: 1.7em;
+	}
+
+	object {
+		height: 60%;
 	}
 
 	.portrait {
