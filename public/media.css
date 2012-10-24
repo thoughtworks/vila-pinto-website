@@ -10,6 +10,10 @@
 		display: none;
 	}
 
+	.fb-like.content {
+		display: none;
+	}
+
 	h1 {
 		font-size: 1.6em;
 	}
@@ -87,6 +91,11 @@
 	#sitemap-container ul {
     	margin-left: 5%;
   	}
+
+	.fb-like.content {
+		display: block;
+		padding-top: 0px;
+	}
 
   	#doe {
 		top: 60px;
