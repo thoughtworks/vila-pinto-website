@@ -24,12 +24,13 @@
 }
 
 #header.vovo {
-  background: url('vovo/header.jpg');
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/vovo/header.jpg',sizingMethod='scale');
+  background: url('vovo/header_original.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/vovo/header_original.jpg',sizingMethod='scale');
   background-size: 100%;
   background-repeat: no-repeat;
   height: 100%;
   overflow: hidden;
+  background-position: 0 -180px;
 }
 
 #menu.vovo {

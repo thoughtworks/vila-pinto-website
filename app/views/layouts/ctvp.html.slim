@@ -55,6 +55,9 @@ html
           = link_to t('home.contact'), new_contact_path({to: 'ctvp'}), class: 'contact'
     = yield
     #footer.ctvp
-     div
-      = image_tag("logoceawhite.png", id:"logo_cea_white")
-      p CEA - Centro de Educacao Ambiental Vila Pinto - Todos os direitos reservados
+      div
+        = image_tag("logoceawhite.png", id:"logo_cea_white")
+        p CEA - Centro de Educacao Ambiental Vila Pinto - Todos os direitos reservados
+        a.back-to-top href="/"
+          .top Ir para o início
+          = image_tag("arrow.png", id:"back_to_top")

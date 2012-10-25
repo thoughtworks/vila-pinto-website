@@ -7,7 +7,7 @@
   width: 170px;
   display: table;
   border: 2px solid white;
-  top: 90px;
+  top: 190px;
 
   .doe-text {
     float: left;
@@ -160,13 +160,13 @@ div.parceiros-cejak {
 }
 
 #header.cejak {
-  background: url('cejak/header.jpg'); 
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/cejak/header.jpg',sizingMethod='scale'); 
+  background: url('cejak/header_original.jpg'); 
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/cejak/header_original.jpg',sizingMethod='scale'); 
   background-size: 104%;
   background-repeat: no-repeat;
   height: 100%;
   overflow: hidden;
-
+  background-position: 0 -150px;
 
   #logo {
     margin-top: 10px !important;
