@@ -29,12 +29,15 @@ html
     #header.cea
       = link_to image_tag("logocea.png", id: 'logo'), root_path
       #navigation
+        = link_to root_path, :class => 'cea page_link' do
+          = image_tag("logoceawhite.png")
+          label.short CEA
         = link_to ctvp_path, :class => 'ctvp page_link' do
           = image_tag("logoceawhite.png")
           label.short CTVP
         = link_to cejak_path, :class => 'cejak page_link' do
           = image_tag("logoceawhite.png")
-          label.short CEJAK  
+          label.short CEJAK
         = link_to vovo_path, :class => 'vovo page_link' do
           = image_tag("logoceawhite.png")
           label Vovo Belinha
