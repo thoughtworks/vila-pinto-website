@@ -63,7 +63,7 @@
 
 #sobrectvp {
   height: 100%;
-  width: 90%;
+  width: auto;
   display: table;
   padding-top: 0px;
 
@@ -291,7 +291,7 @@ div.sobrectvp {
   width: 70%;
   float: left;
 
-  label {
+  p {
     font-size: 1.1em;
   }
 

@@ -21,6 +21,7 @@
 
 #sobrecejak, #cejakprojeto {
   height: 100%;
+  width: auto;
   display: table;
   float:left;
   padding-top: 0px;
@@ -161,7 +162,7 @@ div.parceiros-cejak {
 #header.cejak {
   background: url('cejak/header.jpg'); 
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/cejak/header.jpg',sizingMethod='scale'); 
-  background-size: 100%;
+  background-size: 104%;
   background-repeat: no-repeat;
   height: 100%;
   overflow: hidden;

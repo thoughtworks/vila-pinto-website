@@ -6,7 +6,7 @@ $(document).ready(function() {
   }
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > $('#header').height()) {
       $('#menu').css('position', 'fixed').css('top', 0);
       $('#menu').css('opacity', '0.9');
       $('#sobre').css('margin-top', 50);

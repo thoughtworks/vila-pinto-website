@@ -11,6 +11,10 @@ body {
   color: #666;
 }
 
+p {
+  text-align: justify;
+}
+
 .fb-like-short {
   left: 45%;
 }
@@ -195,6 +199,7 @@ h1 {
 
 #sobre {
   height: 100%;
+  width: auto;
   display: table;
   padding-top: 0;
 
