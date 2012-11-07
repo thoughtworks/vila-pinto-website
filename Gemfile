@@ -4,6 +4,7 @@ gem 'rails', '3.2.8'
 gem 'slim-rails'
 gem "simple_form"
 gem 'rails-translate-routes'
+gem 'gmaps4rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

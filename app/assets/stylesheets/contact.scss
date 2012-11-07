@@ -78,10 +78,6 @@
     margin-right: 20px;
   }
 
-  iframe {
-    margin-top: 30px;
-  }
-
   small {
     display: block;
     text-align: center;
@@ -93,5 +89,16 @@
     border: 2px solid #CCC;
     border-radius: 3px;
     font-size: 1.0em;
+  }
+  
+  .map_container {
+ 	margin-top: 30px;
+	margin-height: 0px;
+	margin-width: 0px;
+  	width: 425px;
+  }
+  .gmaps4rails_map {
+    width: 425px;
+    height: 350px;
   }
 }

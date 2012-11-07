@@ -35,6 +35,7 @@ en:
       error: "You must fill in all fields."
       success: "Contact email sent successfully."
     location: "Location"
+    viewlargermap: "View Larger Map"
 
   cea:
     mission: "Our mission is to generate and facilitate opportunities of personal and professional growth to improve the overall quality of life of the Vila Pinto community."
