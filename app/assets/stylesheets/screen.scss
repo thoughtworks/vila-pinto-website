@@ -219,6 +219,23 @@ h1 {
     color: $blue;
     text-decoration: none;
   }
+
+  a#ctvp_inline_link {
+	color: $green;
+  }
+
+  a#cejak_inline_link {
+	color: $yellow;
+  }
+
+  a#vovo_inline_link {
+	color: $orange;
+  }
+}
+
+.projects_small_icon {
+	width: 20px;
+	height: 20px;
 }
 
 #depoimentos {

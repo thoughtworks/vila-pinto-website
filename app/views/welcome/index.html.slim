@@ -17,10 +17,12 @@
     = t('cea.mission')
   p.two 
     = t('cea.about')
-    = link_to " CTVP", ctvp_path
-    = link_to ", CEJAK ", cejak_path
+    = link_to " CTVP", ctvp_path, id: 'ctvp_inline_link'
+    | ,
+    = link_to " CEJAK ", cejak_path, id: 'cejak_inline_link'
     = t('global.and')
-    = link_to " Vovó Belinha.", vovo_path
+    = link_to " Vovó Belinha", vovo_path, id: 'vovo_inline_link'
+    | .
 #departamentos.content
   h1.title = t('home.iniciatives')
   = link_to ctvp_path do
