@@ -15,7 +15,7 @@ ActiveAdmin.register Partner do
   form do |f|
     f.inputs do
       f.input :name
-      f.input :image, :for => :image, :as => :file, :hint => f.object.image.file.filename
+      f.input :image, :for => :image, :as => :file, :hint => (f.object.image.file.filename if not f.object.image.file.nil? )
       f.input :url
       
     end
