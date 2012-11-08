@@ -22,6 +22,7 @@ en:
   time:
     formats:
       default: '%m/%d/%Y'
+      long: '%m/%d/%Y, %H:%M h'
 
   helpers:
     submit:

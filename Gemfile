@@ -5,6 +5,10 @@ gem 'slim-rails'
 gem "simple_form"
 gem 'rails-translate-routes'
 gem 'gmaps4rails'
+gem 'activeadmin'
+gem "meta_search", '>= 1.1.0.pre'
+gem "carrierwave"
+gem "activevalidators"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

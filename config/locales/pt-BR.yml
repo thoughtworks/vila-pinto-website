@@ -1,4 +1,23 @@
 pt-BR:
+  formtastic:
+    yes: 'Sim'
+    no: 'Não'
+    create: 'Cadastrar %{model}'
+    update: 'Atualizar %{model}'
+    submit: 'Salvar %{model}'
+    required: 'obrigatório'
+  activerecord:
+    models:
+      partner:
+        one: Parceiro
+        other: Parceiros
+    attributes:
+      partner:
+        name: Nome
+        url: URL
+        image: Imagem
+        created_at: Data de Criação
+        updated_at: Data de Atualização				
   global:
     and: e
   home:
@@ -22,6 +41,7 @@ pt-BR:
   time:
     formats:
       default: '%d/%m/%Y'
+      long: '%d/%m/%Y, %H:%M h'
 
   helpers:
     submit:
