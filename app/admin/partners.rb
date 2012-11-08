@@ -20,7 +20,7 @@ ActiveAdmin.register Partner do
     f.inputs do
       f.input :name
       f.input :type, :as => :select, :collection => type_options
-      f.input :image, :for => :image, :as => :file, :hint => (f.object.image.file.filename if not f.object.image.file.nil? )
+      f.input :image, :for => :image, :as => :file, :hint => image_info(f)
       f.input :url
     end
     f.actions
