@@ -204,6 +204,9 @@ GEM
     uglifier (1.2.7)
       execjs (>= 0.3.0)
       multi_json (~> 1.3)
+    values_for (0.1)
+      activerecord
+      activesupport
     warden (1.2.1)
       rack (>= 1.0)
 
@@ -230,3 +233,4 @@ DEPENDENCIES
   slim-rails
   sqlite3
   uglifier (>= 1.0.3)
+  values_for

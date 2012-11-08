@@ -9,6 +9,7 @@ gem 'activeadmin'
 gem "meta_search", '>= 1.1.0.pre'
 gem "carrierwave"
 gem "activevalidators"
+gem "values_for"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

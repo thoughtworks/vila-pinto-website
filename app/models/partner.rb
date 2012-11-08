@@ -1,5 +1,8 @@
 class Partner < ActiveRecord::Base
-  attr_accessible :name, :url, :image
+  set_inheritance_column '' # sets to nil to be possible use type as a common column
+  values_for :type, :has => [:cea, :cejak, :ctvp, :vovo_belinha], :add => [:predicate_methods, :constants]
+
+  attr_accessible :name, :url, :image, :type
   mount_uploader :image, ImageUploader
   
   validates :name, :presence => true

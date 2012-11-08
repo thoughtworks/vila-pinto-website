@@ -1,3 +1,4 @@
+include ActiveAdmin::PartnersHelper
 ActiveAdmin.register Partner do
   actions  :index, :destroy, :edit, :update, :new, :create
   
@@ -7,6 +8,9 @@ ActiveAdmin.register Partner do
    
   index :download_links => false do
     column :name
+    column :type do |partner|
+      translate_type(partner.type)
+    end
     column :url
     column :updated_at
     default_actions
@@ -15,9 +19,9 @@ ActiveAdmin.register Partner do
   form do |f|
     f.inputs do
       f.input :name
+      f.input :type, :as => :select, :collection => type_options
       f.input :image, :for => :image, :as => :file, :hint => (f.object.image.file.filename if not f.object.image.file.nil? )
       f.input :url
-      
     end
     f.actions
   end

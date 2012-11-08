@@ -1,4 +1,10 @@
 pt-BR:
+  partner:
+    type:
+      cea: "CEA"
+      cejak: "CEJAK"
+      ctvp: "CTPV"
+      vovo_belinha: "Vovó Belinha"
   formtastic:
     yes: 'Sim'
     no: 'Não'

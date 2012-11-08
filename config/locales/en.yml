@@ -1,6 +1,12 @@
 en:
   global:
     and: and
+  partner:
+    type:
+      cea: "CEA"
+      cejak: "CEJAK"
+      ctvp: "CTPV"
+      vovo_belinha: "Vovó Belinha"
   home:
     aboutus: About Us
     about: About
