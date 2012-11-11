@@ -1,0 +1,12 @@
+#menu.cea
+    ul#menu-list
+      li
+        = link_to t('home.aboutus'), root_path(:anchor => "")
+      li
+        = link_to t('home.iniciatives'), root_path(:anchor => "departamentos")
+      li
+        = link_to t('home.vila_pinto'), root_path(:anchor => "historia")
+      li
+        = link_to t('home.testimonials'), root_path(:anchor => "depoimentos")
+      li.active
+        = link_to t('home.contact'), new_contact_path
