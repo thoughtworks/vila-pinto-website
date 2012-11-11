@@ -62,7 +62,7 @@
 	    width: 100%;
 	}
 
-	#sitemap-container #sitemap {
+	#sitemap-container {
     	width: 100%;
     }
 
@@ -156,7 +156,7 @@
 	    width: 45%;
 	}
 
-	#sitemap-container #sitemap {
+	#sitemap-container {
     	width: 90%;
     }
 
@@ -170,8 +170,8 @@
 		top: 100px;
 	}
 
-	#sitemap-container #sitemap {
-    	width: 80%;
+	#sitemap-container {
+    	width: 60%;
     }
 
     #sobre h1 {
@@ -193,7 +193,7 @@
 	}
 
 	#sitemap-container ul {
-    	margin-left: 25%;
+    	margin-left: 15%;
   	}
 }
 

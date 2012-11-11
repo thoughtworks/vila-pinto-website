@@ -1,0 +1,11 @@
+#menu.ctvp
+  .department CTVP
+  ul#menu-list.nav
+    li
+      = link_to t('home.about'),  ctvp_path
+    li
+      = link_to t('home.materiais'), ctvp_materiais_path
+    li
+      =link_to t('home.partners'), ctvp_sponsors_path
+    li
+      = link_to t('home.contact'), new_contact_path({to: 'ctvp'}), class: 'contact'

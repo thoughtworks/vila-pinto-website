@@ -5,4 +5,8 @@ class CejakController < ApplicationController
   def show
     render params[:project_name]
   end
+
+  def controller_class
+    'cejak'
+  end
 end

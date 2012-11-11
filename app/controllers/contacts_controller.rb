@@ -14,4 +14,11 @@ class ContactsController < ApplicationController
       render :action => 'new'
     end
   end
+
+  def controller_class
+    if params[:to]
+      @contact.to 
+    else "cea"
+    end
+  end
 end
