@@ -10,5 +10,5 @@
  *
  *= require_self
  *= require gmaps4rails/gmaps4rails
- *= require_tree .
+ *= require_directory .
  */
