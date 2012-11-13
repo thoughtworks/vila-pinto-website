@@ -14,9 +14,4 @@
 //= require jquery_ujs
 //= require gmaps4rails/gmaps4rails.base
 //= require gmaps4rails/gmaps4rails.googlemaps
-//= require bootstrap-carousel
-//= require bootstrap-scrollspy
-//= require donation
-//= require script
-
-
+//= require_directory .
