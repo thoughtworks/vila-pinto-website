@@ -9,16 +9,6 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require blueprint
  *= require gmaps4rails/gmaps4rails
- *= require cejak
- *= require color
- *= require contact
- *= require ctvp
- *= require donation
- *= require ie
- *= require layout
- *= require print
- *= require screen
- *= require vovo	
+ *= require_directory .
  */
