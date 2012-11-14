@@ -1,5 +1,4 @@
-
-[![Build Status](https://secure.travis-ci.org/thoughtworks/vila-pinto-website.png?branch=master)](http://travis-ci.org/thoughtworks/vila-pinto-website)
+{<img src="https://secure.travis-ci.org/thoughtworks/vila-pinto-website.png" />}[http://travis-ci.org/thoughtworks/vila-pinto-website]
 
 Vila Pinto Website
 ================
