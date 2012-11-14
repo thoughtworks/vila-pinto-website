@@ -10,5 +10,14 @@
  *
  *= require_self
  *= require gmaps4rails/gmaps4rails
- *= require_directory .
+ *= require cejak
+ *= require color
+ *= require contact
+ *= require ctvp
+ *= require donation
+ *= require ie
+ *= require layout
+ *= require print
+ *= require screen
+ *= require vovo
  */
