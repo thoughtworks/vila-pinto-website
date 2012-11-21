@@ -1,7 +1,6 @@
 @import "color";
-@import "ctvp/sprite/*.png";
-@include all-sprite-sprites;
-
+//@import "ctvp/sprite/*.png";
+//@include all-sprite-sprites;
 
 @mixin size($sprite) {
   height: sprite-sprite-height($sprite);
