@@ -218,6 +218,7 @@ DEPENDENCIES
   activevalidators
   carrierwave
   coffee-rails (~> 3.2.1)
+  compass
   compass-rails
   gmaps4rails
   jquery-rails
@@ -227,7 +228,7 @@ DEPENDENCIES
   rails (= 3.2.8)
   rails-translate-routes
   rspec-rails (~> 2.0)
-  sass-rails (~> 3.2.3)
+  sass-rails
   shoulda-matchers
   simple_form
   slim-rails
