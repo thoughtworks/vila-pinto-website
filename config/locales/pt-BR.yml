@@ -1,9 +1,22 @@
 pt-BR:
+  active_admin:
+    scopes:
+      all: "Todos"
+      cea: "CEA"
+      cejak: "CEJAK"
+      ctvp: "CTVP"
+      vovo_belinha: "Vovó Belinha"
   partner:
     type:
       cea: "CEA"
       cejak: "CEJAK"
-      ctvp: "CTPV"
+      ctvp: "CTVP"
+      vovo_belinha: "Vovó Belinha"
+  financial_report:
+    type:
+      cea: "CEA"
+      cejak: "CEJAK"
+      ctvp: "CTVP"
       vovo_belinha: "Vovó Belinha"
   formtastic:
     yes: 'Sim'
@@ -17,13 +30,23 @@ pt-BR:
       partner:
         one: Parceiro
         other: Parceiros
+      financial_report:
+        one: Relatório Financeiro
+        other: Relatório Financeiros
     attributes:
       partner:
         name: Nome
         url: URL
+        type: Iniciativa
         image: Imagem
         created_at: Data de Criação
-        updated_at: Data de Atualização				
+        updated_at: Data de Atualização
+      financial_report:
+        name: Nome
+        url: URL
+        type: Tipo       
+        created_at: Data de Criação
+        updated_at: Data de Atualização			
   global:
     and: e
   home:
