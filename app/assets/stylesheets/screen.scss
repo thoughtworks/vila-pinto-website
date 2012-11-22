@@ -178,7 +178,7 @@ h1 {
 }
 
 #departamentos {
-  height: 800px;
+  height: 860px;
   margin: 0;
   background-color: #eee;
  
@@ -191,9 +191,14 @@ h1 {
     color: #222;
 
     #cea {
-      padding-left: 36%;
       float: none;
       clear: both;
+
+      .nav {
+        img {
+          margin: 0% 10% 0 10%;
+        }
+      }
     }
   }
 
@@ -219,7 +224,6 @@ h1 {
   width: 28%;
   float: left;
   padding-left: 4%;
-  margin-top: 4%;
 
   h1 {
     margin-top: 50px;
