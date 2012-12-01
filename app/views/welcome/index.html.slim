@@ -7,6 +7,8 @@
     li
       = link_to t('home.vila_pinto'), "#historia", class: 'anchor-link'
     li
+      = link_to t('home.videos'), "#videos", class: 'anchor-link'
+    li
       = link_to t('home.testimonials'), "#depoimentos", class: 'anchor-link'
     li
       = link_to t('home.contact'), new_contact_path, class: 'contact'
@@ -65,8 +67,11 @@
       li = t('cea.item3')
       li = t('cea.item4')
       li = t('cea.item5')
-  iframe src="http://player.vimeo.com/video/52259940?badge=0" width="80%" height="50%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
   object width="80%" height="60%" <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fvilapintowebsite%2Fshow%2F&page_show_back_url=%2Fphotos%2Fvilapintowebsite%2F&user_id=78707398@N05&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=109615"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fvilapintowebsite%2Fshow%2F&page_show_back_url=%2Fphotos%2Fvilapintowebsite%2F&user_id=78707398@N05&jump_to=" width="860" height="570"></embed>
+#videos.content
+  h1
+    = t('home.videos')
+  iframe src="http://player.vimeo.com/video/52259940?badge=0" width="80%" height="90%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
 #depoimentos.content
   h1
     = t('home.testimonials')  

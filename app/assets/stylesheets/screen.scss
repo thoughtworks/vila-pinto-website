@@ -91,7 +91,7 @@ h1 {
     font-size: 1.1em;
 }
 
-#historia h1, #depoimentos h1, #departamentos h1.title {
+#historia h1, #depoimentos h1, #departamentos h1.title, #videos h1 {
   width: 95%;
   border-bottom: 5px solid #3F7CB4;
   padding-bottom: 10px;
@@ -252,12 +252,8 @@ h1 {
   }
 }
 
-#historia {
-  height: 1020px;
-
-  p {
-    margin-bottom: 4%;
-  }
+#videos {
+  height: 500px;
 
   object {
     margin: 40px 10%;
@@ -265,6 +261,14 @@ h1 {
     display: block;
     float: left;
   } 
+}
+
+#historia {
+  height: 1020px;
+
+  p {
+    margin-bottom: 4%;
+  }
 
   ul {
     list-style: circle;
