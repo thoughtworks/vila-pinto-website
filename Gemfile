@@ -14,6 +14,7 @@ gem "draper"
 gem "sass-rails"
 gem "compass"
 gem "compass-rails"
+gem 'nokogiri'
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'

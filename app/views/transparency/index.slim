@@ -1,0 +1,9 @@
+= render :partial => 'layouts/cea_menu'
+.content
+
+  h1 Relatórios Financeiros
+
+  ul
+    - @files.each do |file| 
+      li 
+        a href=file[:url] =file[:name].html_safe

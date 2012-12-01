@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" class="" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <body class="en shmodel-body deferred-resources file-preview-body nonmedia-folder">
+    <div style="display: none;" id="modal-behind"></div>
+    <div style="display: none;" id="modal">
+      <div id="modal-box">
+        <a href="#" id="modal-x" onclick="javascript: Modal.hide(); Event.stop(event); return false;"></a>
+        <h2 id="modal-title"></h2>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+    <div style="display: none;" id="modal-overlay" onclick="Modal.hide(); Event.stop(event); return false;"></div>
+    <div id="floaters"></div>
+    <div style="display:none" id="trash-can"></div>
+    <div style="display:none" id="grave-yard"></div>
+    <div style="display: none;" class="external-drop-indicator top"></div>
+    <div style="display: none;" class="external-drop-indicator right"></div>
+    <div style="display: none;" class="external-drop-indicator bottom"></div>
+    <div style="display: none;" class="external-drop-indicator left"></div>
+    <div style="display:none; margin-bottom: -10px" id="translate-div">
+      <form action="/translation_suggest" onsubmit="TranslationSuggest.submit_suggest(event); return false;" method="POST" id="translation-suggest-form">
+        <input type="hidden" name="locale" value="en" /><input type="hidden" name="locale_url" value="https://www.dropbox.com/sh/5mdvv2s8r332mxw/UofqHHNdoJ" /><input type="hidden" name="msg_id" value="" id="translation-msg-id" />
+        <p class="clean"><label for="bad_text">Please paste or type the improper translation</label></p>
+        <div id="part-one">
+          <p><span style="display: none" id="bad-i18n-text-error" class="error-message">We could not find that string on this page.</span><textarea class="act_as_block textinput" rows="3" cols="40" id="bad-i18n-text" name="bad_text"></textarea></p>
+          <div id="bad-i18n-text-complete" class="autocomplete"></div>
+        </div>
+        <div id="part-two">
+          <div style="margin-bottom: 10px" id="translation-msg-display" class="emo hotbox"></div>
+          <p class="clean">Original English text</p>
+          <div style="margin-bottom: 10px" id="translation-orig-msg-display" class="green-hotbox"></div>
+          <p class="clean"><label for="suggested_text">Suggested translation</label></p>
+          <p><textarea rows="3" cols="40" name="suggested_text" class="textinput act_as_block"></textarea></p>
+          <p class="clean"><label for="explanation">Explanation of the problem</label></p>
+          <p><textarea rows="3" cols="40" name="explanation" class="textinput act_as_block"></textarea></p>
+          <div class="modal-buttons"><input onclick="TranslationSuggest.start_wizard(event);return false;" type="button" id="translation-back-button" value="Back" class="freshbutton" /><input type="submit" onclick="TranslationSuggest.submit_suggest(event); return false;" value="Suggest translation" class="freshbutton-blue" /></div>
+        </div>
+      </form>
+    </div>
+    <div id="notify-wrapper"><span style="display: none;" id="notify"><span id="notify-msg">Sorry, there was a problem loading this page.</span></span></div>
+    <div id="outer-frame">
+      <div style="display:none;" id="modal-locale-selector">
+        <ul>
+          <li><a data-locale="de" class="locale-option">Deutsch</a></li>
+          <li><a data-locale="en" class="locale-option">English</a></li>
+          <li><a data-locale="es" class="locale-option">Español (Latinoamérica)</a></li>
+          <li><a data-locale="es_ES" class="locale-option">Español (España)</a></li>
+          <li><a data-locale="fr" class="locale-option">Français</a></li>
+          <li><a data-locale="it" class="locale-option">Italiano</a></li>
+          <li><a data-locale="ja" class="locale-option">日本語</a></li>
+          <li><a data-locale="ko" class="locale-option">한국어</a></li>
+        </ul>
+      </div>
+      <div id="page-content">
+        <div class="nav-header">
+          <a href="//www.dropbox.com?src=shmodel" target="_top" class="logo"><img src="https://dt8kf6553cww8.cloudfront.net/static/images/new_logo_shmodel_2x-vflkCIiHR.png" alt="Dropbox" class="big" /><img src="https://dt8kf6553cww8.cloudfront.net/static/images/new_logo_shmodel-vfl9sSGTp.png" alt="Dropbox" class="small" /></a>
+          <div class="filename shmodel-filename"><span id="emsnippet-18e423a89cde0a58"></span></div>
+          <div class="buttons">
+            <a href="#" class="freshbutton-blue freshdropdown-button" onclick="SharingModel.toggle_dropdown(event, $('download-menu'), $('download-menu-button'))" id="download-menu-button">Download<img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="" class=" sprite sprite_web s_web_arrow_white" /></a>
+            <div style="display: none;" id="download-menu" class="chat-bubble freshdropdown-menu">
+              <ul>
+                <li><a href="https://dl.dropbox.com/shz/5mdvv2s8r332mxw/UofqHHNdoJ/Public?top_level_offset=0" id="download_button_link" onclick="FreshDropdown.hide_all()"><img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="" class=" sprite sprite_web s_web_download_arrow" />Download as .zip</a></li>
+                <li><a class="a2md-button" onclick="SharingModel.show_c2d_modal(false); return false;" id="add_to_my_dropbox_link"><img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="" class=" sprite sprite_web s_web_dropbox" />Add to my Dropbox</a></li>
+              </ul>
+            </div>
+            <a id="create-an-account-button" href="/register?signup_tag=shmodel" target="_blank" class="freshbutton-lightblue">Sign up for Dropbox</a>
+            <div id="account-header">
+              <ul class="nav">
+                <li>
+                  <div id="top-login-wrapper">
+                    <a href="/login" id="login-hover-link"><img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="" class="link-img sprite sprite_web s_web_door_in link-img" />Sign in<img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="padding: 0; margin-left: 2px; margin-top: -1px;" class="link-img sprite sprite_web s_web_login_arrow link-img" id="login-hover-dropdown-icon" /></a>
+                    <div id="login-hover-cont" class="offscreen chat-bubble">
+                      <form action="https://www.dropbox.com/login" method="post">
+                        <input type="hidden" name="t" value="HiHjih0g94jyaItez1Z2D9yI" />
+                        <div class="sick-input small"><label for="login_email_elm">Email</label><input type="text" id="login_email_elm" name="login_email" tabindex="1" /></div>
+                        <div class="sick-input small"><label for="login_password_elm">Password</label><input type="password" id="login_password_elm" name="login_password" tabindex="2" /></div>
+                        <p style="margin-bottom: 0.5em; line-height: 28px;"><input style="vertical-align: middle; margin-left: 0;" name="remember_me" class="no-border" type="checkbox" id="remember_me" tabindex="3" /><label style="vertical-align: middle; cursor: pointer; " for="remember_me">Remember me</label><input tabindex="4" type="submit" class="freshbutton-blue" value="Sign in" id="toplogin-submit" /><input type="hidden" name="cont" value="https://www.dropbox.com/sh/5mdvv2s8r332mxw/UofqHHNdoJ" /></p>
+                        <p class="create-account"><a href="/register" id="login-create-an-account">Create an account</a></p>
+                      </form>
+                      <div class="chat-bubble-arrow-border"></div>
+                      <div class="chat-bubble-arrow"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="shmodel-content-area">
+          <div class="filename-below shmodel-filename"><span id="emsnippet-ed12778770cade6c"></span></div>
+          <div id="content-wrapper">
+            <div id="top-bar">
+              <h3 id="folder-title" class="shmodel-filename"><span id="emsnippet-669a264c5098cbbf"></span></h3>
+            </div>
+            <div style="" id="list-view-container" class="gallery-view-section">
+              <div id="list-view-header" class="list-view-cols clearfix">
+                <div class="filename-col">Name</div>
+                <div class="filesize-col">Size</div>
+                <div class="modified-col">Modified</div>
+              </div>
+              <ol class="browse-files gallery-list-view">
+                <li class="browse-file list-view-cols">
+                  <div class="filename-col">
+                    <a href="https://www.dropbox.com/sh/5mdvv2s8r332mxw/yQ7EC3RL3F/Pokemon%20-%20Fire%20Red.GBA" target="_top" class="thumb-link" onclick="" rel="nofollow"><img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="" class="icon sprite sprite_web s_web_page_white_32 icon" /></a>
+                    <div class="filename"><a href="https://www.dropbox.com/sh/5mdvv2s8r332mxw/yQ7EC3RL3F/Pokemon%20-%20Fire%20Red.GBA" target="_top" class="filename-link" onclick="" rel="nofollow"><span id="emsnippet-79054a3104fc01f1"></span></a></div>
+                  </div>
+                  <div class="filesize-col"><span class="size">16 MB</span></div>
+                  <div class="modified-col"><span><span class="modified-time">16 secs ago</span></span></div>
+                  <br class="clear" />
+                </li>
+                <li class="browse-file list-view-cols">
+                  <div class="filename-col">
+                    <a href="https://www.dropbox.com/sh/5mdvv2s8r332mxw/YyKv_-GRMY/scala-impatient.pdf" target="_top" class="thumb-link" onclick="" rel="nofollow"><img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="" class="icon sprite sprite_web s_web_page_white_acrobat_32 icon" /></a>
+                    <div class="filename"><a href="https://www.dropbox.com/sh/5mdvv2s8r332mxw/YyKv_-GRMY/scala-impatient.pdf" target="_top" class="filename-link" onclick="" rel="nofollow"><span id="emsnippet-4dd995abf6e14ec2"></span></a></div>
+                  </div>
+                  <div class="filesize-col"><span class="size">6.16 MB</span></div>
+                  <div class="modified-col"><span><span class="modified-time">10 days ago</span></span></div>
+                  <br class="clear" />
+                </li>
+              </ol>
+            </div>
+            <a href="/copyright_complaint?stoken=5mdvv2s8r332mxw&amp;spath=&amp;shash=UofqHHNdoJ" class="content-flag title_bubble" rel="nofollow" title="Flag for copyright">Flag for copyright</a>
+          </div>
+          <div style="display: none;" id="modal-progress-overlay"></div>
+          <div style="display: none;" id="modal-progress-content">
+            <div id="modal-progress-container">
+              <div id="modal-progress-bar"></div>
+              <div id="modal-progress-text"></div>
+            </div>
+          </div>
+        </div>
+        <div id="twitter-login" style="display:none;">
+          <form action="#" onsubmit="Twitter.login(); return false">
+            <div class="center">
+              <img src="/static/images/twitter_logo.jpg" alt="twitter" />
+              <p id="twitter-status" style="margin-top:1.5em;">Before you can tweet this link, we need to connect to your Twitter account.</p>
+              <p style="margin: 1.5em 0 3.5em 0;">
+                <a href="#" onclick="Twitter.do_auth(); return false;">
+                <img src="/static/images/twitter_signin.png" alt="" />
+                </a>
+              </p>
+              <div class="modal-buttons">
+                I've finished signing in to Twitter
+                <input type="button" class="freshbutton-blue" onclick="Twitter.onLoginSuccessCallback();" value="Tweet my message" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="facebook-auth" style="display:none;">
+          <div class="center">
+            <img src="/static/images/facebook_logo.jpg" alt="facebook" />
+            <p id="facebook-status" style="margin-top:1.5em;">Before you can post this link, we need to connect to your Facebook account.</p>
+            <p style="margin: 1.5em 0 3.5em 0;">
+              <a href="#" onclick="FacebookOAuth.do_auth(); return false;">
+              <img src="/static/images/facebook_signin.png" alt="" />
+              </a>
+            </p>
+            <div class="modal-buttons">
+              I've finished signing in to Facebook <input style="margin-left: 0.5em;margin-bottom: -1px;" type="button" class="freshbutton-blue" onclick="Modal.vars.action();" value="Post my message" />
+            </div>
+          </div>
+        </div>
+        <div id="twitter-posting" style="display:none;">
+          <div class="center">
+            <img src="/static/images/twitter_logo.jpg" alt="Twitter" />
+            <h3 style="margin-top: 3em;"><img src="/static/images/icons/ajax-loading-small.gif" class="h2-img" alt="" />Tweeting</h3>
+          </div>
+        </div>
+        <div id="facebook-posting" style="display:none;">
+          <div class="center">
+            <br /><br />
+            <img src="/static/images/facebook_logo.jpg" alt="Facebook" />
+            <br /><br />
+            <h3><img src="/static/images/icons/ajax-loading-small.gif" class="h2-img" alt="" />Posting to Facebook</h3>
+            <br />
+          </div>
+        </div>
+        <div id="disable-token-modal" style="display:none;">
+          <p>Are you sure you want to remove this link? Once the link is removed, nobody else will be able to view this file or folder.</p>
+          <div class="modal-buttons">
+            <input type="button" value="Remove link" onclick="SharingModel.do_remove(Modal.vars);" class="freshbutton-blue" />
+            <input type="button" value="Cancel" onclick="Modal.hide();" class="freshbutton" />
+          </div>
+        </div>
+        <div id="album-disable-token-modal" style="display:none;">
+          <p>Are you sure you want to unshare '<span class="album-unshare-name">&nbsp;</span>'? Once it's unshared, nobody else will be able to view this album.</p>
+          <div class="modal-buttons">
+            <input type="button" value="Unshare" onclick="SharingModel.do_remove(Modal.vars);" class="freshbutton-blue" />
+            <input type="button" value="Cancel" onclick="Modal.hide();" class="freshbutton" />
+          </div>
+        </div>
+        <div id="c2d-modal" style="display: none;">
+          <ul id="c2d-modal-tabs" class="modal-tabs clearfix">
+            <li><a href="#" class="selected" id="create-account">Create an account</a></li>
+            <li><a href="#" id="login-account">Sign in</a></li>
+          </ul>
+          <div id="create-account-content">
+            <p>
+              <span class="c2d-create-account-desc"></span>
+            </p>
+            <br />
+            <div>
+              <form id="c2d-register-form">
+                <input type="hidden" name="signup_tag" value="copy_to_dropbox" />
+                <input type="hidden" name="dl_redir" value="1" />
+                <div id="register-partial">
+                  <div class="error-plain-text" style="display:none;">
+                    <form:error name="fname" />
+                  </div>
+                  <div id="fname-field" class="sick-input">
+                    <input type="text" name="fname" id="fname" tabindex="5" />
+                    <label id="fname-label" for="fname">First name</label>
+                  </div>
+                  <div class="error-plain-text" style="display:none;">
+                    <form:error name="lname" />
+                  </div>
+                  <div id="lname-field" class="sick-input">
+                    <input type="text" name="lname" id="lname" tabindex="6" />
+                    <label id="lname-label" for="lname">Last name</label>
+                  </div>
+                  <div class="register-spacer"></div>
+                  <div class="error-plain-text" style="display:none;">
+                    <form:error name="email" />
+                  </div>
+                  <div id="new-email-field" class="sick-input clearfix">
+                    <input type="text" id="email" name="email" value="" tabindex="7" />
+                    <label id="new-email-label" for="email">Email</label>
+                    <script type="text/javascript">
+                      on_script_loaded(function() {
+                          new MailCheck('email', 'email_check_warning');
+                      });
+                    </script>
+                    <div id="email_check_warning" style="display: none;">
+                    </div>
+                  </div>
+                  <div class="error-plain-text" style="display:none;">
+                    <form:error name="password" />
+                  </div>
+                  <div id="new-password-field" class="sick-input">
+                    <input type="password" id="password" name="password" tabindex="8" />
+                    <label id="new-password-label" for="password">Password</label>
+                    <script type="text/javascript" charset="utf-8" src="/static/36576/javascript/password_strength.js"></script>
+                    <script type="text/javascript">
+                      on_script_loaded(function () {
+                          PasswordStrength.watch("password");
+                      });
+                    </script>
+                  </div>
+                  <div id="register-footer">
+                    <div id="tos-agree-field">
+                      <div class="error-plain-text" style="display:none;">
+                        <form:error name="tos_agree" />
+                      </div>
+                      <input type="checkbox" name="tos_agree" id="tos_agree" tabindex="9" />
+                      <label for="tos_agree">
+                      I agree to <a href="/terms" target="_blank">Dropbox Terms</a>
+                      </label>
+                    </div>
+                    <input type="submit" id="register-submit" name="register-submit" class="freshbutton-blue one-submit-at-a-time" value="Create account" tabindex="10" />
+                  </div>
+                </div>
+                <br class="clear" />
+              </form>
+            </div>
+          </div>
+          <div id="login-account-content" style="display:none;">
+            <div id="c2d-login">
+              <p>
+                <span class="c2d-login-desc"></span>
+              </p>
+              <br />
+              <form id="c2d-login-form">
+                <table id="login-table">
+                  <tr>
+                    <td>
+                      <div class="error-plain-text" style="display:none;">
+                        <form:error name="login_email" />
+                      </div>
+                      <div class="sick-input">
+                        <label for="email">Email</label>
+                        <input type="text" name="login_email" autocomplete="off" tabindex="13" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 10px 0;">
+                      <div class="error-plain-text" style="display:none;">
+                        <form:error name="login_password" />
+                      </div>
+                      <div class="sick-input">
+                        <label for="password">Password</label>
+                        <input type="password" name="login_password" autocomplete="off" tabindex="14" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input style="float:right" type="submit" id="login_submit" name="login_submit" class="freshbutton-blue" value="Sign in" tabindex="15" />
+                    </td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+            <div id="c2d-twofactor-login" style="display: none;">
+              <p class="c2d-header">
+                Enter security code
+              </p>
+              <p id="sms-msg">
+                We sent a security code to your phone ending in <span class="last-four-digits"></span>.
+              </p>
+              <p id="offline-msg">
+                Enter the security code generated by your mobile authenticator app.
+              </p>
+              <br />
+              <form id="c2d-twofactor-login-form">
+                <div id="c2d-twofactor-error" class="error-message"></div>
+                <div class="sick-input">
+                  <label for="email">6-digit code</label>
+                  <input type="text" id="c2d-twofactor-code" name="twofactor_code" autocomplete="off" tabindex="13" />
+                </div>
+                <input type="submit" id="twofactor_login_submit" name="twofactor_login_submit" class="freshbutton-blue" value="Submit code" tabindex="15" />
+                <p class="resend-code">
+                  <a id="c2d-resend-link">Didn't receive one?</a>
+                </p>
+              </form>
+            </div>
+          </div>
+          <script type="text/javascript" charset="utf-8">
+            document.observe("script:loaded", function () {
+                window.c2d_tabs = new TabController("c2d-modal-tabs", {
+                   url_prefix: false
+                });
+            });
+          </script>
+        </div>
+        <div id="sharing-progress" style="display: none;">
+          <div class="orange-hotbox">
+            <img src="/static/images/icons/ajax-loader-trans.gif" alt="" />
+            Sharing...
+          </div>
+        </div>
+        <div id="sharing-posted" style="display: none;">
+          <div class="green-hotbox">
+            <table>
+              <tr>
+                <td>Message shared!</td>
+                <td style="width: 5px;"></td>
+                <td><a target="_blank" id="view-post"></a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id="sharing-posted-both" style="display: none;">
+          <div class="green-hotbox">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Link shared!</td>
+                  <td style="width: 5px;"></td>
+                  <td><a target="_blank" id="view-post" href="http://www.twitter.com/"><img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" alt="" class="sprite sprite_web  s_web_twitter " />View tweet</a></td>
+                  <td style="width: 5px;"></td>
+                  <td><a target="_blank" id="view-post" href="http://www.facebook.com/profile.php?v=wall"><img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" alt="" class="sprite sprite_web  s_web_facebook " />View post</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="inline-facebook-auth" style="display:none;">
+          <div class="orange-hotbox">
+            You need to <a id="connect-with-facebook">connect with Facebook</a> first.
+          </div>
+        </div>
+        <div id="inline-twitter-auth" style="display:none;">
+          <div class="orange-hotbox">
+            You need to <a id="connect-with-twitter">connect with Twitter</a> first.
+          </div>
+        </div>
+        <script>
+          document.observe('script:loaded', function() {
+            Util.live_jag('inline-facebook-auth', 'connect-with-facebook', 'onclick', "FacebookOAuth.do_auth(); return false;");
+            Util.live_jag('inline-twitter-auth', 'connect-with-twitter', 'onclick', "Twitter.do_auth(); return false;");
+          });
+        </script>
+        <div style="display:none;" id="file-preview-modal">
+          <div class="header"><a href="#" class="close"><img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="" class=" sprite sprite_web s_web_white_x" /></a></div>
+          <div class="preview">
+            <table class="preview-container-parent">
+              <tr>
+                <td class="preview-container">
+                  <div class="preview-content"></div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="file-preview-menu" class="menu">
+            <div class="file-title"><span class="album-name">&nbsp;</span><span class="filename">&nbsp;</span></div>
+            <div class="actions">&nbsp;</div>
+            <div class="paging"><a href="#" class="prev"><img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="" class=" sprite sprite_web s_web_arrow_left_white" /></a><span class="current_index"></span> of <span class="total"></span><a href="#" class="next"><img src="https://dt8kf6553cww8.cloudfront.net/static/images/icons/icon_spacer-vflN3BYt2.gif" style="" class=" sprite sprite_web s_web_arrow_right_white" /></a></div>
+          </div>
+          <div style="display:none;" class="delete-file-prompt chat-bubble-bottom">
+            <input type="button" id="lightbox-delete-photo" value="Delete" class="freshbutton-blue" /><br /><input type="button" id="lightbox-delete-cancel" value="Cancel" class="freshbutton" />
+            <div class="chat-bubble-arrow-border"></div>
+            <div class="chat-bubble-arrow"></div>
+          </div>
+        </div>
+      </div>
+      <noscript>
+        <p class="center">The Dropbox website requires JavaScript.</p>
+      </noscript>
+    </div>
+    <!--[if IE]><iframe onload="on_script_loaded(function() { HashKeeper.reloading=false; });" style="display: none" name="hashkeeper" src="/blank" height="1" width="1" id="hashkeeper"></iframe><![endif]-->
+    <div style="position: absolute; top: 0; left: 0; font-family: Courier" id="ieconsole"></div>
+    <div style="position:absolute; top:-10000px;width:0px; height:0px; left: 0;" id="FB_HiddenContainer"></div>
+    <div style="display:none;" id="notice-container" class="clearfix"></div>
+    
+  </body>
+</html>
