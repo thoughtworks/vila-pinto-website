@@ -304,32 +304,3 @@ h1 {
   } 
 
 }
-
-body.bp {
-  //@include blueprint-typography(true);
-  //@include blueprint-utilities;
-  //@include blueprint-debug;
-  //@include blueprint-interaction;
-}
-
-form.bp {
-  //@include blueprint-form;
-  //@include blueprint-scaffolding; 
-}
-
-body.two-col {
-  #container {
-    //@include container; 
-  }
-  #header, #footer {
-    //@include column($blueprint-grid-columns); 
-  }
-  #sidebar {
-    $sidebar-columns: floor($blueprint-grid-columns / 3);
-    //@include column($sidebar-columns); 
-  }
-  #content {
-    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
-    //@include column($content-columns, true); 
-  } 
-}
