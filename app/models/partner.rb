@@ -1,5 +1,5 @@
 class Partner < ActiveRecord::Base
-  set_inheritance_column '' # sets to nil to be possible use type as a common column
+  self.inheritance_column = '' # sets to nil to be possible use type as a common column
   values_for :type, :has => [:cea, :cejak, :ctvp, :vovo_belinha], :add => [:predicate_methods, :constants]
 
   attr_accessible :name, :url, :image, :type
