@@ -255,12 +255,30 @@ h1 {
 #videos {
   height: 500px;
 
-  object {
-    margin: 40px 10%;
-    margin-bottom: 0px;
+  iframe, object {
+    margin: 0 auto;
     display: block;
-    float: left;
-  } 
+    position: absolute;
+    margin-left: 9%;
+    margin-top: 10%;
+  }
+
+  a {
+    display: block;
+    
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  #container-video {
+
+  }
+
+  #menu-video {
+    float: right;
+  }
 }
 
 #historia {
@@ -277,10 +295,13 @@ h1 {
     margin-bottom: 10px;
   }
   
-  iframe {
-    margin: 0 auto;
+  object {
+    position: relative;
+    margin: 40px 10%;
+    margin-bottom: 0px;
     display: block;
-  }
+    float: left;
+  } 
 
 }
 

@@ -56,4 +56,15 @@ $(document).ready(function() {
       listItem.addClass("active");
     }
   });
+
+  $('#menu-video a').click(function () {
+    $('#container-video iframe, #container-video object').hide();
+    var video1 = $("#video1").attr("src");
+    var video2 = $("#video2").attr("src");
+    var video3 = $("#video3").attr("src");
+    $("#video1").attr("src",video1);
+    $("#video2").attr("src",video2);
+    $("#video3").attr("src",video3);
+    $('#' + $(this).attr('videolink')).show();
+  });
 });
