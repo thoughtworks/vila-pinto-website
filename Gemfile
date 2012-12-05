@@ -7,7 +7,8 @@ gem 'rails-translate-routes'
 gem 'gmaps4rails'
 gem 'activeadmin'
 gem "meta_search", '>= 1.1.0.pre'
-gem "carrierwave"
+gem "carrierwave", '~> 0.7.0'
+gem "carrierwave-google_drive"
 gem "activevalidators"
 gem "values_for"
 gem "draper"
