@@ -253,14 +253,8 @@ h1 {
 }
 
 #videos {
-  height: 500px;
-
   iframe, object {
-    margin: 0 auto;
     display: block;
-    position: absolute;
-    margin-left: 9%;
-    margin-top: 10%;
   }
 
   a {
@@ -273,11 +267,14 @@ h1 {
   }
 
   #container-video {
-
+    float: left;
+    width: 80%;
+    height: 100%;
+    margin-right: 1%;
   }
 
   #menu-video {
-    float: right;
+    float: left;
   }
 }
 
