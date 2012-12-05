@@ -5,17 +5,7 @@ $(document).ready(function() {
     $('#menu-list.nav > li:first').addClass('active');
   }
 
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > $('#header').height()) {
-      $('#menu').css('position', 'fixed').css('top', 0);
-      $('#menu').css('opacity', '0.9');
-      $('#sobre').css('margin-top', 50);
-    } else {
-      $('#menu').css('position', 'relative');
-      $('#menu').css('opacity', '1');
-      $('#sobre').css('margin-top', 0);
-    }
-  });
+  dockMenuBarOnTop();
 
   $(".anchor-link").not(".sobre").click(function(event) {
     event.preventDefault(event);
@@ -57,3 +47,17 @@ $(document).ready(function() {
     }
   });
 });
+
+function dockMenuBarOnTop(){
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > $('#header').height()) {
+        $('#menu').css('position', 'fixed').css('top', 0);
+        $('#menu').css('opacity', '0.9');
+        $('#sobre').css('margin-top', 50);
+    } else {
+        $('#menu').css('position', 'relative');
+        $('#menu').css('opacity', '1');
+        $('#sobre').css('margin-top', 0);
+    }
+  });
+}
