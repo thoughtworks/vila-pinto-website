@@ -1,14 +1,28 @@
 en:
+  active_admin:
+    scopes:
+      all: "All"
+      cea: "CEA"
+      cejak: "CEJAK"
+      ctvp: "CTVP"
+      vovo_belinha: "Vovó Belinha"
   global:
     and: and
   partner:
     type:
       cea: "CEA"
       cejak: "CEJAK"
-      ctvp: "CTPV"
+      ctvp: "CTVP"
+      vovo_belinha: "Vovó Belinha"
+  financial_report:
+    type:
+      cea: "CEA"
+      cejak: "CEJAK"
+      ctvp: "CTVP"
       vovo_belinha: "Vovó Belinha"
   home:
     aboutus: About Us
+    video: Videos
     about: About
     history: History
     vila_pinto: Vila Pinto

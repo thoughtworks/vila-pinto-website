@@ -91,7 +91,7 @@ h1 {
     font-size: 1.1em;
 }
 
-#historia h1, #depoimentos h1, #departamentos h1.title {
+#historia h1, #depoimentos h1, #departamentos h1.title, #videos h1 {
   width: 95%;
   border-bottom: 5px solid #3F7CB4;
   padding-bottom: 10px;
@@ -136,7 +136,7 @@ h1 {
 }
 
 .projects_small_icon {
-	width: 20px;
+	width: 32px;
 	height: 20px;
 }
 
@@ -178,10 +178,10 @@ h1 {
 }
 
 #departamentos {
-  height: 500px;
+  height: 860px;
   margin: 0;
   background-color: #eee;
-  
+ 
   img {
     margin: 10% 10% 0 10%;
     width: 80%;
@@ -189,6 +189,16 @@ h1 {
 
   a {
     color: #222;
+
+  }
+  
+  #cea {
+    float: none;
+    clear: both;
+
+    img {
+      margin: 0% 10% 0% 10%;
+    }
   }
 
   h1 {
@@ -242,19 +252,41 @@ h1 {
   }
 }
 
+#videos {
+  height: 500px;
+
+  iframe, object {
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    margin-left: 9%;
+    margin-top: 10%;
+  }
+
+  a {
+    display: block;
+    
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  #container-video {
+
+  }
+
+  #menu-video {
+    float: right;
+  }
+}
+
 #historia {
   height: 1020px;
 
   p {
     margin-bottom: 4%;
   }
-
-  object {
-    margin: 40px 10%;
-    margin-bottom: 0px;
-    display: block;
-    float: left;
-  } 
 
   ul {
     list-style: circle;
@@ -263,33 +295,12 @@ h1 {
     margin-bottom: 10px;
   }
   
-  iframe {
-    margin: 0 auto;
+  object {
+    position: relative;
+    margin: 40px 10%;
+    margin-bottom: 0px;
     display: block;
-  }
+    float: left;
+  } 
 
-}
-
-body.bp {
-  @include blueprint-typography(true);
-  @include blueprint-utilities;
-  @include blueprint-debug;
-  @include blueprint-interaction;
-}
-
-form.bp {
-  @include blueprint-form;
-  @include blueprint-scaffolding; }
-
-body.two-col {
-  #container {
-    @include container; }
-  #header, #footer {
-    @include column($blueprint-grid-columns); }
-  #sidebar {
-    $sidebar-columns: floor($blueprint-grid-columns / 3);
-    @include column($sidebar-columns); }
-  #content {
-    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
-    @include column($content-columns, true); } 
 }

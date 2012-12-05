@@ -9,6 +9,8 @@ VilaPintoWebsite::Application.routes.draw do
 
   match '/donation' => 'donation#index', as: :donation
 
+  match '/transparency' => 'transparency#index', as: :transparency
+
   match '/cejak' => 'cejak#index', as: :cejak
   match '/ctvp' => 'ctvp#index', as: :ctvp
   match '/vovo' => 'vovo#index', as: :vovo

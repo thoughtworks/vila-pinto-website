@@ -8,5 +8,7 @@
         = link_to t('home.vila_pinto'), root_path(:anchor => "historia")
       li
         = link_to t('home.testimonials'), root_path(:anchor => "depoimentos")
-      li.active
+      li
+        = link_to t('home.transparency'), transparency_path
+      li
         = link_to t('home.contact'), new_contact_path
