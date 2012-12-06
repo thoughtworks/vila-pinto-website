@@ -25,5 +25,5 @@ VilaPintoWebsite::Application.routes.draw do
 
   match '/cejak/projects/:project_name' => 'cejak#show', as: :cejak_project
 
-  ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
+  #ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
 end
