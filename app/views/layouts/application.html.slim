@@ -23,19 +23,19 @@ html
     = render :partial => 'layouts/google_analytics'
   body data-spy="scroll" data-target="#menu" data-offset="70"
     #header class=controller.controller_class
-      = link_to image_tag(controller_class + ".png", id: 'logo', class: controller_class), root_path
+      = link_to image_tag(controller_class + ".png", id: 'logo', alt: "CEA logo", title: "CEA - Centro de Educação Ambiental", class: controller_class), root_path
       #navigation
         = link_to root_path, :class => 'cea page_link', :title => 'CEA - Centro de Educação Ambiental' do
-          = image_tag("logoceawhite.png", :alt => "CEA - Centro de Educação Ambiental", :title => "CEA - Centro de Educação Ambiental")
+          = image_tag("logoceawhite.png", :alt => "CEA link", :title => "CEA - Centro de Educação Ambiental")
           label.short CEA
         = link_to ctvp_path, :class => 'ctvp page_link', :title => 'CTVP - Centro de Triagem da Vila Pinto' do
-          = image_tag("logoceawhite.png", :alt => 'CTVP - Centro de Triagem da Vila Pinto', :title => 'CTVP - Centro de Triagem da Vila Pinto')
+          = image_tag("logoceawhite.png", :alt => 'CTVP link', :title => 'CTVP - Centro de Triagem da Vila Pinto')
           label.short CTVP
         = link_to cejak_path, :class => 'cejak page_link', :title => 'CEJAK - Centro Cultural James Kulisz' do
-          = image_tag("logoceawhite.png", :alt => 'CEJAK - Centro Cultural James Kulisz', :title => 'CEJAK - Centro Cultural James Kulisz')
+          = image_tag("logoceawhite.png", :alt => 'CEJAK link', :title => 'CEJAK - Centro Cultural James Kulisz')
           label.short CEJAK
         = link_to vovo_path, :class => 'vovo page_link', :title => 'Escola de Educação Infantil Vovó Belinha' do
-          = image_tag("logoceawhite.png", :alt => 'Escola de Educação Infantil Vovó Belinha', :title => 'Escola de Educação Infantil Vovó Belinha')
+          = image_tag("logoceawhite.png", :alt => 'Vovó Belinha link', :title => 'Escola de Educação Infantil Vovó Belinha')
           label Vovo Belinha
       = link_to donation_path, :id => "doe", :class => controller_class do
         p.doe-text
@@ -79,7 +79,7 @@ html
         .left
           = link_to donation_path, :class => "doe-container" do
             p.doe Doe Agora
-            = image_tag("doebg3.png", id:"doe_agora")
+            = image_tag("doebg3.png", id:"doe_agora", alt:"Doe agora link", title: "Doe agora")
           a.back-to-top href="/"
             .top Ir para o início
             = image_tag("arrow.png", id:"back_to_top")
