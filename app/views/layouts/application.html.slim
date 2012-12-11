@@ -37,9 +37,6 @@ html
         = link_to vovo_path, :class => 'vovo page_link', :title => 'Escola de Educação Infantil Vovó Belinha' do
           = image_tag("logoceawhite.png", :alt => 'Escola de Educação Infantil Vovó Belinha', :title => 'Escola de Educação Infantil Vovó Belinha')
           label Vovo Belinha
-      #localization
-        = link_to image_tag("portuguese.png"), url_for(:only_path => false, :locale => 'pt-BR')
-        = link_to image_tag("english.png"), url_for(:only_path => false, :locale => 'en')
       = link_to donation_path, :id => "doe", :class => controller_class do
         p.doe-text
           = t('home.donation-text')
