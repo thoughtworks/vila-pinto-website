@@ -21,7 +21,9 @@
 #sobre.content
   h1
     = t('cea.mission')
-  p.two 
+  p.two xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Organization"
+    span property="v:name"
+      = t('cea.name') 
     = t('cea.about')
     = link_to ctvp_path, id: 'ctvp_inline_link' do
       img src="assets/ctvp/ctvp_link_symbol.png" class="projects_small_icon"
