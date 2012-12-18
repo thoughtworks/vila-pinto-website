@@ -23,7 +23,7 @@
     = t('cea.mission')
   p.two xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Organization"
     span property="v:name"
-      = t('cea.name') 
+      = t('cea.name')
     = t('cea.about')
     = link_to ctvp_path, id: 'ctvp_inline_link' do
       img src="assets/ctvp/ctvp_link_symbol.png" class="projects_small_icon"
@@ -37,6 +37,12 @@
       img src="assets/vovo/vovo_link_symbol.png" class="projects_small_icon"
       |  Vovó Belinha&nbsp;
     | .
+    div typeof="v:address"
+      span property="v:street-address" content="Avenida Joaquim Porto Villanova"
+      span property="v:locality" content="Porto Alegre"
+      span property="v:region" content="Rio Grande do Sul"
+      span property="v:country-name" content="Brazil"
+      span property="v:postal-code" content="91410-400"
 #departamentos.content
   h1.title = t('home.iniciatives')
   #cea
