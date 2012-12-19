@@ -13,6 +13,42 @@ http://www.youtube.com/watch?v=ejIlcZJd4cA
 Instructions
 ==========
 
+Ubuntu Instalation
+-------------------
+1 - Install git
+    	sudo apt-get install git
+	
+2 - Install RVM - Ruby Version Manager
+	curl -L get.rvm.io | bash -s stable --auto
+	
+	ps: you might need to install curl: sudo apt-get install curl
+	
+3 - Install Ruby with Readline support
+	sudo rvm install 1.9.3 --with-readline-dir=/usr
+
+4 - Download Vila Pinto Project
+	git clone https://github.com/thoughtworks/vila-pinto-website.git
+	
+5 - Use ruby with gemset global and install bundler
+	rvm gemset use global && gem install bundler
+	
+6 - Broke on postgresql problem
+	sudo apt-get install libpq-dev
+	
+	ps: if any of the gems fails, run the command it suggests, like "gem install pg -v '0.14.1'". If it fails, it will show which lib is missing, so do a "sudo apt-get install [MISSING LIB]".
+
+7 - Execute "bundle install" until no error is seeing. If necessary, install the missing libs and run "bundle install" again.
+
+	ps: if you get a error like "missing javascript runtime", then run 
+	"sudo apt-get install nodejs"
+	
+8 - Change bootstrap permission to execute
+	chmod +x bootstrap.sh
+
+9 - Execute bootstrap.sh	
+
+10 - Access Vila Pinto through: http://localhost:3000
+
 Development
 -----------
 

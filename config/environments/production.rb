@@ -12,7 +12,7 @@ VilaPintoWebsite::Application.configure do
   config.serve_static_assets = true
 
   #precompile assets
-  config.assets.precompile += %w( respond.js respond-proxy.html respond.proxy.js )
+  config.assets.precompile += %w( respond.js respond-proxy.html respond.proxy.js active_admin.css active_admin.js active_admin/print.css )
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
