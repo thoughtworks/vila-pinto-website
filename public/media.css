@@ -20,6 +20,10 @@
 		height: 80px;
 	}
 
+	#container-video iframe {
+		height: 200px;
+	}
+
 	#menu-video {
 		margin-left: 2.5%;
 		width: 100%;
@@ -150,6 +154,10 @@
 		display: block;
 	}
 
+	#container-video iframe {
+		height: 300px;
+	}
+
 	#videos a img {
 		width: 100px;
 		height: 100px;
@@ -189,6 +197,10 @@
 @media screen and (min-width: 768px) {
 	#doe {
 		top: 100px;
+	}
+
+	#container-video iframe {
+		height: 500px;
 	}
 
 	#videos a {
