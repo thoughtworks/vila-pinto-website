@@ -255,22 +255,18 @@ h1 {
 #videos {
   iframe, object {
     display: block;
+    margin-left: 3%;
   }
 
   a {
     display: block;
-    
-    img {
-      width: 100px;
-      height: 100px;
-    }
   }
 
   #container-video {
     float: left;
     width: 80%;
     height: 100%;
-    margin-right: 1%;
+    margin-right: 3%;
   }
 
   #menu-video {

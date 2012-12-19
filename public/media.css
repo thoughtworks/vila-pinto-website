@@ -10,6 +10,22 @@
 		display: none;
 	}
 
+	#videos a {
+		float: left;
+		margin-right: 1%;
+	}
+
+	#videos a img {
+		width: 80px;
+		height: 80px;
+	}
+
+	#menu-video {
+		margin-left: 2.5%;
+		width: 100%;
+		margin-top: 1%;
+	}
+
 	.fb-like.content {
 		display: none;
 	}
@@ -134,6 +150,11 @@
 		display: block;
 	}
 
+	#videos a img {
+		width: 100px;
+		height: 100px;
+	}
+
 	#sobre p {
 		margin-top: 0px;
 		width: 50%;
@@ -168,6 +189,16 @@
 @media screen and (min-width: 768px) {
 	#doe {
 		top: 100px;
+	}
+
+	#videos a {
+		float: none;
+	}
+
+	#menu-video {
+		margin-top: 0%;
+		margin-left: 0%;
+		width: auto;
 	}
 
 	#sitemap-container {
