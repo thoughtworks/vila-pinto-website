@@ -2,8 +2,8 @@
 
 class ImageUploader < CarrierWave::Uploader::GoogleDrive
 
-  google_login 'vilapintoteste@gmail.com'
-  google_password 'vilapinto123'
+  google_login Settings.google_drive_credentials.login
+  google_password Settings.google_drive_credentials.password
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick

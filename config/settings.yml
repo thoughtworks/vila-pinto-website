@@ -1,0 +1,15 @@
+defaults: &defaults
+  google_drive_credentials:
+    login: 'vilapintoteste@gmail.com'
+    password: 'vilapinto123'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  google_drive_credentials:
+    login:  'tw@ceavilapinto.org.br'
+    password: 'poarecife'
