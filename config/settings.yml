@@ -9,6 +9,9 @@ development:
 test:
   <<: *defaults
 
+staging:
+  <<: *defaults
+
 production:
   google_drive_credentials:
     login:  'tw@ceavilapinto.org.br'
