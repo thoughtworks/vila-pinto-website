@@ -260,6 +260,14 @@ h1 {
 
   a {
     display: block;
+
+    img {
+       border: 5px solid white;
+
+       &.active {
+          border-color: $blue;
+       }
+    }
   }
 
   #container-video {

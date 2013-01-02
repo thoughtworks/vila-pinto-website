@@ -58,6 +58,9 @@ $(document).ready(function() {
     $("#video3").attr("src",video3);
     $("#video4").attr("src",video4);
     $('#' + $(this).attr('videolink')).show();
+
+    $('#menu-video a img').removeClass('active');
+    $(this).find('img').addClass('active');
   });
 });
 
