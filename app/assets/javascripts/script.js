@@ -62,6 +62,7 @@ $(document).ready(function() {
     $('#menu-video a img').removeClass('active');
     $(this).find('img').addClass('active');
   });
+  $(".carousel").carousel();
 });
 
 function dockMenuBarOnTop(){

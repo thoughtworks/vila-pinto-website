@@ -11,7 +11,7 @@ html
 
     link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'
     link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'
-    
+
     link href="../../media.css" type="text/css" rel="stylesheet"
     link href="../../font-awesome.css" type="text/css" rel="stylesheet"
     link href="../../font-awesome-ie7.css" type="text/css" rel="stylesheet"
@@ -42,6 +42,8 @@ html
         p.doe-text
           = t('home.donation-text')
         = image_tag("doebg3.png")
+      = yield :cea_partners
+
     = yield
     javascript:
       (function(d, s, id) {

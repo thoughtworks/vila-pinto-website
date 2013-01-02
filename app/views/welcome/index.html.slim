@@ -1,3 +1,8 @@
+= content_for :cea_partners do
+    .carousel.slide.apoio
+      .carousel-inner
+        = render :partial => 'welcome/partner', :collection => @partners
+
 #menu
   ul#menu-list.nav
     li.active
