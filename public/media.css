@@ -45,6 +45,10 @@
 	#doe {
 		top: 0;
 	}
+	
+	#slides {
+		top: 70px;	
+	}
 
 	.two {
 		line-height: 1.4em;
@@ -119,6 +123,10 @@
 
   	#doe {
 		top: 60px;
+	}
+	
+	#slides {
+		top: 130px;	
 	}
 
 	.two {
@@ -198,6 +206,10 @@
 	#doe {
 		top: 100px;
 	}
+	
+	#slides {
+		top: 170px;	
+	}
 
 	#container-video iframe {
 		height: 500px;
@@ -233,6 +245,10 @@
 @media screen and (min-width: 900px) {
 	#doe {
 		top: 130px;
+	}
+	
+	#slides {
+		top: 200px;	
 	}
 
 	#sitemap-container ul {

@@ -63,7 +63,7 @@
 }
 
 
-#doe {
+#doe,#slides {
   width: 170px;
   display: table;
   border: 2px solid white;
@@ -75,7 +75,7 @@
   padding: 2px;
   border-radius: 5px;
 
-  .doe-text {
+  .doe-text,.slides {
     margin-top: 5px;
     font-family: 'Handlee', cursive;
     font-size: 1.4em;
