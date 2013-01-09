@@ -51,6 +51,7 @@ blockquote {
 
       &.active a, &:hover a {
         color: $green !important;
+        background: none;
       }
       
       & a {
