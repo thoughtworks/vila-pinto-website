@@ -17,7 +17,6 @@ gem "compass"
 gem "compass-rails"
 gem 'nokogiri'
 gem "settingslogic"
-gem 'sitemap_generator'
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
