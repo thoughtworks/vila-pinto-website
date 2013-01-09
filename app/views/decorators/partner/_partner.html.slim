@@ -1,8 +1,8 @@
 .sprite-container
   - if partner.url.blank?
 	span.sprite
-		img src="#{partner.image.url}" alt="#{partner.name}"
+		img src="#{partner.image.url}" title="#{partner.name}" 
   - else
-	a.sprite href="#{partner.url}"
-		img src="#{partner.image.url}" alt="#{partner.name}"
+	a.sprite href="#{partner.url}" target="_blank"
+		img src="#{partner.image.url}" title="#{partner.name}"
 
