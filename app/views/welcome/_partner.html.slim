@@ -1,8 +1,8 @@
 div class="item #{'active' if partner_counter.zero?}"
   - if partner.url.blank?
-	span
+	span class="slides"
 		img src="#{partner.image.url}" alt="#{partner.name}"
   - else
-	a href="#{partner.url}"
+	a class="slides" href="#{partner.url}"
 		img src="#{partner.image.url}" alt="#{partner.name}"
 
