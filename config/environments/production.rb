@@ -9,7 +9,8 @@ VilaPintoWebsite::Application.configure do
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+  config.serve_static_assets = true 
+  config.static_cache_control = "public, max-age=30758400"
 
   #precompile assets
   config.assets.precompile += %w( respond.js respond-proxy.html respond.proxy.js active_admin.css active_admin.js active_admin/print.css )
@@ -18,7 +19,7 @@ VilaPintoWebsite::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
@@ -82,5 +83,4 @@ VilaPintoWebsite::Application.configure do
     :authentication => :plain,
   }
   ActionMailer::Base.delivery_method = :smtp
-
 end
