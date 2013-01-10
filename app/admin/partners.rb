@@ -16,7 +16,7 @@ ActiveAdmin.register Partner do
   index :download_links => false do
     column :name
     column :type do |partner|
-      translate_partner_type(partner.type)
+      translate_type(partner.type)
     end
     column :url
     column :updated_at

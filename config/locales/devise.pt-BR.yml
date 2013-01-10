@@ -1,4 +1,5 @@
 pt-BR:
+  file: "arquivo"
   errors:
     messages:
       expired: 'expirou, por favor solicite um novo'

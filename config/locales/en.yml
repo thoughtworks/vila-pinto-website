@@ -1,4 +1,5 @@
 en:
+  file: "file"
   active_admin:
     scopes:
       all: "All"
