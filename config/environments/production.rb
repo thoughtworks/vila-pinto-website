@@ -9,7 +9,7 @@ VilaPintoWebsite::Application.configure do
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = true
+  config.serve_static_assets = false
 
   #precompile assets
   config.assets.precompile += %w( respond.js respond-proxy.html respond.proxy.js active_admin.css active_admin.js active_admin/print.css )
