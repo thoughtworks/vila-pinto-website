@@ -7,7 +7,7 @@ class CejakController < ApplicationController
   end
 
   def transparency
-    @reports = FinancialReportDecorator.order("name DESC")
+    @reports = FinancialReportDecorator.order("name DESC").find_all_by_type(FinancialReport::TYPE_CEJAK)
   end
 
   def controller_class

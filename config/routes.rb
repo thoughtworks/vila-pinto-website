@@ -15,6 +15,7 @@ VilaPintoWebsite::Application.routes.draw do
 
   match '/ctvp/materiais' => 'ctvp#materiais', as: :ctvp_materiais
   match '/ctvp/sponsors' => 'ctvp#sponsors', as: :ctvp_sponsors
+  match '/ctvp/transparency' => 'ctvp#transparency', as: :ctvp_transparency
 
   match '/vovo/sponsors' => 'vovo#sponsors', as: :vovo_sponsors
   match '/vovo/donation' => 'vovo#donation', as: :vovo_donation
