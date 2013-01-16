@@ -31,17 +31,30 @@ CTVP_PARTNERS = [{:name => "Moinhos Shopping", :url => "http://www.moinhosshoppi
                  {:name => "UFRGS", :url => "http://www.ufrgs.br/", :image => "ufrgs.png"},
                  {:name => "Armazém Ventura", :url => "", :image => "ventura.png"}]
 
-VOVO_BELINHA_PARTNERS = [{:name => "Prefeitura de Porto Alegre", :url => "http://www2.portoalegre.rs.gov.br/portal_pmpa_novo/", :image => "prefeiturapoa.png"},                                  
+VOVO_BELINHA_PARTNERS = [{:name => "Prefeitura de Porto Alegre", :url => "http://www2.portoalegre.rs.gov.br/portal_pmpa_novo/", :image => "prefeiturapoa.png"},
                          {:name => "Renner", :url => "http://www.lojasrenner.com.br/", :image => "renner.png"}]
 
+CEA_PARTNERS = [{:name => "Gerdau", :url => "http://wwww.gerdau.com.br", :image => "gerdau.png"},
+                {:name => "Renner", :url => "http://www.lojasrenner.com.br/", :image => "renner.png"},
+                {:name => "Vonpar SA", :url => "http://www.vonpar.com.br/corporativo/", :image => "vonpar.jpg"},
+                {:name => "Sulgás", :url => "http://www.sulgas.rs.gov.br/", :image => "sulgas.jpeg"},
+                {:name => "Agiplan Financeira S.A.", :url => "http://ww2.agiplan.com.br/site/home/index.php", :image => "agiplan.jpg"}]
+
+
 CTVP_PARTNERS.each do |partner|
-  next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CTVP  
+  next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CTVP
   image = File.open(Rails.root.join('app','assets','images','ctvp','sprite',partner[:image]))
-  Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CTVP, :image => image  
+  Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CTVP, :image => image
 end
 
 VOVO_BELINHA_PARTNERS.each do |partner|
   next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_VOVO_BELINHA
   image = File.open(Rails.root.join('app','assets','images','ctvp','sprite',partner[:image]))
-  Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_VOVO_BELINHA, :image => image  
+  Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_VOVO_BELINHA, :image => image
+end
+
+CEA_PARTNERS.each do |partner|
+  next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CEA
+  image = File.open(Rails.root.join('app','assets','images','cea','sprite',partner[:image]))
+  Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CEA, :image => image
 end
