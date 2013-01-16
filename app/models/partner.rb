@@ -3,7 +3,7 @@ class Partner < ActiveRecord::Base
   values_for :type, :has => [:cea, :cejak, :ctvp, :vovo_belinha], :add => [:predicate_methods, :constants]
 
   attr_accessible :name, :url, :image, :type
-  mount_uploader :image, ImageUploader
+  mount_uploader :image, FileUploader
   
   validates :name, :presence => true, :length => { :maximum => 200 }
   validates :image, :presence => true
