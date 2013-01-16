@@ -322,6 +322,8 @@ h1 {
 .carousel-inner {
   img {
     width: 120px;
+    border: 2px solid white;
+    border-radius: 5px;
   }
 
   > .item {
