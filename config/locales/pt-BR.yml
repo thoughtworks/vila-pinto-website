@@ -26,6 +26,9 @@ pt-BR:
       financial_report:
         one: Relatório Financeiro
         other: Relatórios Financeiros
+      admin_user:
+        one: Administrador
+        other: Administradores
     attributes:
       partner:
         name: Nome
@@ -37,9 +40,12 @@ pt-BR:
       financial_report:
         name: Nome
         url: URL
-        type: Tipo       
+        type: Tipo
         created_at: Data de Criação
         updated_at: Data de Atualização			
+      admin_user:
+        password: Senha
+        password_confirmation: Confirmação de Senha
   global:
     and: e
   home:
