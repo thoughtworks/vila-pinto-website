@@ -34,7 +34,7 @@ CTVP_PARTNERS = [{:name => "Moinhos Shopping", :url => "http://www.moinhosshoppi
 VOVO_BELINHA_PARTNERS = [{:name => "Prefeitura de Porto Alegre", :url => "http://www2.portoalegre.rs.gov.br/portal_pmpa_novo/", :image => "prefeiturapoa.png"},
                          {:name => "Renner", :url => "http://www.lojasrenner.com.br/", :image => "renner.png"}]
 
-CEA_PARTNERS = [{:name => "Gerdau", :url => "http://wwww.gerdau.com.br", :image => "gerdau.png"},
+CEA_PARTNERS = [{:name => "Gerdau", :url => "http://wwww.gerdau.com.br", :image => "gerdau.jpg"},
                 {:name => "Renner", :url => "http://www.lojasrenner.com.br/", :image => "renner.png"},
                 {:name => "Vonpar SA", :url => "http://www.vonpar.com.br/corporativo/", :image => "vonpar.jpg"},
                 {:name => "Sulgás", :url => "http://www.sulgas.rs.gov.br/", :image => "sulgas.jpeg"},
