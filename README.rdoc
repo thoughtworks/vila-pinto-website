@@ -1,20 +1,22 @@
 {<img src="https://secure.travis-ci.org/thoughtworks/vila-pinto-website.png" />}[http://travis-ci.org/thoughtworks/vila-pinto-website]
 
 Vila Pinto Website
-================
+==================
 
-This project is the website for Vila Pinto, one of the most needing area in Porto Alegre/RS - Brazil.                                                                                        
-They have a lot of initiatives to make their lifes better and one of their ideas is the Reclycling Center, what help a lot of families get money and help the local comunity to fight against the drug dealers and social injustice.
+This project is the website for Vila Pinto, one of the most needing areas in Porto Alegre/RS - Brazil.
 
-You can figure out more information about Vila Pinto and the Reclycling Center here:
+They have a lot of initiatives to make their lives better and one of their ideas is the Recycling Center, that help a lot of families get money and also help the local community to fight against the drug dealers and social injustice.
+
+You can see more information about Vila Pinto and the Recycling Center here:
 http://www.youtube.com/watch?v=ejIlcZJd4cA
 
 
 Instructions
-==========
+============
 
 Ubuntu Instalation
--------------------
+------------------
+
 1 - Install git
     	sudo apt-get install git
 	
@@ -57,9 +59,13 @@ Fork the project
 Install RVM
 
 Clone the repo
-sh bootstrap.sh
+
+Run "sh bootstrap.sh"
 
 have fun!
+
+
+PS: If you're not able to upload images from the administration section, make sure you set the environment variables GOOGLE_DRIVE_USER and GOOGLE_DRIVE_PASSWORD. We have a test account set, ask someone for the credentials!
 
 
 LICENSE
