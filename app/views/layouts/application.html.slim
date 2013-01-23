@@ -28,16 +28,16 @@ html
       #navigation
         = link_to root_path, :class => 'cea page_link', :title => 'CEA - Centro de Educação Ambiental' do
           = image_tag("logoceawhite.png", :alt => "CEA link", :title => "CEA - Centro de Educação Ambiental")
-          label.short CEA
+          span.short CEA
         = link_to ctvp_path, :class => 'ctvp page_link', :title => 'CTVP - Centro de Triagem da Vila Pinto' do
           = image_tag("logoceawhite.png", :alt => 'CTVP link', :title => 'CTVP - Centro de Triagem da Vila Pinto')
-          label.short CTVP
+          span.short CTVP
         = link_to cejak_path, :class => 'cejak page_link', :title => 'CEJAK - Centro Cultural James Kulisz' do
           = image_tag("logoceawhite.png", :alt => 'CEJAK link', :title => 'CEJAK - Centro Cultural James Kulisz')
-          label.short CEJAK
+          span.short CEJAK
         = link_to vovo_path, :class => 'vovo page_link', :title => 'Escola de Educação Infantil Vovó Belinha' do
           = image_tag("logoceawhite.png", :alt => 'Vovó Belinha link', :title => 'Escola de Educação Infantil Vovó Belinha')
-          label Vovo Belinha
+          span Vovo Belinha
       = link_to donation_path, :id => "doe", :class => controller_class do
         p.doe-text
           = t('home.donation-text')
