@@ -35,17 +35,23 @@ describe ContactsController do
         post :create, good_params
       end
 
-      it { should respond_with(:redirect) }
       it { should set_the_flash }
-      it { should redirect_to(root_path) }
+      it { should render_template(:new) }
+      it { assigns[:contact].name.should == nil }
+      it { assigns[:contact].to.should == nil }
+      it { assigns[:contact].email.should == nil }
+      it { assigns[:contact].subject.should == nil }
+      it { assigns[:contact].message.should == nil }
     end
 
     context 'when input is invalid' do
       before do
+        ContactMailer.should_not_receive(:make_contact)
         post :create, empty_params
       end
 
       it { should assign_to(:contact) }
+      it { should_not set_the_flash[:notice] }
       it { should render_template(:new) }
     end
 

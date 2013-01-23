@@ -9,8 +9,10 @@ class ContactsController < ApplicationController
     if @contact.valid?
       ContactMailer.make_contact(@contact).deliver
       flash[:notice] = I18n.t('contact.notices.success')
-      redirect_to root_url
+      @contact = Contact.new
+      render :action => 'new'
     else
+      flash[:notice] = nil
       render :action => 'new'
     end
   end

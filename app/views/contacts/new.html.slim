@@ -3,6 +3,8 @@
   #contact
     h2 =t('contact.contact_us')
     = simple_form_for @contact do |f|
+      - if !flash.nil? and !flash[:notice].nil?
+        span.success = flash[:notice]
       = f.input :to, collection: Contact::INSTITUTIONS, prompt: false
       = f.input :name
       = f.input :email
