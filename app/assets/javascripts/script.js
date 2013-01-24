@@ -35,13 +35,13 @@ $(document).ready(function() {
   });
 
   $('#menu-list.nav > li > a').each(function() {
-    var urlSplit        = $(location).attr('href').split('/'),
-        linkSplit       = $(this).attr('href').split('/'),
-        currentPage     = urlSplit[urlSplit.length - 1],
+
+    var linkSplit       = $(this).attr('href').split('/'),
         currentLinkHref = linkSplit[linkSplit.length - 1],
+        currentPage     = $(location).attr("pathname") + $(location).attr("search"),
         listItem        = $(this).parent();
 
-    if ( currentPage.indexOf(currentLinkHref) != -1 || currentPage.indexOf(currentLinkHref) != -1 ) {
+    if ( currentPage.indexOf(currentLinkHref) != -1 ){
       $('#menu-list.nav > li').removeClass('active');
       listItem.addClass("active");
     }
