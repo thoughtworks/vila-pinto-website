@@ -74,12 +74,11 @@ VilaPintoWebsite::Application.configure do
     :host => "http://www.ceavilapinto.org.br"
   }
   ActionMailer::Base.smtp_settings = {
-    :port           => ENV['MAILGUN_SMTP_PORT'],
-    :address        => ENV['MAILGUN_SMTP_SERVER'],
-    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => 'ceavilapinto.org.br',
-    :authentication => :plain,
+      :user_name => "vilapinto",
+      :password => "f6c3d172676cf77b",
+      :address => "mailtrap.io",
+      :port => 2525,
+      :authentication => :plain
   }
   ActionMailer::Base.delivery_method = :smtp
 
