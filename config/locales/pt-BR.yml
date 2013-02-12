@@ -1,4 +1,6 @@
 pt-BR:
+  "true": Sim
+  "false": Não
   active_admin:
     scopes:
       all: "Todos"
@@ -6,11 +8,16 @@ pt-BR:
       cejak: "CEJAK"
       ctvp: "CTVP"
       vovo_belinha: "Vovó Belinha"
+      children_and_teenagers: "Crianças e Adolescentes"
+      community: "Comunidade"
   type:
     cea: "CEA"
     cejak: "CEJAK"
     ctvp: "CTVP"
     vovo_belinha: "Vovó Belinha"
+  category:
+      children_and_teenagers: "Crianças e Adolescentes"
+      community: "Comunidade"
   formtastic:
     yes: 'Sim'
     no: 'Não'
@@ -20,6 +27,9 @@ pt-BR:
     required: 'obrigatório'
   activerecord:
     models:
+      project:
+        one: Projeto
+        other: Projetos
       partner:
         one: Parceiro
         other: Parceiros
@@ -30,6 +40,13 @@ pt-BR:
         one: Administrador
         other: Administradores
     attributes:
+      project:
+        name: Nome
+        category: Categoria
+        description: Descrição
+        visible: Visível na página de projetos do CEJAK
+        created_at: Data de Criação
+        updated_at: Data de Atualização
       partner:
         name: Nome
         url: URL
@@ -40,6 +57,7 @@ pt-BR:
       financial_report:
         name: Nome
         url: URL
+        file: Arquivo
         type: Tipo
         created_at: Data de Criação
         updated_at: Data de Atualização			
