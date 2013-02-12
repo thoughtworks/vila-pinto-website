@@ -8,16 +8,16 @@ pt-BR:
       cejak: "CEJAK"
       ctvp: "CTVP"
       vovo_belinha: "Vovó Belinha"
-      children_and_teenagers: "Crianças e Adolescentes"
-      community: "Comunidade"
+      children_and_teenagers: "Atendimento a Crianças e Adolescentes"
+      community: "Atendimento a Comunidade em Geral"
   type:
     cea: "CEA"
     cejak: "CEJAK"
     ctvp: "CTVP"
     vovo_belinha: "Vovó Belinha"
   category:
-      children_and_teenagers: "Crianças e Adolescentes"
-      community: "Comunidade"
+      children_and_teenagers: "Atendimento a crianças e adolescentes"
+      community: "Atendimento a comunidade em geral"
   formtastic:
     yes: 'Sim'
     no: 'Não'
