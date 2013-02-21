@@ -190,6 +190,10 @@ div.news {
     float: left;
   }
 
+  .sprite img {
+    max-width: 100%;
+  }
+
   .sprite-bancodealimentos {
     @include size(bancodealimentos);
   }
