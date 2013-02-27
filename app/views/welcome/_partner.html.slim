@@ -3,6 +3,6 @@ div class="item #{'active' if partner_counter.zero?}"
 	span class="slides"
 		img src="#{partner.image.url}" alt="#{partner.name}"
   - else
-	a class="slides" href="#{partner.url}"
+	a class="slides" href="#{partner.url}" target="_blank"
 		img src="#{partner.image.url}" alt="#{partner.name}"
 
