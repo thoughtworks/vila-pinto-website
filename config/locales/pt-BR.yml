@@ -47,6 +47,7 @@ pt-BR:
         visible: Visível na página de projetos do CEJAK
         created_at: Data de Criação
         updated_at: Data de Atualização
+        attendance_value: Atendimentos
       partner:
         name: Nome
         url: URL

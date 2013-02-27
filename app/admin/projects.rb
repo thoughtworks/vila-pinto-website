@@ -24,6 +24,8 @@ ActiveAdmin.register Project do
       f.input :category, :as => :select, :collection => project_category_options
       f.input :visible
       f.input :description
+      f.input :attendance_value
+      f.input :attendance_days, :as => :checkbox, :collection => project_attendance_days_options
     end
     f.actions
   end
