@@ -7,4 +7,12 @@ module ApplicationHelper
     I18n.t "category.#{category}" 
   end
 
+  def translate_attendance_day day
+    I18n.t "attendance_days.#{day}"
+  end
+
+  def translate_frequency_unit unit
+    I18n.t "frequency_unit.#{unit}"
+  end
+
 end

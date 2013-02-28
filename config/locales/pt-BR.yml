@@ -18,6 +18,17 @@ pt-BR:
   category:
       children_and_teenagers: "Atendimento a crianças e adolescentes"
       community: "Atendimento a comunidade em geral"
+  attendance_days:
+      sunday: "Domingo"
+      monday: "Segunda"
+      tuesday: "Terça"
+      wednesday: "Quarta"
+      thursday: "Quinta"
+      friday: "Sexta"
+      saturday: "Sábado"
+  frequency_unit:
+      week: "Semana"
+      month: "Mês"
   formtastic:
     yes: 'Sim'
     no: 'Não'
@@ -48,6 +59,9 @@ pt-BR:
         created_at: Data de Criação
         updated_at: Data de Atualização
         attendance_value: Atendimentos
+        attendance_days: Dias de Atendimento
+        frequency_value: Frequência
+        frequency_unit: Unidade
       partner:
         name: Nome
         url: URL

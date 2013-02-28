@@ -24,9 +24,18 @@ ActiveAdmin.register Project do
       f.input :category, :as => :select, :collection => project_category_options
       f.input :visible
       f.input :description
-      f.input :attendance_value
-      f.input :attendance_days, :as => :checkbox, :collection => project_attendance_days_options
     end
+
+    f.inputs do
+      f.input :attendance_value
+      f.input :show_attendance
+      f.input :attendance_days, :as => :check_boxes, :collection => project_attendance_days_options
+      f.input :show_attendance_days
+      f.input :frequency_value
+      f.input :frequency_unit, :as => :select, :collection => project_frequency_unit_options
+      f.input :show_frequency
+    end
+
     f.actions
   end
 end
