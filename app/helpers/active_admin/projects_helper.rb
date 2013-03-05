@@ -16,4 +16,16 @@ module ActiveAdmin::ProjectsHelper
       [translate_frequency_unit(unit), unit]
     end
   end
+
+  def project_attendace_shift_options
+    Project.attendance_shifts.map do |shift|
+      [translate_attendance_shift(shift), shift]
+    end
+  end
+
+  def project_meals_options
+    Project.meals_quantity_units.map do |unit|
+      [translate_meals_unit(unit), unit]
+    end
+  end
 end

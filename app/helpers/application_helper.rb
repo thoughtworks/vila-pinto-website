@@ -15,4 +15,12 @@ module ApplicationHelper
     I18n.t "frequency_unit.#{unit}"
   end
 
+  def translate_attendance_shift shift
+    I18n.t "attendance_shifts.#{shift}"
+  end
+
+  def translate_meals_unit unit
+    I18n.t "meals_quantity_unit.#{unit}"
+  end
+
 end

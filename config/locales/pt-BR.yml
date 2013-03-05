@@ -29,6 +29,10 @@ pt-BR:
   frequency_unit:
       week: "Semana"
       month: "Mês"
+  attendance_shifts:
+      morning: "manhã"
+      afternoon: "tarde"
+      night: "noite"
   formtastic:
     yes: 'Sim'
     no: 'Não'
@@ -62,6 +66,11 @@ pt-BR:
         attendance_days: Dias de Atendimento
         frequency_value: Frequência
         frequency_unit: Unidade
+        attendance_shift: Turnos de Atendimento
+        attendance_goal_value: Meta de Atendimento
+        meals_quantity_value: Refeições
+        meals_quantity_unit: Unidade
+        available_spots: Vagas Disponibilizadas
       partner:
         name: Nome
         url: URL

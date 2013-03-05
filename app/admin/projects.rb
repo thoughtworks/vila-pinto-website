@@ -34,6 +34,15 @@ ActiveAdmin.register Project do
       f.input :frequency_value
       f.input :frequency_unit, :as => :select, :collection => project_frequency_unit_options
       f.input :show_frequency
+      f.input :attendance_shift, :as => :check_boxes, :collection => project_attendace_shift_options
+      f.input :show_attendance_shift
+      f.input :attendance_goal_value
+      f.input :show_attendance_goal
+      f.input :meals_quantity_value
+      f.input :meals_quantity_unit, :as => :select, :collection => project_meals_options
+      f.input :show_meals_quantity
+      f.input :available_spots
+      f.input :show_available_spots
     end
 
     f.actions
