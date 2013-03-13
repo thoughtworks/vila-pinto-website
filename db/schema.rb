@@ -185,16 +185,24 @@ ActiveRecord::Schema.define(:version => 20130220230006) do
     t.string   "category"
     t.boolean  "visible"
     t.text     "description"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
     t.integer  "attendance_value"
     t.boolean  "show_attendance"
-    t.string   "attendance_days"
+    t.boolean  "attendance_day_sunday"
+    t.boolean  "attendance_day_monday"
+    t.boolean  "attendance_day_tuesday"
+    t.boolean  "attendance_day_wednesday"
+    t.boolean  "attendance_day_thursday"
+    t.boolean  "attendance_day_friday"
+    t.boolean  "attendance_day_saturday"
     t.boolean  "show_attendance_days"
     t.integer  "frequency_value"
     t.string   "frequency_unit"
     t.boolean  "show_frequency"
-    t.string   "attendance_shift"
+    t.boolean  "attendance_shift_morning"
+    t.boolean  "attendance_shift_afternoon"
+    t.boolean  "attendance_shift_night"
     t.boolean  "show_attendance_shift"
     t.integer  "attendance_goal_value"
     t.boolean  "show_attendance_goal"

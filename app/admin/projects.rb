@@ -29,12 +29,20 @@ ActiveAdmin.register Project do
     f.inputs do
       f.input :attendance_value
       f.input :show_attendance
-      f.input :attendance_days, :as => :check_boxes, :collection => project_attendance_days_options
+      f.input :attendance_day_monday 
+      f.input :attendance_day_tuesday
+      f.input :attendance_day_wednesday
+      f.input :attendance_day_thursday
+      f.input :attendance_day_friday
+      f.input :attendance_day_saturday
+      f.input :attendance_day_sunday
       f.input :show_attendance_days
       f.input :frequency_value
       f.input :frequency_unit, :as => :select, :collection => project_frequency_unit_options
       f.input :show_frequency
-      f.input :attendance_shift, :as => :check_boxes, :collection => project_attendace_shift_options
+      f.input :attendance_shift_morning
+      f.input :attendance_shift_afternoon
+      f.input :attendance_shift_night
       f.input :show_attendance_shift
       f.input :attendance_goal_value
       f.input :show_attendance_goal

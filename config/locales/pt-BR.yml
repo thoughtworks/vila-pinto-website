@@ -29,6 +29,9 @@ pt-BR:
   frequency_unit:
       week: "Semana"
       month: "Mês"
+  meals_quantity_unit:
+      day: "Dia"
+      month: "Mês"
   attendance_shifts:
       morning: "manhã"
       afternoon: "tarde"
@@ -71,6 +74,16 @@ pt-BR:
         meals_quantity_value: Refeições
         meals_quantity_unit: Unidade
         available_spots: Vagas Disponibilizadas
+        attendance_day_sunday: dom
+        attendance_day_monday: seg
+        attendance_day_tuesday: ter
+        attendance_day_wednesday: qua
+        attendance_day_thursday: qui
+        attendance_day_friday: sex
+        attendance_day_saturday: sab
+        attendance_shift_morning: manhã
+        attendance_shift_afternoon: tarde
+        attendance_shift_night: noite
       partner:
         name: Nome
         url: URL
