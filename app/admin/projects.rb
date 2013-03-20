@@ -3,6 +3,8 @@ ActiveAdmin.register Project do
   config.clear_sidebar_sections! # remove filter sidebar
   config.paginate = false
 
+  puts form
+
   scope :children_and_teenagers, :default => true
   scope :community
 
@@ -18,6 +20,8 @@ ActiveAdmin.register Project do
     default_actions
   end
 
+  form :partial=> "indicators_form"
+=begin
   form do |f|
     f.inputs do
       f.input :name
@@ -27,8 +31,8 @@ ActiveAdmin.register Project do
     end
 
     f.inputs do
-      f.input :attendance_value
-      f.input :show_attendance
+      f.input :attendance_value, :input_html => { :class => 'short_value'  }, :wrapper_html => { :class => 'project_indicator_label_value_column' }
+      f.input :show_attendance, :label=>'',  :wrapper_html => { :class => 'indicator_show_column', :style => 'display:block;float:right; width:10%;  '   }
       f.input :attendance_day_monday 
       f.input :attendance_day_tuesday
       f.input :attendance_day_wednesday
@@ -55,4 +59,5 @@ ActiveAdmin.register Project do
 
     f.actions
   end
+=end
 end

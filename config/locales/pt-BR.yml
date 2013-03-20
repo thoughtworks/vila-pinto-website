@@ -36,6 +36,12 @@ pt-BR:
       morning: "manhã"
       afternoon: "tarde"
       night: "noite"
+  indicator_labels:
+      description: "Indicador"
+      value: "Valor"
+      show: "Mostrar na Página?"
+      title: "Indicadores"
+      legend: "Aqui você pode definir os indicadores do projeto"
   formtastic:
     yes: 'Sim'
     no: 'Não'
