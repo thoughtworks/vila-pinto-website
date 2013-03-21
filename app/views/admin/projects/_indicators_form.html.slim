@@ -1,0 +1,57 @@
+#background
+	= semantic_form_for [:admin, @project] do |f|
+		#project_basic_info
+		= f.inputs do |i|
+			= f.input :name
+			= f.input :category, :as => :select, :collection => project_category_options
+			= f.input :visible 
+			= f.input :description
+		#project_indicators
+		h3 =t('indicator_labels.title')
+		p.prj_ind_legend =t('indicator_labels.legend')
+		= f.inputs do |i|
+			li
+      			div.prj_ind_lbl_col
+      				span.prj_ind_col =t("indicator_labels.description")
+      			div.prj_ind_val_col 
+      				span.prj_ind_col =t("indicator_labels.value")
+      			div.prj_ind_show_col
+      				span.prj_ind_col =t("indicator_labels.show")
+			#attendance
+			= f.input :attendance_value, :input_html => { :class => 'small_value'  }, :wrapper_html => { :class => 'prj_ind_lbl_val_col' }
+			= f.input :show_attendance, :label=>'',  :wrapper_html => { :class => 'prj_ind_show_col' }
+			#attendance_days
+		    li.prj_ind_lbl_col
+      			span.label_column = t('activerecord.attributes.project.attendance_days')
+    		= f.input :attendance_day_monday, 		:wrapper_html => { :class => 'prj_ind_val_col_tiny'  }   
+    		= f.input :attendance_day_tuesday , 	:wrapper_html => { :class => 'prj_ind_val_col_tiny'  } 
+    		= f.input :attendance_day_wednesday, 	:wrapper_html => { :class => 'prj_ind_val_col_tiny'  } 
+    		= f.input :attendance_day_thursday, 	:wrapper_html => { :class => 'prj_ind_val_col_tiny'  } 
+    		= f.input :attendance_day_friday, 		:wrapper_html => { :class => 'prj_ind_val_col_tiny'  }
+    		= f.input :attendance_day_saturday, 	:wrapper_html => { :class => 'prj_ind_val_col_tiny'  }
+    		= f.input :attendance_day_sunday, 		:wrapper_html => { :class => 'prj_ind_val_col_tiny'  }
+    		= f.input :show_attendance_days, :label => '',  :wrapper_html => { :class => 'prj_ind_show_col' } 
+    		#frequency
+    		= f.input :frequency_value, :input_html => { :class => 'small_value'  },  :wrapper_html => { :class => 'prj_ind_lbl_val_col_half' } 
+    		= f.input :frequency_unit, :label => '',  :as => :select, :collection => project_frequency_unit_options, :wrapper_html => { :class => 'prj_ind_lbl_val_unit_col' }  
+    		= f.input :show_frequency, :label => '', :wrapper_html => { :class => 'prj_ind_show_col' }
+    		#shifts
+    		li.prj_ind_lbl_col
+      			span.label_column =t('activerecord.attributes.project.attendance_shift')
+    		= f.input :attendance_shift_morning, 	:wrapper_html => { :class => 'prj_ind_val_col_tiny'  } 
+    		= f.input :attendance_shift_afternoon, 	:wrapper_html => { :class => 'prj_ind_val_col_tiny'  } 
+    		= f.input :attendance_shift_night, 		:wrapper_html => { :class => 'prj_ind_val_col_tiny'  }  
+    		= f.input :show_attendance_shift, :label => '',  :wrapper_html => { :class => 'prj_ind_show_col' }  
+    		#attendance_goals
+    		= f.input :attendance_goal_value, :input_html => { :class => 'small_value'  }, :wrapper_html => { :class => 'prj_ind_lbl_val_col' }  
+    		= f.input :show_attendance_goal, :label=>'',  :wrapper_html => { :class => 'prj_ind_show_col' }  
+    		#meals
+    		= f.input :meals_quantity_value, :input_html => { :class => 'small_value'  },  :wrapper_html => { :class => 'prj_ind_lbl_val_col_half' }  
+    		= f.input :meals_quantity_unit, :label=>'',  :as => :select, :collection => project_meals_options, :wrapper_html => { :class => 'prj_ind_lbl_val_unit_col' }  
+    		= f.input :show_meals_quantity, :label => '', :wrapper_html => { :class => 'prj_ind_show_col' } 
+    		#available_spots
+    		= f.input :available_spots, :input_html => { :class => 'small_value'  }, :wrapper_html => { :class => 'prj_ind_lbl_val_col' } 
+    		= f.input :show_available_spots, :label => '', :wrapper_html => { :class => 'prj_ind_show_col' }  
+    	= f.actions
+
+

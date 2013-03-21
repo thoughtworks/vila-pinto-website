@@ -29,3 +29,34 @@
 // .other_namespace    applies to a custom namespace named other (eg: /other)
 
 
+.prj_ind_lbl_col{ width:20%; float:left;clear:both;  } 
+.prj_ind_lbl_col .label_column {  font-size: 1.0em; font-weight: bold;color: #5e6469;}
+
+.prj_ind_val_col{ width:60%; float:left; }
+.prj_ind_show_col{ display:block;float:right; width:20% ;   }
+
+.prj_ind_lbl_val_col { display: block;float: left;width: 70%; clear: both; }
+.prj_ind_lbl_val_col label { width:28% !important;  }
+.prj_ind_lbl_val_col .small_value { width:18% !important;  }
+.prj_ind_lbl_val_col p.inline-errors { margin-left: 28% !important; }
+
+.prj_ind_val_col_tiny { display:block; float:left; width:6%; padding-left:0 !important;  }
+.prj_ind_val_col_tiny label { padding-left:0 !important ; }
+
+.prj_ind_lbl_val_col_half { display: block;float: left;width: 35%; clear:both; }
+.prj_ind_lbl_val_col_half input.small_value { width:36% !important;  }
+.prj_ind_lbl_val_col_half label { width:56% !important;  }
+.prj_ind_lbl_val_col_half p.inline-errors { margin-left: 56% !important; }
+
+.prj_ind_lbl_val_unit_col  { display:block;float:left;width:35%;  }
+.prj_ind_lbl_val_unit_col label { width: 8px !important;  }
+.prj_ind_lbl_val_unit_col p.inline-errors { margin-left: 0 !important; }
+
+div span.prj_ind_col { 	font-size: 1.0em; font-weight: bold; color: #5e6469; }
+
+p.prj_ind_legend { font-size: 1.0em; color: #5e6469; }
+
+/*li { border: solid 1px blue !important; }*/
+
+
+
