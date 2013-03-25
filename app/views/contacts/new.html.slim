@@ -5,11 +5,11 @@
     = simple_form_for @contact do |f|
       - if !flash.nil? and !flash[:notice].nil?
         span.success = flash[:notice]
-      = f.input :to, collection: Contact::INSTITUTIONS, prompt: false
-      = f.input :name
-      = f.input :email
-      = f.input :subject
-      = f.input :message, :as => :text
+      = f.input :to, collection: Contact::INSTITUTIONS, prompt: false, required: false
+      = f.input :name, required: false
+      = f.input :email, required: false
+      = f.input :subject, required: false
+      = f.input :message, :as => :text, required: false
       = f.button :submit
 
   #address
