@@ -40,6 +40,9 @@ CEA_PARTNERS = [{:name => "Gerdau", :url => "http://wwww.gerdau.com.br", :image 
                 {:name => "Sulgás", :url => "http://www.sulgas.rs.gov.br/", :image => "sulgas.jpeg"},
                 {:name => "Agiplan Financeira S.A.", :url => "http://ww2.agiplan.com.br/site/home/index.php", :image => "agiplan.jpg"}]
 
+CEJAK_COMMUNITY_PROJECTS = [{:name => "bubububub", :url => "#"}]
+
+CEJAK_CHILDREN_AND_TEENAGERS_PROJECTS = [{:name => "bubububub2", :url => "#"}]
 
 CTVP_PARTNERS.each do |partner|
   next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CTVP
@@ -57,4 +60,10 @@ CEA_PARTNERS.each do |partner|
   next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CEA
   image = File.open(Rails.root.join('app','assets','images','cea','sprite',partner[:image]))
   Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CEA, :image => image
+end
+
+CEJAK_COMMUNITY_PROJECTS.each do |project|
+  next if Project.exits? :category => Project::CATEGORY_COMMUNITY
+  Project.create :description => "", :name => project[:name], :visible => true, :url => project[:url], :category => Project::CATEGORY_COMMUNITY
+  p "save it"
 end
