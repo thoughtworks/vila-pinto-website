@@ -40,6 +40,22 @@ CEA_PARTNERS = [{:name => "Gerdau", :url => "http://wwww.gerdau.com.br", :image 
                 {:name => "Sulgás", :url => "http://www.sulgas.rs.gov.br/", :image => "sulgas.jpeg"},
                 {:name => "Agiplan Financeira S.A.", :url => "http://ww2.agiplan.com.br/site/home/index.php", :image => "agiplan.jpg"}]
 
+CEJAK_COMMUNITY_PROJECTS = [{:name => "Laboratório de Informática", :url => "laboratorio_de_informatica"},
+                            {:name => "Cozinha Comunitária", :url => "cozinha_comunitaria"},
+                            {:name => "SAF - Serviço de Atendimento Familiar", :url => "saf"},
+                            {:name => "Biblioteca", :url => "biblioteca"},
+                            {:name => "Programa Idoso", :url => "programa_idoso"}]
+
+CEJAK_CHILDREN_AND_TEENAGERS_PROJECTS = [    {:name => "Programa SCFE", :url => "sase"},
+                                             {:name => "Projeto Novos Horizontes", :url => "novos_horizontes"},
+                                             {:name => "Projovem Adolescente - Região Leste", :url => "projovem_leste"},
+                                             {:name => "Projovem Adolescente - Região Norte", :url => "projovem_norte"},
+                                             {:name => "Programa Trabalho Educativo", :url => "trabalho_educativo"},
+                                             {:name => "Projeto Novo Despertar", :url => "novo_despertar"},
+                                             {:name => "Projeto Jiu-Jitsu", :url => "jiu_jitsu"},
+                                             {:name => "Projeto Tocando Sonhos", :url => "tocando_sonhos"}]
+
+
 CTVP_PARTNERS.each do |partner|
   next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CTVP
   image = File.open(Rails.root.join('app','assets','images','ctvp','sprite',partner[:image]))
@@ -56,4 +72,14 @@ CEA_PARTNERS.each do |partner|
   next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CEA
   image = File.open(Rails.root.join('app','assets','images','cea','sprite',partner[:image]))
   Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CEA, :image => image
+end
+
+CEJAK_COMMUNITY_PROJECTS.each do |project|
+  next if Project.exists? :category => Project::CATEGORY_COMMUNITY
+  Project.create :id => '1',:description => "desc", :name => project[:name], :visible => true, :url => project[:url], :category => 'community'
+end
+
+CEJAK_CHILDREN_AND_TEENAGERS_PROJECTS.each do |project|
+  next if Project.exists? :category => Project::Project::CATEGORY_CHILDREN_AND_TEENAGERS
+  Project.create :id => '1',:description => "desc",   :name => project[:name], :visible => true, :url => project[:url], :category => 'children_and_teenagers'
 end

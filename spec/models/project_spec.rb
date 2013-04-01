@@ -3,6 +3,7 @@ require 'spec_helper'
 describe Project do
   it { should validate_presence_of :name }
   it { should validate_presence_of :description }
+  it { should validate_presence_of :url }
   it { should validate_numericality_of :attendance_value }
   it { should validate_numericality_of :frequency_value }
   it { should validate_numericality_of :attendance_goal_value }

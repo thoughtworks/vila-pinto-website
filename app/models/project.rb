@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  attr_accessible :category, :description, :name, :visible
+  attr_accessible :category, :description, :name, :visible, :url
   attr_accessible :attendance_value, :show_attendance
   attr_accessible :attendance_day_sunday, :attendance_day_monday,:attendance_day_tuesday,:attendance_day_wednesday,:attendance_day_thursday
   attr_accessible :attendance_day_friday, :attendance_day_saturday
@@ -19,6 +19,7 @@ class Project < ActiveRecord::Base
 
   validates :name, :presence => true, :length => { :maximum => 200 }
   validates :description, :presence => true, :length => { :maximum => 500 }
+  validates :url, :presence => true, :length => { :maximum => 200 }
   validates :attendance_value, :numericality => { :greater_than => 0, :less_than => 100000 }
   validates :frequency_value, :numericality => { :greater_than => 0, :less_than => 100 }
   validates :attendance_goal_value, :numericality => { :greater_than => 0, :less_than => 100000 }
