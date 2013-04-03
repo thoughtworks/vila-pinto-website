@@ -25,6 +25,7 @@ class Project < ActiveRecord::Base
   validates :attendance_goal_value, :numericality => { :greater_than => 0, :less_than => 100000 }
   validates :meals_quantity_value, :numericality => { :greater_than => 0, :less_than => 100000 }
   validates :available_spots, :numericality => { :greater_than => 0, :less_than => 10000 }
+  validates_format_of :url, :with => /^([a-z0-9_]*)$/
 
   scope :children_and_teenagers, where(:category => Project::CATEGORY_CHILDREN_AND_TEENAGERS)
   scope :community, where(:category => Project::CATEGORY_COMMUNITY)

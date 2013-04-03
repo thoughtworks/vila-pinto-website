@@ -67,6 +67,7 @@ pt-BR:
       project:
         name: Nome
         category: Categoria
+        url: Definir url
         description: Descrição
         visible: Visível na página de projetos do CEJAK
         created_at: Data de Criação
