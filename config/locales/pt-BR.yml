@@ -90,6 +90,10 @@ pt-BR:
         attendance_shift_morning: manhã
         attendance_shift_afternoon: tarde
         attendance_shift_night: noite
+        errors:
+          frequency_without_unit: Selecione a frequência
+          frequency_without_value: Preencha o valor da frequência
+          show_without_frequency: Preencha o valor da frequência
       partner:
         name: Nome
         url: URL
