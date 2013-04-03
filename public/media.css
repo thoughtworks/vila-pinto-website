@@ -10,6 +10,11 @@
 		display: none;
 	}
 
+	#slides {
+		display: none;
+		top: 70px;
+	}
+
 	#videos a {
 		float: left;
 		margin-right: 1%;
@@ -44,10 +49,6 @@
 
 	#doe {
 		top: 0;
-	}
-	
-	#slides {
-		top: 70px;	
 	}
 
 	.two {
@@ -100,6 +101,10 @@
 		display: none;
 	}
 
+	#navigation {
+		display: none;
+	}
+
 	#sitemap-container ul {
     	margin-left: 5%;
   	}
@@ -126,6 +131,7 @@
 	}
 	
 	#slides {
+		display: none;
 		top: 130px;	
 	}
 
@@ -159,6 +165,10 @@
 
 @media screen and (min-width: 600px) {
 	#navigation {
+		display: block;
+	}
+
+	#slides {
 		display: block;
 	}
 

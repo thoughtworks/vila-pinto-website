@@ -28,7 +28,7 @@ ActiveAdmin.register Partner do
       f.input :name
       f.input :type, :as => :select, :collection => partner_type_options
       f.input :image, :for => :image, :as => :file, :hint => partner_image_info(f)
-      f.input :url
+      f.input :url, :hint => 'Exemplo: http://www.google.com'
     end
     f.actions
   end
