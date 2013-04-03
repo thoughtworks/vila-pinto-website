@@ -77,17 +77,13 @@ i = 1
 CEJAK_COMMUNITY_PROJECTS.each do |project|
   next if Project.exists? :category => Project::CATEGORY_COMMUNITY
   Project.create  :id => i, :description => "desc", :name => project[:name], :visible => true,
-                  :url => project[:url], :category => Project::CATEGORY_COMMUNITY, :frequency_value => 1,
-                  :frequency_unit => :week, :meals_quantity_unit => :day, :attendance_value => 1,
-                  :attendance_goal_value => 1 , :meals_quantity_value => 1, :available_spots => 1
+                  :url => project[:url], :category => Project::CATEGORY_COMMUNITY
   i = i + 1
 end
 
 CEJAK_CHILDREN_AND_TEENAGERS_PROJECTS.each do |project|
   next if Project.exists? :category => Project::CATEGORY_CHILDREN_AND_TEENAGERS
   Project.create  :id => i, :description => "desc", :name => project[:name], :visible => true,
-                  :url => project[:url], :category => Project::CATEGORY_CHILDREN_AND_TEENAGERS,  :frequency_value => 1,
-                  :frequency_unit => :week, :meals_quantity_unit => :day, :attendance_value => 1,
-                  :attendance_goal_value => 1 , :meals_quantity_value => 1, :available_spots => 1
+                  :url => project[:url], :category => Project::CATEGORY_CHILDREN_AND_TEENAGERS
   i = i +1
 end
