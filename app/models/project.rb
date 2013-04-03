@@ -15,8 +15,10 @@ class Project < ActiveRecord::Base
   values_for :frequency_unit, :has => [:week, :month], :add => [:predicate_methods, :constants], :allow_nil => true
   values_for :meals_quantity_unit, :has => [:day, :month], :add => [:predicate_methods, :constants], :allow_nil => true
 
-  validates :name, :presence => true, :length => { :maximum => 200 }
+  validates :name, :presence => true, :length => { :maximum => 200 }, :uniqueness => true
   validates :description, :presence => true, :length => { :maximum => 500 }
+  validates :url, :presence => true, :length => { :maximum => 200 }, :uniqueness => true
+  validates_format_of :url, :with => /^([a-z0-9_]*)$/
 
   #indicators
   validates :attendance_value, :numericality => { :greater_than => 0, :less_than => 100000 }, :allow_nil => true
@@ -24,8 +26,6 @@ class Project < ActiveRecord::Base
   validates :attendance_goal_value, :numericality => { :greater_than => 0, :less_than => 100000 }, :allow_nil => true
   validates :meals_quantity_value, :numericality => { :greater_than => 0, :less_than => 100000 }, :allow_nil => true
   validates :available_spots, :numericality => { :greater_than => 0, :less_than => 10000 }, :allow_nil => true
-  validates :url, :presence => true, :length => { :maximum => 200 }
-  validates_format_of :url, :with => /^([a-z0-9_]*)$/
 
   validate :invalid_attendance, :invalid_attendance_days, :invalid_frequency, :invalid_shift, 
       :invalid_attendance_goal, :invalid_meals_quantity, :invalid_spots

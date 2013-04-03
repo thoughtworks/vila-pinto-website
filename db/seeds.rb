@@ -46,7 +46,7 @@ CEJAK_COMMUNITY_PROJECTS = [{:name => "Laboratório de Informática", :url => "l
                             {:name => "Biblioteca", :url => "biblioteca"},
                             {:name => "Programa Idoso", :url => "programa_idoso"}]
 
-CEJAK_CHILDREN_AND_TEENAGERS_PROJECTS = [    {:name => "Programa SCFE", :url => "sase"},
+CEJAK_CHILDREN_AND_TEENAGERS_PROJECTS = [    {:name => "Programa SCFE", :url => "scfe"},
                                              {:name => "Projeto Novos Horizontes", :url => "novos_horizontes"},
                                              {:name => "Projovem Adolescente - Região Leste", :url => "projovem_leste"},
                                              {:name => "Projovem Adolescente - Região Norte", :url => "projovem_norte"},
@@ -73,17 +73,17 @@ CEA_PARTNERS.each do |partner|
   image = File.open(Rails.root.join('app','assets','images','cea','sprite',partner[:image]))
   Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CEA, :image => image
 end
-i = 1
+
+id = 0
+
 CEJAK_COMMUNITY_PROJECTS.each do |project|
-  next if Project.exists? :category => Project::CATEGORY_COMMUNITY
-  Project.create  :id => i, :description => "desc", :name => project[:name], :visible => true,
+  id = id + 1
+  Project.create  :id => id, :description => "desc", :name => project[:name], :visible => true,
                   :url => project[:url], :category => Project::CATEGORY_COMMUNITY
-  i = i + 1
 end
 
 CEJAK_CHILDREN_AND_TEENAGERS_PROJECTS.each do |project|
-  next if Project.exists? :category => Project::CATEGORY_CHILDREN_AND_TEENAGERS
-  Project.create  :id => i, :description => "desc", :name => project[:name], :visible => true,
+  id = id + 1
+  Project.create  :id => id, :description => "desc", :name => project[:name], :visible => true,
                   :url => project[:url], :category => Project::CATEGORY_CHILDREN_AND_TEENAGERS
-  i = i +1
 end
