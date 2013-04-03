@@ -93,7 +93,15 @@ pt-BR:
         errors:
           frequency_without_unit: Selecione a frequência
           frequency_without_value: Preencha o valor da frequência
-          show_without_frequency: Preencha o valor da frequência
+          show_without_frequency: Preencha a frequência
+          show_without_attendance: Preencha os atendimentos 
+          show_without_attendance_days: Escolha um turno de atendimento 
+          show_without_shift: Escoha um período
+          show_without_attendance_goal: Preencha a meta de atendimento
+          meals_without_unit: Selecione a frequência de refeições
+          meals_without_value: Preencha a quantidade de refeições
+          show_without_meals: Preencha a quantidade de refeições
+          show_without_spots: Preencha o número de vagas
       partner:
         name: Nome
         url: URL
