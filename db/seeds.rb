@@ -31,6 +31,21 @@ CTVP_PARTNERS = [{:name => "Moinhos Shopping", :url => "http://www.moinhosshoppi
                  {:name => "UFRGS", :url => "http://www.ufrgs.br/", :image => "ufrgs.png"},
                  {:name => "Armazém Ventura", :url => "", :image => "ventura.png"}]
 
+CEJAK_PARTNERS = [{:name => "Fundação de Assistência Social e Cidadania", :url => "", :image => "logofasc.jpeg"},
+                  {:name => "De Lage Landen - Partners in Dinance", :url => "", :image => "logodelagelanden.png"},
+                  {:name => "Ponto de Leitura", :url => "", :image => "logopontodeleitura.png"},
+                  {:name => "Banco de Alimentos", :url => "", :image => "logobancodealimentos.png"},
+                  {:name => "Mesa Brasil", :url => "", :image => "logomesabrasil.png"},
+                  {:name => "Zero Fome", :url => "", :image => "logofomezero.png"},
+                  {:name => "Nestor", :url => "", :image => "logonestor.jpg"},
+                  {:name => "Governo Rio Grande do Sul", :url => "", :image => "logogovernorsul.png"},
+                  {:name => "Renner", :url => "", :image => "logorenner.png"},
+                  {:name => "Gerdau", :url => "", :image => "logogerdau.png"},
+                  {:name => "Fundação de Assitência Social e Cidadania", :url => "", :image => "mauricio_sirotsky.jpg"},
+                  {:name => "Ministério do Desenvolvmento", :url => "", :image => "dev_social_combate_fome.jpeg"},
+                  {:name => "FIERGS SESI", :url => "", :image => "logofiergssesi.png"},
+                 ]
+
 VOVO_BELINHA_PARTNERS = [{:name => "Prefeitura de Porto Alegre", :url => "http://www2.portoalegre.rs.gov.br/portal_pmpa_novo/", :image => "prefeiturapoa.png"},
                          {:name => "Renner", :url => "http://www.lojasrenner.com.br/", :image => "renner.png"}]
 
@@ -60,6 +75,12 @@ CTVP_PARTNERS.each do |partner|
   next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CTVP
   image = File.open(Rails.root.join('app','assets','images','ctvp','sprite',partner[:image]))
   Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CTVP, :image => image
+end
+
+CEJAK_PARTNERS.each do |partner|
+  next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CEJAK
+  image = File.open(Rails.root.join('app','assets','images','cejak','sprite',partner[:image]))
+  Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CEJAK, :image => image
 end
 
 VOVO_BELINHA_PARTNERS.each do |partner|
