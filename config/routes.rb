@@ -22,6 +22,7 @@ VilaPintoWebsite::Application.routes.draw do
   match '/vovo/transparency' => 'vovo#transparency', as: :vovo_transparency
 
   match '/cejak/projects' => 'cejak#projects', as: :cejak_projects
+  match '/cejak/sponsors' => 'cejak#sponsors', as: :cejak_sponsors
   match '/cejak/transparency' => 'cejak#transparency', as: :cejak_transparency
 
   match '/cejak/projects/:project_name' => 'cejak#show', as: :cejak_project
