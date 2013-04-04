@@ -7,6 +7,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+if not AdminUser.exists?
+  first_user_email = ENV['FIRST_USER_EMAIL'] || 'admin@example.com'
+  first_user_password = ENV['FIRST_USER_PASSWORD'] || 'password'
+  AdminUser.create!(:email => first_user_email, :password => first_user_password, :password_confirmation => first_user_password)
+end
+
 CTVP_PARTNERS = [{:name => "Moinhos Shopping", :url => "http://www.moinhosshopping.com.br/", :image => "moinhosshopping.png"},
                  {:name => "Colégio Bom Conselho", :url => "http://www.bomconselho.com.br/", :image => "cbc.png"},
                  {:name => "Banrisul", :url => "http://www.banrisul.com.br/", :image => "banrisul.png"},
