@@ -42,6 +42,7 @@ pt-BR:
       show: "Mostrar na Página?"
       title: "Indicadores"
       legend: "Aqui você pode definir os indicadores do projeto"
+      url_hint: "Apenas letras, números e traços são permitidos. Projeto: Serviço Comunitário Url: servico_comunitario."
   formtastic:
     yes: 'Sim'
     no: 'Não'

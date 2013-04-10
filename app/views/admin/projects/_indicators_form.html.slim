@@ -3,7 +3,7 @@
 		#project_basic_info
 		= f.inputs do |i|
 			= f.input :name
-			= f.input :url
+			= f.input :url, :hint => t("indicator_labels.url_hint")
 			= f.input :category, :as => :select, :collection => project_category_options
 			= f.input :visible 
 			= f.input :description
