@@ -50,6 +50,12 @@ CEJAK_PARTNERS = [{:name => "Fundação de Assistência Social e Cidadania", :ur
                   {:name => "Fundação de Assitência Social e Cidadania", :url => "", :image => "mauricio_sirotsky.jpg"},
                   {:name => "Ministério do Desenvolvimento", :url => "www.mds.gov.br/bolsafamilia ", :image => "dev_social_combate_fome.jpeg"},
                   {:name => "FIERGS SESI", :url => "http://www.fiergs.org.br/", :image => "logofiergssesi.png"},
+                  {:name => "Educandário São Luis - Vila Jardim", :url => "", :image => ""},
+                  {:name => "Associação de Moradores Vila Nova Tijuca", :url => "", :image => ""},
+                  {:name => "Associação de Moradores do Ipê I", :url => "", :image => ""},
+                  {:name => "CRAS Noroeste", :url => "", :image => ""},
+                  {:name => "CRAS Norte", :url => "", :image => ""},
+                  {:name => "CRAS Santa Rosa", :url => "", :image => ""}
                  ]
 
 VOVO_BELINHA_PARTNERS = [{:name => "Prefeitura de Porto Alegre", :url => "http://www2.portoalegre.rs.gov.br/portal_pmpa_novo/", :image => "prefeiturapoa.png"},
@@ -79,25 +85,41 @@ CEJAK_CHILDREN_AND_TEENAGERS_PROJECTS = [    {:name => "Programa SCFE", :url => 
 
 CTVP_PARTNERS.each do |partner|
   next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CTVP
-  image = File.open(Rails.root.join('app','assets','images','ctvp','sprite',partner[:image]))
+  if not partner[:image].blank?
+    image = File.open(Rails.root.join('app','assets','images','ctvp','sprite',partner[:image]))
+  else
+    image = nil
+  end
   Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CTVP, :image => image
 end
 
 CEJAK_PARTNERS.each do |partner|
   next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CEJAK
-  image = File.open(Rails.root.join('app','assets','images','cejak','sprite',partner[:image]))
+  if not partner[:image].blank?
+    image = File.open(Rails.root.join('app','assets','images','cejak','sprite',partner[:image]))
+  else
+    image = nil
+  end
   Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CEJAK, :image => image
 end
 
 VOVO_BELINHA_PARTNERS.each do |partner|
   next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_VOVO_BELINHA
-  image = File.open(Rails.root.join('app','assets','images','ctvp','sprite',partner[:image]))
+  if not partner[:image].blank?
+    image = File.open(Rails.root.join('app','assets','images','ctvp','sprite',partner[:image]))
+  else
+    image = nil
+  end
   Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_VOVO_BELINHA, :image => image
 end
 
 CEA_PARTNERS.each do |partner|
   next if Partner.exists? :image => partner[:image], :type => Partner::TYPE_CEA
-  image = File.open(Rails.root.join('app','assets','images','cea','sprite',partner[:image]))
+  if not partner[:image].blank?
+    image = File.open(Rails.root.join('app','assets','images','cea','sprite',partner[:image]))
+  else
+    image = nil
+  end
   Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CEA, :image => image
 end
 

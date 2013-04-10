@@ -6,7 +6,7 @@ class Partner < ActiveRecord::Base
   mount_uploader :image, FileUploader
   
   validates :name, :presence => true, :length => { :maximum => 200 }
-  validates :image, :presence => true
+  
   validates :url, :url => true, :allow_blank => true, :length => { :maximum => 200 }
   
   scope :vovo_belinha, where(:type => Partner::TYPE_VOVO_BELINHA)
