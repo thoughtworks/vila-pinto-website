@@ -123,16 +123,12 @@ CEA_PARTNERS.each do |partner|
   Partner.create :name => partner[:name], :url => partner[:url], :type => Partner::TYPE_CEA, :image => image
 end
 
-id = 0
-
 CEJAK_COMMUNITY_PROJECTS.each do |project|
-  id = id + 1
-  Project.create  :id => id, :description => "desc", :name => project[:name], :visible => true,
+  Project.create  :description => "desc", :name => project[:name], :visible => true,
                   :url => project[:url], :category => Project::CATEGORY_COMMUNITY
 end
 
 CEJAK_CHILDREN_AND_TEENAGERS_PROJECTS.each do |project|
-  id = id + 1
-  Project.create  :id => id, :description => "desc", :name => project[:name], :visible => true,
+  Project.create  :description => "desc", :name => project[:name], :visible => true,
                   :url => project[:url], :category => Project::CATEGORY_CHILDREN_AND_TEENAGERS
 end
