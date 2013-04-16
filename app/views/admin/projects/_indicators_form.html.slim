@@ -18,9 +18,6 @@
       				span.prj_ind_col =t("indicator_labels.value")
       			div.prj_ind_show_col
       				span.prj_ind_col =t("indicator_labels.show")
-			#attendance
-			= f.input :attendance_value, :input_html => { :class => 'small_value'  }, :wrapper_html => { :class => 'prj_ind_lbl_val_col' }
-			= f.input :show_attendance, :label=>'',  :wrapper_html => { :class => 'prj_ind_show_col' }
 			#attendance_days
 		    li.prj_ind_lbl_col
       			span.label_column = t('activerecord.attributes.project.attendance_days')

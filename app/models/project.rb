@@ -1,7 +1,6 @@
 class Project < ActiveRecord::Base
 
   attr_accessible :category, :description, :name, :visible, :url
-  attr_accessible :attendance_value, :show_attendance
   attr_accessible :attendance_day_sunday, :attendance_day_monday,:attendance_day_tuesday,:attendance_day_wednesday,:attendance_day_thursday
   attr_accessible :attendance_day_friday, :attendance_day_saturday
   attr_accessible :show_attendance_days
@@ -21,13 +20,11 @@ class Project < ActiveRecord::Base
   validates_format_of :url, :with => /^([a-z0-9_]*)$/
 
   #indicators
-  validates :attendance_value, :numericality => { :greater_than => 0, :less_than => 100000 }, :allow_nil => true
   validates :frequency_value, :numericality => { :greater_than => 0, :less_than => 100 }, :allow_nil => true
-  validates :attendance_goal_value, :numericality => { :greater_than => 0, :less_than => 100000 }, :allow_nil => true
   validates :meals_quantity_value, :numericality => { :greater_than => 0, :less_than => 100000 }, :allow_nil => true
   validates :available_spots, :numericality => { :greater_than => 0, :less_than => 10000 }, :allow_nil => true
 
-  validate :invalid_attendance, :invalid_attendance_days, :invalid_frequency, :invalid_shift, 
+  validate :invalid_attendance_days, :invalid_frequency, :invalid_shift, 
       :invalid_attendance_goal, :invalid_meals_quantity, :invalid_spots
 
   
@@ -38,9 +35,6 @@ class Project < ActiveRecord::Base
     I18n.t("activerecord.attributes.project.errors.#{message}")
   end  
 
-  def invalid_attendance
-    errors.add(:show_attendance, error_message(:show_without_attendance) )  if show_attendance and attendance_value.nil? 
-  end
 
   def invalid_attendance_days
      selected_days = [ 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130317182733) do
+ActiveRecord::Schema.define(:version => 20130416010259) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -187,8 +187,6 @@ ActiveRecord::Schema.define(:version => 20130317182733) do
     t.text     "description"
     t.datetime "created_at",                 :null => false
     t.datetime "updated_at",                 :null => false
-    t.integer  "attendance_value"
-    t.boolean  "show_attendance"
     t.boolean  "attendance_day_sunday"
     t.boolean  "attendance_day_monday"
     t.boolean  "attendance_day_tuesday"
@@ -204,7 +202,7 @@ ActiveRecord::Schema.define(:version => 20130317182733) do
     t.boolean  "attendance_shift_afternoon"
     t.boolean  "attendance_shift_night"
     t.boolean  "show_attendance_shift"
-    t.integer  "attendance_goal_value"
+    t.string   "attendance_goal_value"
     t.boolean  "show_attendance_goal"
     t.integer  "meals_quantity_value"
     t.string   "meals_quantity_unit"
