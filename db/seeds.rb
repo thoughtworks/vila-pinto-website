@@ -61,11 +61,11 @@ CEJAK_PARTNERS = [{:name => "Fundação de Assistência Social e Cidadania", :ur
 VOVO_BELINHA_PARTNERS = [{:name => "Prefeitura de Porto Alegre", :url => "http://www2.portoalegre.rs.gov.br/portal_pmpa_novo/", :image => "prefeiturapoa.png"},
                          {:name => "Renner", :url => "http://www.lojasrenner.com.br/", :image => "renner.png"}]
 
-CEA_PARTNERS = [{:name => "Gerdau", :url => "http://wwww.gerdau.com.br", :image => "gerdau.png"},
+CEA_PARTNERS = [{:name => "Gerdau", :url => "http://www.gerdau.com.br", :image => "gerdau.png"},
                 {:name => "Renner", :url => "http://www.lojasrenner.com.br/", :image => "renner.png"},
                 {:name => "Vonpar SA", :url => "http://www.vonpar.com.br/corporativo/", :image => "vonpar.png"},
                 {:name => "Sulgás", :url => "http://www.sulgas.rs.gov.br/", :image => "sulgas.png"},
-                {:name => "Agiplan Financeira S.A.", :url => "http://ww2.agiplan.com.br/site/home/index.php", :image => "agiplan.png"}]
+                {:name => "Agiplan Financeira S.A.", :url => "http://www.agiplan.com.br", :image => "agiplan.png"}]
 
 CEJAK_COMMUNITY_PROJECTS = [{:name => "Laboratório de Informática", :url => "laboratorio_de_informatica"},
                             {:name => "Cozinha Comunitária", :url => "cozinha_comunitaria"},
