@@ -6,7 +6,7 @@
 			= f.input :url, :hint => t("indicator_labels.url_hint")
 			= f.input :category, :as => :select, :collection => project_category_options
 			= f.input :visible 
-			= f.input :description
+			= f.input :description, :as => :html_editor
 		#project_indicators
 		h3 =t('indicator_labels.title')
 		p.prj_ind_legend =t('indicator_labels.legend')

@@ -25,7 +25,7 @@ VilaPintoWebsite::Application.routes.draw do
   match '/cejak/sponsors' => 'cejak#sponsors', as: :cejak_sponsors
   match '/cejak/transparency' => 'cejak#transparency', as: :cejak_transparency
 
-  match '/cejak/projects/:project_name' => 'cejak#show', as: :cejak_project
+  match '/cejak/projects/:url' => 'cejak#project_show', as: :cejak_project
 
   ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
 end

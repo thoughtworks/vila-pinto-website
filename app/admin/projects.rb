@@ -12,7 +12,7 @@ ActiveAdmin.register Project do
       translate_category(project.category)
     end
     column :visible do |project|
-      t(project.visible)
+      t(project.visible.to_s)
     end
     column :updated_at
     default_actions

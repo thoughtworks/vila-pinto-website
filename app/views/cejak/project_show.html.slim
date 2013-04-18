@@ -1,0 +1,25 @@
+= render :partial => 'layouts/cejak_menu'
+#cejakprojeto.content
+   div.sobreprojeto
+      h2 = @project.name
+
+      = @project.description.html_safe
+
+      h2 Dados sobre o projeto
+
+      ul.information
+         - if @project.available_spots?
+          li
+            i class="icon-user"
+            h3 Atendimentos:&nbsp;
+            = @project. available_spots_description
+         - if @project.attendance_days?
+          li
+            i class="icon-time"
+            h3 Dias de Atendimento:&nbsp;
+            = @project.attendance_days
+         - if @project.available_meals?
+          li
+            i class="icon-heart"
+            h3 = @project.available_meals_title
+            = @project.meals_quantity_value

@@ -30,8 +30,8 @@ pt-BR:
       week: "Semana"
       month: "Mês"
   meals_quantity_unit:
-      day: "Dia"
-      month: "Mês"
+      day: "dia"
+      month: "mês"
   attendance_shifts:
       morning: "manhã"
       afternoon: "tarde"
