@@ -3,12 +3,12 @@ class CejakController < ApplicationController
   end
 
   def project_show
-    @project = Project.where(:url => params[:url]).first.decorate
+    @project = Project.where(:url => params[:url], :visible => true).first.decorate
   end
 
   def projects
-    @community_projects = Project.where :category => Project::CATEGORY_COMMUNITY, :visible => true
-    @children_teenagers_projects = Project.where :category => Project::CATEGORY_CHILDREN_AND_TEENAGERS, :visible => true
+    @community_projects = Project.where(:category => Project::CATEGORY_COMMUNITY, :visible => true).order("name ASC")
+    @children_teenagers_projects = Project.where(:category => Project::CATEGORY_CHILDREN_AND_TEENAGERS, :visible => true).order("name ASC")
   end
 
   def sponsors

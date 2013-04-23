@@ -5,21 +5,38 @@
 
       = @project.description.html_safe
 
-      h2 Dados sobre o projeto
+      - if @project.available_indicators?
+        h2 Dados sobre o projeto
 
-      ul.information
-         - if @project.available_spots?
-          li
-            i class="icon-user"
-            h3 Atendimentos:&nbsp;
-            = @project. available_spots_description
-         - if @project.attendance_days?
-          li
-            i class="icon-time"
-            h3 Dias de Atendimento:&nbsp;
-            = @project.attendance_days
-         - if @project.available_meals?
-          li
-            i class="icon-heart"
-            h3 = @project.available_meals_title
-            = @project.meals_quantity_value
+        ul.information
+          - if @project.available_spots?
+            li
+              i class="icon-user"
+              h3 Atendimentos:&nbsp;
+              = @project.available_spots_description
+          - if @project.attendance_days?
+            li
+              i class="icon-time"
+              h3 Dias de Atendimento:&nbsp;
+              = @project.attendance_days
+          - if @project.available_meals?
+            li
+              i class="icon-heart"
+              h3 = @project.available_meals_title
+              = @project.meals_quantity_value
+          - if @project.attendance_goal?
+            li
+              i class="icon-user"
+              h3 Meta de atendimentos:&nbsp;
+              = @project.attendance_goal_value
+          - if @project.attendance_shift?
+            li
+              i class="icon-time"
+              h3 Turnos de atendimento:&nbsp;
+              = @project.attendance_shifts
+          - if @project.frequency?
+            li
+              i class="icon-time"
+              h3 Frequência:&nbsp;
+              = @project.frequency
+

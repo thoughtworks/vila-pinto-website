@@ -32,6 +32,7 @@ pt-BR:
   meals_quantity_unit:
       day: "dia"
       month: "mês"
+  available_meals_title: "Refeições servidas por %{unit}:&nbsp;"
   attendance_shifts:
       morning: "manhã"
       afternoon: "tarde"
