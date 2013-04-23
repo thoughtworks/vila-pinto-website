@@ -15,7 +15,7 @@ class Project < ActiveRecord::Base
   values_for :meals_quantity_unit, :has => [:day, :month], :add => [:predicate_methods, :constants], :allow_nil => true
 
   validates :name, :presence => true, :length => { :maximum => 200 }, :uniqueness => true
-  validates :description, :presence => true, :length => { :maximum => 500 }
+  validates :description, :presence => true, :length => { :maximum => 2000 }
   validates :url, :presence => true, :length => { :maximum => 200 }, :uniqueness => true
   validates_format_of :url, :with => /^([a-z0-9_]*)$/
 
