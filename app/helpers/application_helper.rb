@@ -25,12 +25,20 @@ module ApplicationHelper
     I18n.t "meals_quantity_unit.#{unit}"
   end
 
-  def page_title(title)
-    base_title = "Centro de Educação Ambiental Vila Pinto"
-    if title.to_s.empty?
-      base_title
+  def page_title title 
+    build_attribute("Centro de Educação Ambiental Vila Pinto", title)
+  end
+
+  def meta_description description 
+    build_attribute("CEA - Centro de Educação Ambiental da Vila Pinto Porto Alegre", description)
+  end
+
+  private
+  def build_attribute base, add
+    if add.to_s.empty?
+      base
     else
-      "#{base_title} - #{title}"
+      "#{base} - #{add}"
     end
   end
 end
