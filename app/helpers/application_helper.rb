@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module ApplicationHelper
   def translate_type type
     I18n.t "type.#{type}" 
@@ -23,4 +25,12 @@ module ApplicationHelper
     I18n.t "meals_quantity_unit.#{unit}"
   end
 
+  def page_title(title)
+    base_title = "Centro de Educação Ambiental Vila Pinto"
+    if title.to_s.empty?
+      base_title
+    else
+      "#{base_title} - #{title}"
+    end
+  end
 end
