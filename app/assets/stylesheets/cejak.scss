@@ -105,10 +105,11 @@
     text-decoration: none;
     font-size: 1.1em;
     text-align: center;
-    color: $dark-yellow;
+    color: white;
     width: 230px;
     display: block;
     width: 230px;
+    font-weight: bold;
   }
 
   .vertical-align {
@@ -120,18 +121,18 @@
     height: 70px;
     margin-bottom: 10px;
     float: left;
-    background: #eee;
-    border-radius: 10px;
+    border-radius: 3px;
     display: table;
   }
 
   .span-12 {
+    padding: 10px 0;
+    font-size: 1.3em;
     text-align: center;
     margin-bottom: 40px;
     font-weight: bold;
-    background: #eee;
-    border-radius: 10px;
-    color: #555;
+    border-radius: 3px;
+    color: white;
   }
 
   h2 {
