@@ -101,6 +101,11 @@
     }
 }
 
+
+#sponsors h2 {
+  width: 92%;
+}
+
 #menu.ctvp {
   background: $green;
 
@@ -180,19 +185,21 @@ div.news {
   }
 
   .sprite-container {
-    width: 23%;
     height: 250px;
     float: left;
     margin-left: 2%;
   }
 
   .sprite {
+    width: 250px;
     float: left;
   }
 
   .sprite img {
     max-width: 200px;
     max-height: 120px;
+    margin: 0 auto;
+    display: block;
   }
 
   .sprite-bancodealimentos {
