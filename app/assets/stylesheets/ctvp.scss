@@ -67,11 +67,27 @@
       margin-top: 20px;
       list-style: none;
 
+      li {
+        padding-top: 20px;
+        width: 350px;
+        float: left;
+        font-size: 1.2em;
+        color: #666;
+        font-weight: bold;
+
+         h3 {
+            margin-top: 5px;
+            float: left;
+            color: $green;
+            font-weight: normal;
+          }
+      }
+
       h3 {
         margin-top: 5px;
         float: left;
-        font-weight: bold;
-        color: #222;
+        color: $green;
+        font-weight: normal;
       }
 
       img {
@@ -80,11 +96,7 @@
         margin-right: 10px;
       }
 
-      li {
-        padding-top: 20px;
-        width: 350px;
-        float: left;
-        font-size: 1.2em;
+      i {
         color: $green;
       }
     }
@@ -121,6 +133,7 @@
 
   ul li.active a {
     color: #222 !important;
+    font-weight: bold;
   }
 
   li:hover a {

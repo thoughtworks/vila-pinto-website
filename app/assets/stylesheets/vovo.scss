@@ -1,10 +1,18 @@
 @import "color";
 
 #sobrevovo.content {
-      height: 100%;
-      width: auto;
-      padding-top:1%;
-      display:table;
+  height: 100%;
+  width: auto;
+  padding-top:1%;
+  display:table;
+
+  ul.information {
+      margin-left:20px;
+
+    h3 {
+        font-weight:bold;
+    }
+  }
 }
 
 #doe.vovo {
@@ -46,6 +54,7 @@
 
   ul li.active a {
     color: #222 !important;
+    font-weight: bold;
   }
 
   li:hover a {
@@ -103,14 +112,6 @@ div.sobrevovo {
   h2 {
     float: left;
     width: 820px;
-  }
-}
-
-ul.information {
-    margin-left:20px;
-
-  h3{
-      font-weight:bold;
   }
 }
 
