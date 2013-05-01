@@ -116,19 +116,20 @@
   display: table;
   width: 100%;
 
-  .right, .left {
+  .right, .left, .cea {
     margin-top: 15px;
     display: inline-block;
-    float: left;
+  }
+
+  .left {
+    float: right;
+    margin-right: 40px;
   }
 
   .right {
+    vertical-align: top;
     margin-left: 5%;
     margin-top: 1%;
-  }
-
-  .cea {
-    float: left;
   }
 
   .doe {
@@ -182,16 +183,18 @@
   }
 }
 
-#sitemap-container {
-  #sitemap {
-    margin: 0 auto;  
-  }
+#sitemap {
+    vertical-align: top;
+    margin: 0 auto;
+    display: inline-block;
+    width: 400px;
 
   ul {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    float: left;
+    vertical-align: top;
+    margin: 20px 0;
+    display: inline-block;
     color: white;
+    margin-left: 10%;
 
     li {
       line-height: 25px;
@@ -225,9 +228,5 @@
 
       list-style: none;
     }
-  }
-
-  ul:first-child {
-      margin-left: 10%;
   }
 }
