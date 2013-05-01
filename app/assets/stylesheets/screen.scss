@@ -280,11 +280,15 @@ h1 {
 
   #menu-video {
     float: left;
+    
+    a {
+      cursor: pointer;
+    }
   }
 }
 
 #historia {
-  height: 1020px;
+  height: 1200px;
 
   p {
     margin-bottom: 4%;
