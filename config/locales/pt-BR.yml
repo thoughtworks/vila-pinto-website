@@ -46,6 +46,7 @@ pt-BR:
       url_hint: "Apenas letras, números e traços são permitidos. Projeto: Serviço Comunitário Url: servico_comunitario."
   formtastic:
     yes: 'Sim'
+    false: 'Não'
     no: 'Não'
     create: 'Cadastrar %{model}'
     update: 'Atualizar %{model}'
