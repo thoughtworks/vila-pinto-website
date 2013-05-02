@@ -15,6 +15,7 @@ $(document).ready(function(){
     });
 
     numberInputs.keyup( function(e) { 
+        if( e.keyCode === 46 || e.keyCode === 8 ) return;
         var cursorStart = this.selectionStart; 
         var cursorEnd = this.selectionEnd; 
         this.value = this.value.replace(/[^\d]+/g,'') || this.getAttribute('previousValue'); 
