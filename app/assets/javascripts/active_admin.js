@@ -8,6 +8,22 @@ $(document).ready(function(){
     function update(element_id, content){
         $(element_id).val(content);
     }
+
+    var numberInputs = $('input[type=number]');
+    numberInputs.keydown(function(e) { 
+        this.setAttribute('previousValue', this.value || this.getAttribute('previousValue')  )  
+    });
+
+    numberInputs.keyup( function(e) { 
+        var cursorStart = this.selectionStart; 
+        var cursorEnd = this.selectionEnd; 
+        this.value = this.value.replace(/[^\d]+/g,'') || this.getAttribute('previousValue'); 
+        this.selectionStart = cursorStart; 
+        this.selectionEnd = cursorEnd;    
+    });
+
+    numberInputs.blur(function(e) {this.value = this.value.replace(/[^\d]+/g,'')});
+
 });
 
 
