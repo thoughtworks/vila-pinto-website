@@ -140,6 +140,7 @@ GEM
       metaclass (~> 0.0.1)
     multi_json (1.5.0)
     multipart-post (1.1.5)
+    newrelic_rpm (3.6.1.88)
     nokogiri (1.5.5)
     oauth (0.4.7)
     oauth2 (0.8.0)
@@ -260,6 +261,7 @@ DEPENDENCIES
   gmaps4rails
   jquery-rails
   meta_search (>= 1.1.0.pre)
+  newrelic_rpm
   nokogiri
   pg
   pry

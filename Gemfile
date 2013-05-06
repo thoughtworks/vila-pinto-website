@@ -17,6 +17,7 @@ gem "sass-rails"
 gem "compass"
 gem "compass-rails"
 gem 'nokogiri'
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
