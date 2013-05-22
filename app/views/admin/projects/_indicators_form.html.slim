@@ -30,8 +30,8 @@
     		= f.input :attendance_day_sunday, 		:wrapper_html => { :class => 'prj_ind_val_col_tiny'  }
     		= f.input :show_attendance_days, :label => '',  :wrapper_html => { :class => 'prj_ind_show_col' } 
     		#frequency
-    		= f.input :frequency_value, :input_html => { :class => 'small_value'  },  :wrapper_html => { :class => 'prj_ind_lbl_val_col_half' } 
-    		= f.input :frequency_unit, :label => '',  :as => :select, :collection => project_frequency_unit_options, :wrapper_html => { :class => 'prj_ind_lbl_val_unit_col' }  
+    		= f.input :frequency_value, :input_html => { :class => 'small_value' }, :hint => t("indicator_labels.numeric_value"), :wrapper_html => { :class => 'prj_ind_lbl_val_col_half' }
+    		= f.input :frequency_unit, :label => '',  :as => :select, :collection => project_frequency_unit_options, :wrapper_html => { :class => 'prj_ind_lbl_val_unit_col' }
     		= f.input :show_frequency, :label => '', :wrapper_html => { :class => 'prj_ind_show_col' }
     		#shifts
     		li.prj_ind_lbl_col
@@ -44,11 +44,11 @@
     		= f.input :attendance_goal_value, :input_html => { :class => 'small_value'  }, :wrapper_html => { :class => 'prj_ind_lbl_val_col' }  
     		= f.input :show_attendance_goal, :label=>'',  :wrapper_html => { :class => 'prj_ind_show_col' }  
     		#meals
-    		= f.input :meals_quantity_value, :input_html => { :class => 'small_value'  },  :wrapper_html => { :class => 'prj_ind_lbl_val_col_half' }  
+    		= f.input :meals_quantity_value, :hint => t("indicator_labels.numeric_value"), :input_html => { :class => 'small_value'  },  :wrapper_html => { :class => 'prj_ind_lbl_val_col_half' }
     		= f.input :meals_quantity_unit, :label=>'',  :as => :select, :collection => project_meals_options, :wrapper_html => { :class => 'prj_ind_lbl_val_unit_col' }  
     		= f.input :show_meals_quantity, :label => '', :wrapper_html => { :class => 'prj_ind_show_col' } 
     		#available_spots
-    		= f.input :available_spots, :input_html => { :class => 'small_value'  }, :wrapper_html => { :class => 'prj_ind_lbl_val_col' } 
+    		= f.input :available_spots, :input_html => { :class => 'small_value'  }, :hint => t("indicator_labels.numeric_value"), :wrapper_html => { :class => 'prj_ind_lbl_val_col_half' }
     		= f.input :show_available_spots, :label => '', :wrapper_html => { :class => 'prj_ind_show_col' }  
     	= f.actions
 

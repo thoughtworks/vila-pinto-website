@@ -44,6 +44,7 @@ pt-BR:
       title: "Indicadores"
       legend: "Aqui você pode definir os indicadores do projeto"
       url_hint: "Apenas letras, números e traços são permitidos. Projeto: Serviço Comunitário Url: servico_comunitario."
+      numeric_value: "Somente números são permitidos"
   formtastic:
     yes: 'Sim'
     false: 'Não'
