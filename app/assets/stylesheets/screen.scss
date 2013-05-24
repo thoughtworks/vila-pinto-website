@@ -179,9 +179,10 @@ h1 {
 }
 
 #departamentos {
-  height: 860px;
+  display: inline-block;
   margin: 0;
   background-color: #eee;
+  margin-bottom: 20px;
  
   img {
     margin: 10% 10% 0 10%;
