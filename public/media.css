@@ -48,6 +48,7 @@
 
 	#doe {
 		top: 0;
+		display: none;
 	}
 
 	.two {
@@ -63,6 +64,7 @@
 	#sobre h1 {
 		width: 100%;
 		font-size: 1.4em;
+		margin-bottom: 20px;
 	}
 
 	#departamentos h1 {
@@ -139,7 +141,7 @@
 	}
 
   	#menu ul li {
-	  	width: auto;
+	  width: auto;
 		font-size: 1.5em;
 		padding-right: 30px;
 		padding-top: 10px;
@@ -148,10 +150,6 @@
 
 @media screen and (min-width: 600px) {
 	#navigation {
-		display: block;
-	}
-
-	#slides {
 		display: block;
 	}
 
@@ -189,11 +187,7 @@
 
 @media screen and (min-width: 768px) {
 	#doe {
-		top: 100px;
-	}
-	
-	#slides {
-		top: 170px;	
+		display: block;
 	}
 
 	#container-video iframe {
@@ -221,10 +215,11 @@
 
 @media screen and (min-width: 900px) {
 	#doe {
-		top: 130px;
+		top: 80px;
 	}
-	
+
 	#slides {
-		top: 200px;	
+		display: block;
+		top: 140px;	
 	}
 }
