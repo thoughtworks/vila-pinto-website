@@ -82,13 +82,14 @@ $navbarInverseBrandColor:                $navbarInverseLinkColor !default;
   border: 0;
   margin-bottom: 10px;
   cursor: pointer;
-  border-radius: 1px;
+  border-radius: 3px;
   font-size: 18px;
 
   .icon-reorder {
     font-size: 1.5em;
     position: relative;
     top: 3px;
+    color: white;
   }
 }
 
@@ -99,7 +100,10 @@ $navbarInverseBrandColor:                $navbarInverseLinkColor !default;
 .navbar .btn-navbar.disabled,
 .navbar .btn-navbar[disabled] {
   background: white;
-    color: #3f7cb4;
+
+  .icon-reorder {
+    color: #3F7CB4;
+  }
 }
 
 .navbar .btn-navbar:active,
