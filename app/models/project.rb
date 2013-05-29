@@ -1,5 +1,7 @@
 class Project < ActiveRecord::Base
 
+  has_many :project_picture
+
   attr_accessible :category, :description, :name, :visible, :url
   attr_accessible :attendance_day_sunday, :attendance_day_monday,:attendance_day_tuesday,:attendance_day_wednesday,:attendance_day_thursday
   attr_accessible :attendance_day_friday, :attendance_day_saturday
@@ -18,6 +20,7 @@ class Project < ActiveRecord::Base
   validates :description, :presence => true, :length => { :maximum => 2000 }
   validates :url, :presence => true, :length => { :maximum => 200 }, :uniqueness => true
   validates_format_of :url, :with => /^([a-z0-9_]*)$/
+  validate :pictures_count
 
   #indicators
   validates :frequency_value, :numericality => { :greater_than => 0, :less_than => 100 }, :allow_nil => true
@@ -66,5 +69,9 @@ class Project < ActiveRecord::Base
 
   def invalid_spots
     errors.add(:show_available_spots, error_message(:show_without_spots) )  if show_available_spots and available_spots.nil?
+  end
+
+  def pictures_count
+    errors.add(:project_picture, error_message(:exceeded_number_of_pictures) ) if project_picture.count > 5
   end
 end
