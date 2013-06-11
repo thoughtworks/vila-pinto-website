@@ -11,4 +11,5 @@
  *= require_self
  *= require gmaps4rails/gmaps4rails
  *= require_directory .
+ *= require fancybox/manifest
  */

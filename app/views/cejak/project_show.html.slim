@@ -39,4 +39,14 @@
               i class="icon-time"
               h3 Frequência:&nbsp;
               = @project.frequency
+      - if @project.project_picture.size > 0
+        div.sobreprojeto
+          h2 Fotos
+          a class="fancybox" rel="g1" href="#{@project.project_picture.first.image.url}" 
+            img src="#{@project.project_picture.first.image.thumb.url}" alt=""
+        
+javascript:
+  $(document).ready(function() {
+    $(".fancybox").fancybox({'type' : 'image'});
+  });      
 
