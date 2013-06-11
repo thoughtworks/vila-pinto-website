@@ -106,6 +106,9 @@ pt-BR:
           meals_without_value: Preencha a quantidade de refeições
           show_without_meals: Preencha a quantidade de refeições
           show_without_spots: Preencha o número de vagas
+      project_picture:
+        image: Imagem
+        _destroy: Apagar a imagem acima?  
       partner:
         name: Nome
         url: URL

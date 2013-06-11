@@ -19,7 +19,7 @@
                div.prj_ind_show_col
                   span.prj_ind_col =t("indicator_labels.show")
          #attendance_days
-          li.prj_ind_lbl_col
+         li.prj_ind_lbl_col
                span.label_column = t('activerecord.attributes.project.attendance_days')
          = f.input :attendance_day_monday,      :wrapper_html => { :class => 'prj_ind_val_col_tiny'  }   
          = f.input :attendance_day_tuesday ,    :wrapper_html => { :class => 'prj_ind_val_col_tiny'  } 
@@ -51,10 +51,13 @@
          = f.input :available_spots, :input_html => { :class => 'small_value'  }, :hint => t("indicator_labels.numeric_value"), :wrapper_html => { :class => 'prj_ind_lbl_val_col_half' }
          = f.input :show_available_spots, :label => '', :wrapper_html => { :class => 'prj_ind_show_col' }  
 
-         #pictures
-         h3 Imagens
-         = f.has_many :project_picture do |picture|
-            = picture.input :image
+      - @project.add_pictures_slot
+      #pictures
+      h3 Imagens
+      = f.inputs do     
+         = f.semantic_fields_for :project_picture do |h| 
+               = h.input :image, :as => :file, :hint => h.object.image.url.nil? ? f.template.content_tag(:span, "") : f.template.image_tag(h.object.image.url())
+               = h.input :_destroy, :as => :boolean unless h.object.id.nil?
 
       = f.actions
 

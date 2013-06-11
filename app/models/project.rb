@@ -1,6 +1,10 @@
 class Project < ActiveRecord::Base
 
+  MAXIMUM_NUMBER_OF_PICTURES = 5
+
   has_many :project_picture
+  accepts_nested_attributes_for :project_picture, :allow_destroy => true
+  attr_accessible :project_picture_attributes
 
   attr_accessible :category, :description, :name, :visible, :url
   attr_accessible :attendance_day_sunday, :attendance_day_monday,:attendance_day_tuesday,:attendance_day_wednesday,:attendance_day_thursday
@@ -11,6 +15,7 @@ class Project < ActiveRecord::Base
   attr_accessible :attendance_goal_value, :show_attendance_goal
   attr_accessible :meals_quantity_value, :meals_quantity_unit, :show_meals_quantity
   attr_accessible :available_spots, :show_available_spots
+
 
   values_for :category, :has => [:children_and_teenagers, :community], :add => [:predicate_methods, :constants]
   values_for :frequency_unit, :has => [:week, :month], :add => [:predicate_methods, :constants], :allow_nil => true
@@ -74,4 +79,9 @@ class Project < ActiveRecord::Base
   def pictures_count
     errors.add(:project_picture, error_message(:exceeded_number_of_pictures) ) if project_picture.count > 5
   end
+
+  def add_pictures_slot
+    (MAXIMUM_NUMBER_OF_PICTURES - project_picture.size).times {  project_picture.build }
+  end
+
 end
