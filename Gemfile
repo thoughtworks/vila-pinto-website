@@ -9,7 +9,9 @@ gem 'activeadmin'
 gem 'active_admin_editor' 
 gem "meta_search", '>= 1.1.0.pre'
 gem "carrierwave", '~> 0.7.0'
-gem "carrierwave-google_drive"
+gem "carrierwave-google_drive" 
+gem "carrierwave-processing", "~> 0.0.2"
+gem "rmagick", :require => 'RMagick'
 gem "activevalidators"
 gem "values_for"
 gem "draper"

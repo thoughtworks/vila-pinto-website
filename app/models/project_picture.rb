@@ -4,5 +4,5 @@ class ProjectPicture < ActiveRecord::Base
   attr_accessible :image
   mount_uploader :image, FileUploader
 
-  validates :image, :presence => true
+  validates :image, :presence => false
 end

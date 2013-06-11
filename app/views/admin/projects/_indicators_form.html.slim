@@ -56,7 +56,7 @@
       h3 Imagens
       = f.inputs do     
          = f.semantic_fields_for :project_picture do |h| 
-               = h.input :image, :as => :file, :hint => h.object.image.url.nil? ? f.template.content_tag(:span, "") : f.template.image_tag(h.object.image.url())
+               = h.input :image, :as => :file, :hint => h.object.image.url.nil? ? f.template.content_tag(:span, "") : f.template.image_tag(h.object.image.thumb.url)
                = h.input :_destroy, :as => :boolean unless h.object.id.nil?
 
       = f.actions

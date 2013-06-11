@@ -212,11 +212,15 @@ pt-BR:
       too_long: ! 'é muito longo (máximo: %{count} caracteres)'
       too_short: ! 'é muito curto (mínimo: %{count} caracteres)'
       wrong_length: não possui o tamanho esperado (%{count} caracteres)
+      extension_white_list_error: ! "Apenas arquivos com extensão jpg, jpeg, gif e png podem ser utilizados"
     template:
       body: ! 'Por favor, verifique o(s) seguinte(s) campo(s):'
       header:
         one: ! 'Não foi possível gravar %{model}: 1 erro'
         other: ! 'Não foi possível gravar %{model}: %{count} erros.'
+  support:
+    array:
+      two_words_connector: ''
 
   activemodel:
     attributes:

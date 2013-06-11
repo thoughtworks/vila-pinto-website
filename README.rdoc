@@ -37,17 +37,20 @@ Ubuntu Instalation
 	
 	ps: if any of the gems fails, run the command it suggests, like "gem install pg -v '0.14.1'". If it fails, it will show which lib is missing, so do a "sudo apt-get install [MISSING LIB]".
 
-7 - Execute "bundle install" until no error is seeing. If necessary, install the missing libs and run "bundle install" again.
+7 - Install ImageMagick
+	sudo apt-get install imagemagick
+
+8 - Execute "bundle install" until no error is seeing. If necessary, install the missing libs and run "bundle install" again.
 
 	ps: if you get a error like "missing javascript runtime", then run 
 	"sudo apt-get install nodejs"
 	
-8 - Change bootstrap permission to execute
+9 - Change bootstrap permission to execute
 	chmod +x bootstrap.sh
 
-9 - Execute bootstrap.sh	
+10 - Execute bootstrap.sh	
 
-10 - Access Vila Pinto through: http://localhost:3000
+11 - Access Vila Pinto through: http://localhost:3000
 
 Development
 -----------
