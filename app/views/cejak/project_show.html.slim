@@ -42,8 +42,9 @@
       - if @project.project_picture.size > 0
         div.sobreprojeto
           h2 Fotos
-          a class="fancybox" rel="g1" href="#{@project.project_picture.first.image.url}" 
-            img src="#{@project.project_picture.first.image.thumb.url}" alt=""
+          - for pic in @project.project_picture do
+            a class="fancybox" rel="g1" href="#{pic.image.url}" 
+              img src="#{pic.image.thumb.url}" alt=""
         
 javascript:
   $(document).ready(function() {
