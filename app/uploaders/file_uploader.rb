@@ -13,7 +13,7 @@ class FileUploader < CarrierWave::Uploader::GoogleDrive
   google_password ENV['GOOGLE_DRIVE_PASSWORD']
 
   def extension_white_list
-    %w(jpg jpeg gif png)
+    %w(jpg jpeg gif png pdf)
   end
 
 end

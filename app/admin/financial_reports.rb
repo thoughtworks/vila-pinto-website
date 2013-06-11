@@ -6,6 +6,7 @@ ActiveAdmin.register FinancialReport do
   scope :cejak, :default => true
   scope :ctvp
   scope :vovo_belinha
+  scope :cea
 
   index :download_links => false do
     column :name
