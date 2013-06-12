@@ -24,5 +24,4 @@ describe Project do
   it { should ensure_inclusion_of(:category).in_array([:children_and_teenagers, :community]) }
   it { should ensure_inclusion_of(:frequency_unit).in_array([:week, :month]) }
   it { should ensure_inclusion_of(:meals_quantity_unit).in_array([:day, :month]) }
-
 end
