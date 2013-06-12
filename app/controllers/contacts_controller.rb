@@ -19,7 +19,7 @@ class ContactsController < ApplicationController
 
   def controller_class
     if params[:to]
-      @contact.to 
+      @contact.to
     else "cea"
     end
   end

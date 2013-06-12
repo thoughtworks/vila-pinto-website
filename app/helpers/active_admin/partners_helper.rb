@@ -8,7 +8,6 @@ module ActiveAdmin::PartnersHelper
   def partner_image_info(form)
     return if form.object.image.nil? || form.object.image.file.nil?
     form.template.image_tag(form.object.image.url, :style => "max-width:100px;")
-    #form.object.image.file.filename
   end
 
 end

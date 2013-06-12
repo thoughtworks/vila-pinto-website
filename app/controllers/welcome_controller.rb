@@ -4,6 +4,6 @@ class WelcomeController < ApplicationController
   end
 
   def controller_class
-  	"cea"
+    "cea"
   end
 end

@@ -14,5 +14,4 @@ class ContactMailer < ActionMailer::Base
     @contact = contact
     mail(subject: contact.subject, to: TOS[contact.to])
   end
-
 end

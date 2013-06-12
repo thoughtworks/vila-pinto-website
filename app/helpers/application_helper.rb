@@ -2,11 +2,11 @@
 
 module ApplicationHelper
   def translate_type type
-    I18n.t "type.#{type}" 
+    I18n.t "type.#{type}"
   end
 
   def translate_category category
-    I18n.t "category.#{category}" 
+    I18n.t "category.#{category}"
   end
 
   def translate_attendance_day day
@@ -25,15 +25,16 @@ module ApplicationHelper
     I18n.t "meals_quantity_unit.#{unit}"
   end
 
-  def page_title title 
+  def page_title title
     build_attribute("Centro de Educação Ambiental Vila Pinto", title)
   end
 
-  def meta_description description 
+  def meta_description description
     build_attribute("CEA - Centro de Educação Ambiental da Vila Pinto Porto Alegre", description)
   end
 
   private
+
   def build_attribute base, add
     if add.to_s.empty?
       base
