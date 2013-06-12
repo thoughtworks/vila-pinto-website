@@ -97,7 +97,7 @@ h1 {
     font-size: 1.1em;
 }
 
-#historia h1, #depoimentos h1, #departamentos h1.title, #videos h1 {
+#historia h1, #depoimentos h1, #departamentos h1.title, #videos h1, #marli-medeiros h1  {
   width: 95%;
   border-bottom: 5px solid #3F7CB4;
   padding-bottom: 10px;
@@ -260,6 +260,16 @@ h1 {
 }
 
 #videos {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
   iframe, object {
     display: block;
     margin-left: 3%;
@@ -450,4 +460,66 @@ h1 {
 }
 .carousel-caption p {
   margin-bottom: 0;
+}
+
+
+#marli-medeiros {
+  h1 {
+    width: 100%;
+  }
+
+  img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  h2 {
+    color: $blue;
+    font-size: 1.35em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    position: absolute;
+    margin-top: 10px;
+    right: 7%;
+
+    i {
+      font-size: 0.85em;
+    }
+  }
+
+  ul {
+    padding: 15px;
+    border: 1px solid #eee;
+    background: #eee;
+    display: inline-block;
+    list-style: none;
+    font-size: 0.9em;
+    margin-top: 40px;
+    color: $blue;
+
+    li {
+      line-height: 1.9em;
+    }
+  }
+}
+
+.toggle-header {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all .4s ease-out;
+}
+
+#toggle:target .toggle-header {
+  max-height: 400px;
+  opacity: 1;
+}
+
+#toggle:target .top { 
+  opacity: 0;
+  pointer-events: none;
 }

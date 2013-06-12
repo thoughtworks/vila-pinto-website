@@ -20,11 +20,11 @@
       li
         = link_to t('home.videos'), "#videos", class: 'anchor-link'
       li
+        = link_to t('home.founder'), "#marli-medeiros", class: 'anchor-link'
+      li
         = link_to t('home.testimonials'), "#depoimentos", class: 'anchor-link'
       li
         = link_to t('home.contact'), new_contact_path
-
-
 #face
   div class="fb-like fb-like-short" data-href="http://www.facebook.com/pages/CEA/263445053758791?ref=hl" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true"
 #sobre.content
@@ -114,17 +114,38 @@
       img src="assets/video3.png"
     a videolink="video4"
       img src="assets/video4.png"
+#toggle
+  #marli-medeiros.content
+      h1
+        | Marli Medeiros - 
+        = t('home.founder')
+      img src="assets/depoimento3.png"
+      p
+        | Nasceu em 30 de junho de 1952, na cidade de Alegrete, região da “Campanha”, no interior do Rio Grande do Sul. Mudou-se para Porto Alegre em 1976 em busca de melhores condições de vida para sua família. Casada, mãe de 4 filhas naturais e um filho adotivo, na chegada à capital gaúcha, trabalhou de doméstica, bancária, auxiliar administrativo e gerente de uma loja conceituada no comércio de Porto Alegre, onde destacou-se por seu espírito empreendedor. Morando no prédio onde o pai de suas filhas era zelador Marli conheceu a Vila Pinto e neste local “acomodou” seus familiares vindos do interior. Freqüentando a Vila aos fins de semana já se envolvia nos problemas apontados pela família e em 1990, fugindo da violência doméstica que sofria, Marli mudou-se definitivamente para a Vila Pinto. Na nova realidade decidiu dedicar-se exclusivamente a trabalhos comunitários e, não se conformou em ter que se adaptar às regras impostas pelos traficantes do local.  
+        | Em 1992 organizou um grupo de moradoras e fundou o Clube da Mulher. Em 1993 formou-se Promotora Legal Popular num curso que tinha por objetivo capacitar mulheres, líderes comunitárias, para a promoção e defesa dos Direitos da Mulher. Foi com este conhecimento que Marli iniciou sua caminhada para despertar e mobilizar as  mulheres sobre a importância da criação de um espaço de geração de trabalho e renda que lhes permitisse a libertação moral, psicológica e financeira à que estavam submetidas. Em 1996 nascia então o Centro de Educação Ambiental, ONG que administra dois associados operacionais.
+      a.bot href="#marli-medeiros"
+        i.icon-plus
+        | Veja prêmios
+      a.top href="#toggle"
+        i.icon-plus
+        | Veja prêmios
+      .toggle-header
+        ul
+          h2 Prêmios Marli Medeiros
+          li Amiga da Cidade - 2000 - Prefeitura Municipal de Porto Alegre/RS
+          li Destaque Comunitário, Líderes e Vencedores - 2001 - Federasul - Porto Alegre/RS.
+          li Mulher Cidadã - 2002 - Assembléia Legislativa do RGS - Porto Alegre/RS
+          li Destaque Liderança e Trajetória - 2003 - Rotary Clube - Montevidéu, Uruguai.
+          li Decolando Sonhos, Pilotando Negócios - 2003 - Jovens Lideranças - Porto Alegre/RS.
+          li As Cinquenta Mais do RGS - 2004 - Mulheres Negras que fizeram e fazem a história de Porto Alegre - Porto Alegre/RS
+          li Responsabilidade Social e Ambiental – 2005 – Instituto Sócio Ambiental – São Paulo
+          li Relevantes Serviços Prestados à Comunidade – 2006 – PMPA - Porto Alegre/RS, Brasil.
+          li Direitos Humanos –  2008 - Secretaria da Justiça e do Desenvolvimento Social do RGS
+          li Responsabilidade Social – 2009 – Parceiros Voluntários – Porto Alegre/RS
 #depoimentos.content
   h1
     = t('home.testimonials')  
   .portraits
-    .portrait
-      img src="assets/depoimento3.png"
-      blockquote
-        p
-          = t('cea.testimonial_marli')
-          p
-            small = t('cea.label_marli')
     .portrait
       img src="assets/depoimento1.png"
       blockquote
