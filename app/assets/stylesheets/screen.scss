@@ -523,6 +523,10 @@ h1 {
   opacity: 1;
 }
 
+#marli-medeiros:target .bot {
+  opacity: 0;
+} 
+
 #toggle:target .top { 
   opacity: 0;
   pointer-events: none;
