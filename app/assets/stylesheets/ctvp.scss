@@ -8,13 +8,12 @@
 }
 
 #header.ctvp {
-  background: url('ctvp/header_original.jpg') #777;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/ctvp/header_original.jpg',sizingMethod='scale');
+  background: url('ctvp/header.jpg') #777;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/ctvp/header.jpg',sizingMethod='scale');
   background-size: 100%;
   background-repeat: no-repeat;
   height: 100%;
   overflow: hidden;
-  background-position: 0 -180px;
 }
 
 #footer.ctvp {
