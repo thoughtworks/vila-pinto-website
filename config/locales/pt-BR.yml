@@ -149,6 +149,7 @@ pt-BR:
     donation: Doação
     donation-text: Doe agora
     transparency: Transparência
+    social_balance: Balanço Social 
 
   time:
     formats:
@@ -213,7 +214,7 @@ pt-BR:
       too_long: ! 'é muito longo (máximo: %{count} caracteres)'
       too_short: ! 'é muito curto (mínimo: %{count} caracteres)'
       wrong_length: não possui o tamanho esperado (%{count} caracteres)
-      extension_white_list_error: ! "Apenas arquivos com extensão jpg, jpeg, gif e png podem ser utilizados"
+      extension_white_list_error: ! "Não é possível fazer uploads de arquivos %{extension}. Apenas arquivos com extensão %{allowed_types} e png podem ser utilizados"
     template:
       body: ! 'Por favor, verifique o(s) seguinte(s) campo(s):'
       header:

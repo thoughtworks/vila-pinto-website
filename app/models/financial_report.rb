@@ -3,7 +3,7 @@ class FinancialReport < ActiveRecord::Base
   values_for :type, :has => [:cejak, :ctvp, :vovo_belinha, :cea], :add => [:predicate_methods, :constants]
 
   attr_accessible :file, :name, :type
-  mount_uploader :file, FileUploader
+  mount_uploader :file, DocumentUploader
 
   validates :name, :presence => true, :length => { :maximum => 200 }
   validates :file, :presence => true

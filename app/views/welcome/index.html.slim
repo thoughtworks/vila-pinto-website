@@ -94,6 +94,15 @@
     param name="allowFullScreen" value="true"
     param name="wmode" value="opaque"
     embed type="application/x-shockwave-flash" wmode="opaque" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fvilapintowebsite%2Fshow%2F&page_show_back_url=%2Fphotos%2Fvilapintowebsite%2F&user_id=78707398@N05&jump_to=" width="860" height="570"
+#social_balance.content
+  h1
+    = t('home.social_balance')
+  p
+    = "Acompanhe o Balanço Social do CEA"
+  ul 
+    - @reports.each do |report|
+      li style="margin-left:20px;" = link_to report.name , report.file.to_s
+        
 #videos.content
   h1
     = t('home.videos')

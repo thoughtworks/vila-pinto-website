@@ -27,5 +27,7 @@ VilaPintoWebsite::Application.routes.draw do
 
   match '/cejak/projects/:url' => 'cejak#project_show', as: :cejak_project
 
+  match '/social_balance' => 'welcome#social_balance', as: :social_balance
+
   ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
 end

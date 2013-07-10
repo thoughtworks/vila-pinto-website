@@ -1,0 +1,6 @@
+#social_balance.content
+    h1 = t('home.social_balance')
+
+    ul
+        - @reports.each do |report|
+            li = link_to report.name , report.file.to_s
