@@ -14,15 +14,11 @@
       li.active
         = link_to t('home.aboutus'), "#sobre", class: 'anchor-link sobre'
       li
-        = link_to t('home.iniciatives'), "#departamentos", class: 'anchor-link'   
-      li
         = link_to t('home.vila_pinto'), "#historia", class: 'anchor-link'
-      li
-        = link_to t('home.videos'), "#videos", class: 'anchor-link'
       li
         = link_to t('home.founder'), "#marli-medeiros", class: 'anchor-link'
       li
-        = link_to t('home.testimonials'), "#depoimentos", class: 'anchor-link'
+        = link_to t('home.transparencia'), root_path(:anchor => "transparencia")
       li
         = link_to t('home.contact'), new_contact_path
 #face
@@ -52,28 +48,27 @@
       span property="v:region" content="Rio Grande do Sul"
       span property="v:country-name" content="Brazil"
       span property="v:postal-code" content="91410-400"
-#departamentos.content
-  h1.title = t('home.iniciatives')
-  #cea
-    img alt="cea" src="assets/cealetter.png"
-  = link_to ctvp_path do
-    .departamento
-      .nav
-        img alt="ctvp" src="assets/ctvpletter.png"
-        .saiba-mais.ctvp = t('home.enter')
-      h1 Centro de Triagem da Vila Pinto
-  = link_to cejak_path do
-    .departamento
-      .nav
-        img alt="cjak" src="assets/cejakletter.png"
-        .saiba-mais.cejak = t('home.enter')
-      h1 Centro Cultural James Kulisz
-  = link_to vovo_path do
-    .departamento
-      .nav
-        img alt="vovo belinha" src="assets/vovoletter.png"
-        .saiba-mais.vovo = t('home.enter')
-      h1 Escola de Educação Infantil Vovó Belinha
+  .departamentos
+    #cea
+      img alt="cea" src="assets/cealetter.png"
+    = link_to ctvp_path do
+      .departamento
+        .nav
+          img alt="ctvp" src="assets/ctvpletter.png"
+          .saiba-mais.ctvp = t('home.enter')
+        h1 Centro de Triagem da Vila Pinto
+    = link_to cejak_path do
+      .departamento
+        .nav
+          img alt="cjak" src="assets/cejakletter.png"
+          .saiba-mais.cejak = t('home.enter')
+        h1 Centro Cultural James Kulisz
+    = link_to vovo_path do
+      .departamento
+        .nav
+          img alt="vovo belinha" src="assets/vovoletter.png"
+          .saiba-mais.vovo = t('home.enter')
+        h1 Escola de Educação Infantil Vovó Belinha
 #historia.content
   h1
     = t('home.vila_pinto')
@@ -93,37 +88,26 @@
     param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=109615"
     param name="allowFullScreen" value="true"
     param name="wmode" value="opaque"
-    embed type="application/x-shockwave-flash" wmode="opaque" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fvilapintowebsite%2Fshow%2F&page_show_back_url=%2Fphotos%2Fvilapintowebsite%2F&user_id=78707398@N05&jump_to=" width="860" height="570"
-#social_balance.content
-  h1
-    = t('home.social_balance')
-  p
-    = "Acompanhe o Balanço Social do CEA"
-  ul 
-    - @reports.each do |report|
-      li style="margin-left:20px;" = link_to report.name , report.file.to_s
-        
-#videos.content
-  h1
-    = t('home.videos')
-  #container-video
-    iframe id="video1" src="http://www.youtube.com/embed/eFuQDneENYQ" width="100%"frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
+    embed type="application/x-shockwave-flash" wmode="opaque" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fvilapintowebsite%2Fshow%2F&page_show_back_url=%2Fphotos%2Fvilapintowebsite%2F&user_id=78707398@N05&jump_to=" width="860" height="570"        
+.videos.content
+    #container-video
+      iframe id="video1" src="http://www.youtube.com/embed/eFuQDneENYQ" width="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
 
-    iframe style="display: none;" id="video2" src="http://www.youtube.com/embed/q0Wyp6MFLbA" width="100%"frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
+      iframe style="display: none;" id="video2" src="http://www.youtube.com/embed/q0Wyp6MFLbA" width="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
 
-    iframe style="display: none;" id="video3" src="http://www.youtube.com/embed/I7g7H2k-iaU" width="100%"frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
-    
-    iframe style="display: none;" id="video4" src="http://www.youtube.com/embed/TmF-TEHvess" width="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
+      iframe style="display: none;" id="video3" src="http://www.youtube.com/embed/I7g7H2k-iaU" width="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
+      
+      iframe style="display: none;" id="video4" src="http://www.youtube.com/embed/TmF-TEHvess" width="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
 
-  #menu-video
-    a videolink="video1"
-      img src="assets/video1.png" class="active"
-    a videolink="video2"
-      img src="assets/video2.png"
-    a videolink="video3"
-      img src="assets/video3.png"
-    a videolink="video4"
-      img src="assets/video4.png"
+    #menu-video
+      a videolink="video1"
+        img src="assets/video1.png" class="active"
+      a videolink="video2"
+        img src="assets/video2.png"
+      a videolink="video3"
+        img src="assets/video3.png"
+      a videolink="video4"
+        img src="assets/video4.png"
 #toggle
   #marli-medeiros.content
       h1
@@ -152,28 +136,35 @@
           li 2002 - Mulher Cidadã - Assembléia Legislativa do RGS - Porto Alegre/RS
           li 2001 - Destaque Comunitário, Líderes e Vencedores - Federasul - Porto Alegre/RS
           li 2000 - Amiga da Cidade - Prefeitura Municipal de Porto Alegre/RS
-#depoimentos.content
+      .depoimentos
+        h1 Outros Depoimentos
+        .portraits
+          .portrait
+            img src="assets/depoimento1.png"
+            blockquote
+              p
+                = t('cea.testimonial_jurema')
+                p
+                 small = t('cea.label_jurema')
+          .portrait.testimonial_eduardo
+            img src="assets/depoimento4.png"
+            blockquote
+              p
+                = t('cea.testimonial_eduardo')
+                p
+                  small = t('cea.label_eduardo')
+          .portrait
+            img src="assets/depoimento2.png"
+            blockquote
+              p
+                = t('cea.testimonial_sirlei')
+                p
+                  small = t('cea.label_sirlei')
+#transparencia.content
   h1
-    = t('home.testimonials')  
-  .portraits
-    .portrait
-      img src="assets/depoimento1.png"
-      blockquote
-        p
-          = t('cea.testimonial_jurema')
-          p
-           small = t('cea.label_jurema')
-    .portrait.testimonial_eduardo
-      img src="assets/depoimento4.png"
-      blockquote
-        p
-          = t('cea.testimonial_eduardo')
-          p
-            small = t('cea.label_eduardo')
-    .portrait
-      img src="assets/depoimento2.png"
-      blockquote
-        p
-          = t('cea.testimonial_sirlei')
-          p
-            small = t('cea.label_sirlei')
+    = t('home.transparencia')
+  p
+    = "Acompanhe o Balanço Social do CEA"
+  ul 
+    - @reports.each do |report|
+      li style="margin-left:20px;" = link_to report.name , report.file.to_s

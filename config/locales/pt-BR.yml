@@ -131,6 +131,7 @@ pt-BR:
   home:
     about: Sobre
     videos: Videos
+    transparencia: Transparência
     aboutus: Quem Somos 
     history: História
     vila_pinto: Vila Pinto
@@ -139,7 +140,6 @@ pt-BR:
     contact: Contato
     projects: Projetos
     founder: A Fundadora
-    transparency: Transparência
     partners: Parceiros
     recycling: Reciclagem
     finance: Financeiro
@@ -149,8 +149,6 @@ pt-BR:
     donation: Doação
     donation-text: Doe agora
     transparency: Transparência
-    social_balance: Balanço Social 
-
   time:
     formats:
       default: '%d/%m/%Y'

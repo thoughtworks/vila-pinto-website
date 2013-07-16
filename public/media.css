@@ -18,12 +18,12 @@
 		top: 70px;
 	}
 
-	#videos a {
+	.videos a {
 		float: left;
 		margin-right: 1%;
 	}
 
-	#videos a img {
+	.videos a img {
 		width: 80px;
 		height: 80px;
 	}
@@ -69,7 +69,7 @@
 		width: 100%;
 	}
 
-	#sobre h1 {
+	#sobre > h1 {
 		width: 100%;
 		font-size: 1.4em;
 		margin-bottom: 20px;
@@ -177,7 +177,7 @@
 		height: 300px;
 	}
 
-	#videos a img {
+	.videos a img {
 		width: 100px;
 		height: 100px;
 	}
@@ -187,7 +187,7 @@
 		width: 50%;
 	}
 
-	#sobre h1 {
+	#sobre > h1 {
 		width: 45%;
 		font-size: 2em;
 	}
@@ -214,7 +214,7 @@
 		height: 500px;
 	}
 
-	#videos a {
+	.videos a {
 		float: none;
 	}
 
@@ -224,7 +224,7 @@
 		width: auto;
 	}
 
-	#sobre h1 {
+	#sobre > h1 {
 		font-size: 2.2em;
 	}
 
