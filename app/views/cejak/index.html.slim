@@ -27,7 +27,7 @@
       li
         i class="icon-folder-open"
         h3 Programas e Projetos:&nbsp;
-        = Project.count
+        = Project.where(visible: true).count
       li
         i class="icon-group"
         h3 Funcionários:&nbsp;
