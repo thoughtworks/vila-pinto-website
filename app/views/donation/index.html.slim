@@ -18,7 +18,7 @@
 	.information.funcrianca
 		h2 Através do Funcriança:
 		p
-			| Nesta modalidade o valor doado pode ser deduzido integralmente do imposto de renda devido, até o limite de 6% do imposto devido para pessoas físicas e 1% do imposto devido para pessoas jurídicas.
+			| Nesta modalidade o valor doado pode ser deduzido INTEGRALMENTE do imposto de renda devido, até o limite de 6% do imposto devido para pessoas físicas e 1% do imposto devido para pessoas jurídicas.
 			| Para doar é fácil, basta clicar no link abaixo e seguir as etapas, até imprimir o boleto.<br><br>
 		ul
 			li 1 - Acessar o site do Funcriança 
@@ -30,7 +30,6 @@
 			li 4 - Siga os passos até "Emitir DAD para pagamento"
 			li 5 - Imprima o Documento de Arrecadação e pague em uma lotérica ou em qualquer agência dos principais bancos do país
 			li IMPORTANTE: O documento de arrecadação de doação (DAD) será o comprovante da doação no momento da declaração do imposto de renda
-
 	.information.material
 		h2 Através de mantimentos e materiais
 		ul	
@@ -38,7 +37,7 @@
 			li Material escolar
 			li Livros
 			li Equipamentos ( computadores, impressoras, etc.)
-	.information.bank
+	.information.material
 		h2 Através de depósito bancário:
 		ul
 			li 
@@ -53,5 +52,76 @@
 			li Banco Banrisul
 			li Agência 0027 – Três Figueiras
 			li Conta Corrente: 06.855515.4-4
+	.information.bank
+		h2 Através da lei n° 9249/95
+		p
+			| Empresas optantes do LUCRO REAL podem fazer doações utilizando os incentivos destinados às entidades sem fins lucrativos. A lei prevê a dedução integral do valor das doações como despesa operacional até o limite de 2% do lucro operacional bruto. Não há uma dedução do imposto de renda a ser pago, mas uma dedução da base de cálculo do Imposto de Renda e da Contribuição Social sobre o lucro. Com esta redução, opera-se um ganho de aproximadamente 35% do valor doado. Para fazer uso da dedução, as pessoas jurídicas devem, nos casos de doação em dinheiro, fazê-las por depósito bancário e arquivar o recibo do depósito bancário. Devem, também, solicitar o recibo da entidade donatária, com seus dados e da entidade. Para fins de fiscalização, a pessoa jurídica doadora deve manter em seu arquivo declaração fornecida pela entidade beneficiária, conforme modelo aprovado pela Receita Federal (IN87/96), que pode ser encontrada aqui.<br><br>
+			
+			| São passíveis de incentivo fiscal doações para entidades civis, legalmente constituídas no Brasil, sem fins lucrativos, nos termos do art. 13, § 2º, inciso III, alíneas "a", "b" e "c", da Lei nº 9.249, de 26 de dezembro de 1995.<br><br>
+
+		a href="declaraçãoCEA.docx" Baixe a declaração aqui
+
+		<br><br>
+		p 
+			| A tabela abaixo ilustra o funcionamento: <br><br>
+		.table-container
+			table
+				tr
+					th Descrição
+					th Sem Doação
+					th Com Doação
+					th Economia
+				tr
+					td Lucro Operacional
+					td 1.000.000,00
+					td 1.000.000,00
+					td
+				tr
+					td Valor Máximo Dedutível
+					td
+					td 20.000,00
+					td
+				tr
+					td Lucro Antes da CSL e IRPJ
+					td 1.000.000,00(A)
+					td 980.000,00
+					td
+				tr
+					td (-) Contribuição Social (9%)
+					td 90.000,00(B)
+					td 88.200,00
+					td 1.800,00
+				tr
+					td (-) Imposto de Renda (15%)
+					td 150.000,00(C)
+					td 147.000,00
+					td 3.000,00
+				tr
+					td (-) Adicional (10%(A-(B+C)))
+					td 76.000,00
+					td 74.000,00
+					td 2.000,00
+				tr
+					td Total Carga Tributária
+					td 316.000,00
+					td 309.200,00
+					td 
+				tr
+					td Total de retorno
+					td 
+					td 
+					td 6.800,00
+				tr
+					td Lucro Líquido
+					td 694.000,00
+					td 680.600,00
+					td 
+				tr
+					td Retorno Financeiro
+					td 
+					td 
+					td 34%
+				    
+	
 	p.duvida Se tiver alguma dúvida entre em 
 	= link_to t('home.contact'), new_contact_path, class: 'contact'
