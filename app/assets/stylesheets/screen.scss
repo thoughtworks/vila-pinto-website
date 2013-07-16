@@ -516,6 +516,10 @@ h1 {
   left: 5%;
 }
 
+.bot { 
+  opacity: 0;
+}
+
 .toggle-header {
   overflow: hidden;
   max-height: 0;
@@ -531,6 +535,10 @@ h1 {
 #marli-medeiros:target .bot {
   opacity: 0;
 } 
+
+#toggle:target .bot {
+  opacity: 1;
+}
 
 #toggle:target .top { 
   opacity: 0;
