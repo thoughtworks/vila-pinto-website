@@ -97,10 +97,10 @@ pt-BR:
         attendance_shift_night: noite
         errors:
           frequency_without_unit: Selecione a frequência
-          frequency_without_value: Preencha o valor da frequência
+          frequency_without_value: Preencha um valor válido
           show_without_frequency: Preencha a frequência
-          show_without_attendance_days: Escolha um turno de atendimento 
-          show_without_shift: Escoha um período
+          show_without_attendance_days: Escolha um dia de atendimento 
+          show_without_shift: Escoha um Turno de Atendimento
           show_without_attendance_goal: Preencha a meta de atendimento
           meals_without_unit: Selecione a frequência de refeições
           meals_without_value: Preencha a quantidade de refeições
