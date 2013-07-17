@@ -63,6 +63,14 @@ p.prj_ind_legend { font-size: 1.0em; color: #5e6469; }
   line-height: 1em;
 }
 
+body.active_admin a.table_tools_button, body.active_admin .table_tools .dropdown_menu_button {
+	filter: 0;
+}
+
+body.active_admin #title_bar .action_items a {
+	filter: 0;
+}
+
 /*li { border: solid 1px blue !important; }*/
 
 
