@@ -164,7 +164,7 @@
   h1
     = t('home.transparencia')
   p
-    = "Acompanhe o Balanço Social do CEA"
+    = "Acompanhe os relatórios do CEA"
   ul 
     - @reports.each do |report|
       li style="margin-left:20px;" = link_to report.name , report.file.to_s
