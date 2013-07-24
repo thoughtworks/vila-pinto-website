@@ -7,7 +7,8 @@ VilaPintoWebsite::Application.routes.draw do
 
   root :to => 'welcome#index'
 
-  match '/donation' => 'donation#index', as: :donation
+  get '/donation'  => 'donation#index', as: :donation
+  post '/donation' => 'donation#create', as: :donation
 
   match '/cejak' => 'cejak#index', as: :cejak
   match '/ctvp' => 'ctvp#index', as: :ctvp

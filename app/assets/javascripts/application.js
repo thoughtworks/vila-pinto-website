@@ -16,3 +16,12 @@
 //= require gmaps4rails/gmaps4rails.googlemaps
 //= require_directory .
 //= require manifest
+$(function() {
+  $('#custom_amount').focus(function () {
+    $('#amount_option_custom').prop('checked', true);
+  });
+
+  $('#amount_option_custom').click(function () {
+    $('#custom_amount').focus();
+  });
+});

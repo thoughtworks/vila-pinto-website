@@ -1,74 +1,191 @@
 @import "color";
 
 #donation-text {
-	width: 80%;
-	font-size: 1.05em;
+  width: 80%;
+  font-size: 1.05em;
 
-	h2 {
-		font-size: 1.2em;
-		color: $blue;
-		margin-bottom: 20px;
-		margin-top: 20px;
-		width: 350px;
-	}
+  h2 {
+    font-size: 1.2em;
+    color: $blue;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 350px;
+  }
 
-	h1 {
-		width: 100%;
-		margin-bottom: 40px;
-		border-bottom: 4px solid $blue;
-	}
+  h1 {
 
-	ul {
-		list-style: none;
-		line-height: 2.3em;
-		float: left;
-	}
+    width: 100%;
+    margin-bottom: 40px;
+    border-bottom: 4px solid $blue;
+  }
 
-	.information {
-		margin-right: 10%;
-		float: left;
+  ul {
+    list-style: none;
+    line-height: 2.3em;
+  }
 
-		&.funcrianca {
-			width: 60%;
-			margin-bottom: 40px;
+  .information {
+    margin-right: 10%;
+    float: left;
 
-			i {
-				font-weight: bold;
-				float: none;
-				font-size: 1.05em;
-			}
-		}
+    &.funcrianca {
+      width: 60%;
+      margin-bottom: 40px;
 
-		&.material {
-			width: 20%;
+      i {
+        font-weight: bold;
+        float: none;
+        font-size: 1.05em;
+      }
+    }
 
-			ul {
-				list-style: circle;
-				width: 400px;
-			}
-		}
+    &.material {
+      width: 20%;
 
-		&.bank {
-			width: 100%;
-			margin-bottom: 40px;
-		}
-	}
+      ul {
+        list-style: circle;
+        width: 400px;
+      }
+    }
 
-	p.initial {
-		margin-bottom: 30px;
-	}
+    &.bank {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
 
-	p.duvida {
-		font-size: 1.3em;
-		display: block;
-		float: left;
-		width: 340px;
-		display: block;
-	}
+  p.initial {
+    margin-bottom: 30px;
+  }
 
-	.contact {
-		float: left;
-		text-decoration: none;
-		font-size: 1.2em;
-	}
+  p.duvida {
+    font-size: 1.3em;
+    display: block;
+    float: left;
+    width: 340px;
+    display: block;
+  }
+
+  .contact {
+    float: left;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+}
+
+#pagseguro_donation {
+  background-color: #3498db;
+  padding: 10px;
+  width: 400px;
+  margin: 0 auto;
+
+  h1 {
+    color: #fff;
+    border-bottom: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+
+    img {
+      position: relative;
+      top: 12px;
+      width: 160px;
+      border-radius: 5px;
+      border: 2px solid #62B22D;
+    }
+  }
+
+  em {
+    color: #fff;
+    text-align: center;
+    display:block;
+  }
+
+  form {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    .button {
+      background-color: #2ECC71;
+      width: 250px;
+      border: 0px;
+      color: #fff;
+      font-size: 1.7em;
+      padding: 10px;
+    }
+  }
+
+  label {
+    color: #000;
+    display: block;
+    width: 250px;
+    padding: 10px;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+    background-color: white;
+    &:before {
+      content: "• \a0\a0";
+    }
+  }
+
+  input[type="radio"] {
+    left: -999em;
+    position: absolute;
+    &:checked+label {
+      background: #2ECC71;
+      color: #fff;
+      &:before {
+        content: "✔ ";
+      }
+    }
+  }
+
+  #amount_option_custom {
+    &:checked ~ input {
+      background: #2ECC71;
+      &::-webkit-input-placeholder { /* WebKit browsers */
+        color: #fff;
+      }
+      &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+      }
+      &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #fff;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #fff;
+      }
+    }
+  }
+
+  #custom_amount {
+    font-size: 1.7em;
+    width: 160px;
+    height: 40px;
+    float: left;
+    border: none;
+    position: relative;
+    top: -60px;
+    left: 110px;
+
+    &:focus {
+      outline: 0px;
+      &::-webkit-input-placeholder { /* WebKit browsers */
+        color: #fff;
+      }
+      &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+      }
+      &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #fff;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #fff;
+      }
+      background: #2ECC71;
+      color: #fff;
+    }
+  }
+
 }
