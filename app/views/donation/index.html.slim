@@ -14,31 +14,31 @@
   h1 Doe para as iniciativas do CEA!
   p.initial
     | Sua contribuição ajudará diretamente o CEJAK ou a Escola de Educação Infantil Vovó Belinha. Para isso, existem diversas maneiras. <br>
-  - if flash[:notice]
-    p.notice
-      = flash[:notice]
-    - flash.discard
+  / - if flash[:notice]
+  /   p.notice
+  /     = flash[:notice]
+  /   - flash.discard
 
-  - @donation.errors.each do |attr, e|
-    p.error
-     = e
-  #pagseguro_donation
-    h1
-      | Doe via 
-      img src="/assets/pagseguro.jpg"
+  / - @donation.errors.each do |attr, e|
+  /   p.error
+  /    = e
+  / #pagseguro_donation
+  /   h1
+  /     | Doe via 
+  /     img src="/assets/pagseguro.jpg"
 
-    em Selecione uma opção:
+  /   em Selecione uma opção:
 
-    = form_for @donation, url: donation_pt_br_path do |f|
-      - @amount_options.each do |option|
-        = f.radio_button :amount_option, option
-        = f.label "amount_option_#{option}", number_to_currency(option, unit: 'R$ ')
+  /   = form_for @donation, url: donation_pt_br_path do |f|
+  /     - @amount_options.each do |option|
+  /       = f.radio_button :amount_option, option
+  /       = f.label "amount_option_#{option}", number_to_currency(option, unit: 'R$ ')
 
-      input id="amount_option_custom" type="radio" name="donation[amount_option]" value="custom"
-      label for="amount_option_custom"
-      input id="custom_amount" name="donation[custom_amount]" placeholder="outro valor"
+  /     input id="amount_option_custom" type="radio" name="donation[amount_option]" value="custom"
+  /     label for="amount_option_custom"
+  /     input id="custom_amount" name="donation[custom_amount]" placeholder="outro valor"
 
-      = f.submit "❤ Doe agora", class: 'button'
+  /     = f.submit "❤ Doe agora", class: 'button'
 
   .information.funcrianca
     h2 Através do Funcriança:
