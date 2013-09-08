@@ -185,7 +185,7 @@ div.parceiros-cejak {
   background: $yellow;
 
   .department {
-    color: #222;
+    color: #333;
     font-weight: bold;
     font-size: 2em;
     float: left;
@@ -194,12 +194,12 @@ div.parceiros-cejak {
   }
 
   ul li.active a {
-    color: #222 !important;
+    color: darken($green, 20%) !important;
     font-weight: bold;
   }
 
   li:hover a {
-    color: #222 !important;
+    color: darken($green, 20%) !important;
   }
 }
 

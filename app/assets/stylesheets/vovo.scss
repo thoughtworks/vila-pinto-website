@@ -52,12 +52,12 @@
   }
 
   ul li.active a {
-    color: #222 !important;
+    color: darken($green, 15%) !important;
     font-weight: bold;
   }
 
   li:hover a {
-    color: #222 !important;
+    color: darken($green, 15%) !important;
   }
 }
 
