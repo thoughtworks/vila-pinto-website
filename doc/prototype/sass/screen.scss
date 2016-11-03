@@ -34,7 +34,7 @@ body {
   ul {
     margin: 0 auto;
     width: 955px;
-    
+
     li {
       list-style: none;
       font-size: 1.7em;
@@ -91,7 +91,6 @@ h1 {
     -webkit-column-count: 2;
     -webkit-column-gap: 50px;
     column-count: 2;
-    column-gap: 500px; 
 }
 
 #historia h1, #depoimentos h1 {
@@ -131,7 +130,7 @@ h1 {
 
 #depoimentos {
  height: 950px;
- 
+
   h1 {
     width: 100%;
   }
@@ -148,7 +147,7 @@ h1 {
     margin-left: 170px;
     margin-bottom: 30px;
   }
-  
+
   .portraits {
     width: 45%;
     float: left;
@@ -160,7 +159,7 @@ h1 {
   width: 100%;
   margin: 0;
   background-color: #eee;
-  
+
   img {
     margin-top: 10%;
   }
@@ -198,7 +197,7 @@ blockquote {
   img {
     margin: 0 auto;
     display: block;
-  } 
+  }
 }
 
 footer {
@@ -237,7 +236,7 @@ body.two-col {
     @include column($sidebar-columns); }
   #content {
     $content-columns: ceil(2 * $blueprint-grid-columns / 3);
-    @include column($content-columns, true); } 
+    @include column($content-columns, true); }
 }
 
 .carousel {
@@ -254,10 +253,10 @@ body.two-col {
 
 .carousel.item {
     position: relative;
-    display: none; 
-    -webkit-transition: 0.6s ease-in-out left; 
-    -moz-transition: 0.6s ease-in-out left; 
-    -ms-transition: 0.6s ease-in-out left; 
+    display: none;
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -ms-transition: 0.6s ease-in-out left;
     -o-transition: 0.6s ease-in-out left;
     transition: 0.6s ease-in-out left;
 }
@@ -314,8 +313,8 @@ body.two-col {
     color: #ffffff;
     text-align: center;
     background: #222222;
-    border: 3px solid #ffffff; 
-    -webkit-border-radius: 23px; 
+    border: 3px solid #ffffff;
+    -webkit-border-radius: 23px;
     -moz-border-radius: 23px;
     border-radius: 23px;
     opacity: 0.5;
