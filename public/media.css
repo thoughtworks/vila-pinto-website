@@ -62,7 +62,7 @@
 	#sobre {
 		margin-top: 20px;
 	}
-	
+
 	#sobre p {
 		margin: 0;
 		margin-top: 40px;
@@ -84,7 +84,7 @@
 		width: 45%;
 		padding-top: 0px;
 		padding-right: 0px;
-		font-size: 1.2em;		
+		font-size: 1.2em;
 	}
 
 	blockquote {
@@ -131,9 +131,9 @@
   #doe {
 		top: 60px;
 	}
-	
+
 	#slides {
-		display: none;	
+		display: none;
 	}
 
 	.two {
@@ -141,9 +141,8 @@
 		-webkit-column-count: 2;
 		-moz-column-count: 2;
 		-moz-column-gap: 50px;
-    	-webkit-column-gap: 50px;
-    	column-gap: 500px; 
-    	line-height: 1.7em;
+    -webkit-column-gap: 50px;
+    line-height: 1.7em;
 	}
 
 	#historia ul {
@@ -244,6 +243,6 @@
 
 	#slides {
 		display: block;
-		top: 140px;	
+		top: 140px;
 	}
 }
