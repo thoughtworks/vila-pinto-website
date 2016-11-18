@@ -21,6 +21,7 @@ gem "compass-rails"
 gem 'nokogiri'
 gem 'newrelic_rpm'
 gem 'pag_seguro'
+gem 'test-unit', '~> 3.0'
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
