@@ -11,46 +11,55 @@ http://www.youtube.com/watch?v=ejIlcZJd4cA
 
 Instructions
 ============
+There are two ways to configure the app.
+
+Docker
+--------------------
+Is **strongly** recommended to use the docker to development the website because there's a huge ruby dependencies in this project.
+```
+docker build -t image-cea .
+docker run -p 3000:3000 --rm -v $PWD:/app -it --name cea-website image-cea 
+```
 
 Ubuntu Instalation
 ------------------
 
-1 - Install git
-    	sudo apt-get install git
-	
-2 - Install RVM - Ruby Version Manager
-	curl -L get.rvm.io | bash -s stable --auto
-	
-	ps: you might need to install curl: sudo apt-get install curl
-	
-3 - Install Ruby with Readline support
-	sudo rvm install 1.9.3 --with-readline-dir=/usr
+1. Install git  
+	`sudo apt-get install git`
 
-4 - Download Vila Pinto Project
-	git clone https://github.com/thoughtworks/vila-pinto-website.git
+2. Install RVM - Ruby Version Manager  
+	`curl -L get.rvm.io | bash -s stable --auto`
+
+	>ps: you might need to install curl: sudo apt-get install curl
 	
-5 - Use ruby with gemset global and install bundler
-	rvm gemset use global && gem install bundler
+3. Install Ruby with Readline support  
+	`sudo rvm install 1.9.3 --with-readline-dir=/usr`
+
+4. Download Vila Pinto Project  
+	`git clone https://github.com/thoughtworks/vila-pinto-website.git`
 	
-6 - Broke on postgresql problem
-	sudo apt-get install libpq-dev
+5. Use ruby with gemset global and install bundler  
+	`rvm gemset use global && gem install bundler`
 	
-	ps: if any of the gems fails, run the command it suggests, like "gem install pg -v '0.14.1'". If it fails, it will show which lib is missing, so do a "sudo apt-get install [MISSING LIB]".
-
-7 - Install ImageMagick
-	sudo apt-get install imagemagick
-
-8 - Execute "bundle install" until no error is seeing. If necessary, install the missing libs and run "bundle install" again.
-
-	ps: if you get a error like "missing javascript runtime", then run 
-	"sudo apt-get install nodejs"
+6. Broke on postgresql problem  
+	`sudo apt-get install libpq-dev`
 	
-9 - Change bootstrap permission to execute
-	chmod +x bootstrap.sh
+	>ps: if any of the gems fails, run the command it suggests, like `gem install pg -v '0.14.1'`. If it fails, it will show which lib is missing, so do a `sudo apt-get install [MISSING LIB]`.
 
-10 - Execute bootstrap.sh	
+7. Install ImageMagick  
+	`sudo apt-get install imagemagick`
 
-11 - Access Vila Pinto through: http://localhost:3000
+8. Execute `bundle install` until no error is seeing. If necessary, install the missing libs and run `bundle install` again.
+
+	>ps: if you get a error like _missing javascript runtime_, then run 
+	`sudo apt-get install nodejs`
+	
+9. Change bootstrap permission to execute  
+	`chmod +x bootstrap.sh`
+
+10. Execute `bootstrap.sh`
+
+11. Access Vila Pinto through: `http://localhost:3000`
 
 Development
 -----------
@@ -61,7 +70,7 @@ Install RVM
 
 Clone the repo
 
-Run "sh bootstrap.sh"
+Run `sh bootstrap.sh`
 
 have fun!
 
