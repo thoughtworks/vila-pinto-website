@@ -11,7 +11,7 @@ gem "meta_search", '>= 1.1.0.pre'
 gem "carrierwave", '~> 0.7.0'
 gem "carrierwave-google_drive"
 gem "carrierwave-processing", "~> 0.0.2"
-gem "rmagick", :require => 'RMagick'
+gem "rmagick", "~> 2.15.4"
 gem "activevalidators"
 gem "values_for"
 gem "draper"
