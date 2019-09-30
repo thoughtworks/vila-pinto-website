@@ -204,7 +204,7 @@ GEM
       railties (~> 3.1)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rmagick (2.13.2)
+    rmagick (2.15.4)
     rspec-core (2.12.1)
     rspec-expectations (2.12.0)
       diff-lcs (~> 1.1.3)
