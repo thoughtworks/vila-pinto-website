@@ -91,13 +91,15 @@
     embed type="application/x-shockwave-flash" wmode="opaque" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fvilapintowebsite%2Fshow%2F&page_show_back_url=%2Fphotos%2Fvilapintowebsite%2F&user_id=78707398@N05&jump_to=" width="860" height="570"        
 .videos.content
     #container-video
-      iframe id="video1" src="http://www.youtube.com/embed/eFuQDneENYQ" width="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
+      iframe id="video1" src="http://www.youtube.com/embed/fpVGRYywaL0" width="100%" frameborder="0" allowFullScreen="allowFullScreen"
 
-      iframe style="display: none;" id="video2" src="http://www.youtube.com/embed/q0Wyp6MFLbA" width="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
+      iframe style="display: none;" id="video2" src="http://www.youtube.com/embed/eFuQDneENYQ" width="100%" frameborder="0" allowFullScreen="allowFullScreen"
 
-      iframe style="display: none;" id="video3" src="http://www.youtube.com/embed/I7g7H2k-iaU" width="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
-      
-      iframe style="display: none;" id="video4" src="http://www.youtube.com/embed/TmF-TEHvess" width="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
+      iframe style="display: none;" id="video3" src="http://www.youtube.com/embed/q0Wyp6MFLbA" width="100%" frameborder="0" allowFullScreen="allowFullScreen"
+
+      iframe style="display: none;" id="video4" src="http://www.youtube.com/embed/I7g7H2k-iaU" width="100%" frameborder="0" allowFullScreen="allowFullScreen"
+
+      iframe style="display: none;" id="video5" src="http://www.youtube.com/embed/TmF-TEHvess" width="100%" frameborder="0" allowFullScreen="allowFullScreen"
 
     #menu-video
       a videolink="video1"
@@ -108,6 +110,8 @@
         img src="assets/video3.png"
       a videolink="video4"
         img src="assets/video4.png"
+      a videolink="video5"
+        img src="assets/video5.png"
 #toggle
   #marli-medeiros.content
       h1
@@ -126,6 +130,8 @@
       .toggle-header
         ul
           h2 Prêmios Marli Medeiros
+          li 2017 - Mulheres que Inspiram - Revista Donna, Zero Hora - Porto Alegre/RS
+          li 2016 - Cidadã Porto-Alegrense - Prefeitura Municipal de Porto Alegre - Porto Alegre/RS
           li 2009 - Responsabilidade Social – Parceiros Voluntários – Porto Alegre/RS
           li 2008 - Direitos Humanos - Secretaria da Justiça e do Desenvolvimento Social do RGS
           li 2006 - Relevantes Serviços Prestados à Comunidade – PMPA - Porto Alegre/RS, Brasil
@@ -166,5 +172,4 @@
   p
     = "Acompanhe os relatórios do CEA"
   ul 
-    - @reports.each do |report|
-      li style="margin-left:20px;" = link_to report.name , report.file.to_s
+    li style="margin-left:20px;": a href="https://drive.google.com/file/d/1BbfGHciSoSrtgDgl_FpLBUOfRCRdxvgf/view?usp=sharing" target="_blank" Balanço Social 2016/1017

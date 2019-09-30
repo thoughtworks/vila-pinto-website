@@ -1,4 +1,4 @@
-FROM ruby:1.9.3
+FROM ruby:2.1.10
 
 RUN apt-get update 
 RUN apt-get install -y build-essential 

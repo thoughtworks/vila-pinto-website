@@ -53,10 +53,12 @@ $(document).ready(function() {
     var video2 = $("#video2").attr("src");
     var video3 = $("#video3").attr("src");
     var video4 = $("#video4").attr("src");
+    var video5 = $("#video5").attr("src");
     $("#video1").attr("src",video1);
     $("#video2").attr("src",video2);
     $("#video3").attr("src",video3);
     $("#video4").attr("src",video4);
+    $("#video5").attr("src",video5);
     $('#' + $(this).attr('videolink')).show();
 
     $('#menu-video a img').removeClass('active');
